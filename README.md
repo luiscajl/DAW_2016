@@ -2,7 +2,8 @@
 
 ## Nombre de la aplicación: Taste IT.
 
-## Descripción: Una web donde puedes subir tus propias recetas y ver las de los demas. Puedes filtrar recetas por ingredientes o etiquetas. Al crear la receta, puedes indicar que la receta sea publica o privada. En la parte privada, el usuario puede ver todas sus recetas y las valoraciones / comentarios en sus recetas.
+## Descripción: 
+ Una web donde puedes subir tus propias recetas y ver las de los demas. Puedes filtrar recetas por ingredientes o etiquetas. Al crear la receta, puedes indicar que la receta sea publica o privada. En la parte privada, el usuario puede ver todas sus recetas y las valoraciones / comentarios en sus recetas.
 
 ## Entidades:
 - Receta: Cada receta cuenta con el titulo, el usuario que la ha creado, el cuerpo de la receta, fecha de creacion, etiquetas.
