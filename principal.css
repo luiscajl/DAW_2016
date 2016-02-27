@@ -1,0 +1,21 @@
+.logo{
+
+    height: 100px;
+    
+}
+
+.cabecera{
+    
+    width: 300px;
+    margin: -20;
+    padding-left: 20px;
+}
+
+.navbar{
+    background-color: rgb(168,214,227);
+    height: 100px;
+}
+
+.navbar-collapse{
+    margin-top: 20px;
+}
