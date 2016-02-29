@@ -42,12 +42,14 @@
 
 .navbar{
     background-color: rgb(168,214,227);
-    height: 70;
+    height: 70px;
     color: black;        
 }
 
 .navbar a{
     color: black;
+    height: 100px
+    
 }
 .navbar-nav>.active>a:focus{
     color:#fff;
