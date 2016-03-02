@@ -11,3 +11,68 @@
    
 }
 
+.carnes{
+  background-image: url(../img/car.jpg);
+     background-size: cover;
+}
+
+.pescados{
+    background-image: url(../img/pes.jpg);
+     background-size: cover;
+}
+
+.verduras{
+    background-image: url(../img/ver.jpg);
+     background-size: cover;
+    
+}
+
+.postres{
+    background-image: url(../img/pos.jpg);
+     background-size: cover;
+}
+
+.overlay {
+    padding-top: 50px;
+    text-align: center;
+    width: 250px;
+    height: 100%;
+    margin-top: 0px;
+    margin-left: -15px;
+    background-color: aquamarine;
+    display: none;
+}
+
+.overlay2 {
+      padding-top: 50px;
+    text-align: center;
+    width: 250px;
+    height: 100%;
+    margin-top: 0px;
+    margin-left: -15px;
+    background-color: aquamarine;
+    display: none;
+}
+
+.overlay3 {
+     padding-top: 50px;
+    text-align: center;
+    width: 250px;
+    height: 100%;
+    margin-top: 0px;
+    margin-left: -15px;
+    background-color: aquamarine;
+    display: none;
+}
+
+.overlay4 {
+     padding-top: 50px;
+    text-align: center;
+     width: 250px;
+    height: 100%;
+    margin-top: 0px;
+    margin-left: -15px;
+    background-color: aquamarine;
+    display: none;
+}
+
