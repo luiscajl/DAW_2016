@@ -21,7 +21,6 @@
      background-size: cover;
 }
 
-<<<<<<< HEAD
 .verduras{
     background-image: url(../img/ver.jpg);
      background-size: cover;
@@ -41,7 +40,7 @@
     margin-top: 0px;
     margin-left: -15px;
     background-color: aquamarine;
-=======
+}
 .navbar-brand {
     max-height: 40px;
 }
@@ -91,10 +90,10 @@
     max-width: 20% !important;
     
 }
-    .navbar-brand {
+.navbar-brand {
     width: 40px;
 }
-    .navbar-brand {
+.navbar-brand {
     width: 100;
     margin-top: 10;
     background-image:  url(../img/logo_transparent_2.png);
@@ -106,7 +105,6 @@
 
 @media (max-width:1075px) { 
      .navbar-brand {
->>>>>>> Luisca
     display: none;
 }
 
