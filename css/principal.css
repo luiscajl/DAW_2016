@@ -40,6 +40,71 @@
     margin-top: 0px;
     margin-left: -15px;
     background-color: aquamarine;
+}
+.navbar-brand {
+    max-height: 40px;
+}
+
+.navbar{
+    background-color: rgb(168,214,227);
+    height: 70px;
+    color: black;        
+}
+
+.navbar a{
+    color: black;
+    height: 100px;
+    
+}
+.navbar-nav>.active>a:focus{
+    color:#EDE1B8;
+    background-color: #EDE1B8;
+    
+
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+    color:#fff;
+    background-color: #EDE1B8;
+    moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*Esta es la activa*/
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus{
+     color:#EDE1B8;
+    background-color: whitesmoke;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: White;
+    font-size: 17px;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+
+
+@media (max-width:1187px) { 
+.logo{
+    width: 10% \9; /*Force IE10 and below to size SVG images correctly*/
+    max-width: 20% !important;
+    
+}
+.navbar-brand {
+    width: 40px;
+}
+.navbar-brand {
+    width: 100;
+    margin-top: 10;
+    background-image:  url(../img/logo_transparent_2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+}
+
+@media (max-width:1075px) { 
+     .navbar-brand {
     display: none;
 }
 
