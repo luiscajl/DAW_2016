@@ -1,0 +1,163 @@
+.logo{
+
+   height: 113px;    
+}
+body{
+    background-color: #ededed;
+}
+
+.recetas{
+    height: auto;
+    background-color: rgb(192,239,222);
+    margin-top: -22px;
+    padding: 20px;
+   
+}
+
+.carnes{
+  background-image: url(../img/car.jpg);
+     background-size: cover;
+}
+
+.pescados{
+    background-image: url(../img/pes.jpg);
+     background-size: cover;
+}
+
+.verduras{
+    background-image: url(../img/ver.jpg);
+     background-size: cover;
+    
+}
+
+.postres{
+    background-image: url(../img/pos.jpg);
+     background-size: cover;
+}
+
+.overlay {
+    padding-top: 50px;
+    text-align: center;
+    width: 250px;
+    height: 100%;
+    margin-top: 0px;
+    margin-left: -15px;
+    background-color: aquamarine;
+    display: none;
+}
+
+.overlay2 {
+      padding-top: 50px;
+    text-align: center;
+    width: 250px;
+    height: 100%;
+    margin-top: 0px;
+    margin-left: -15px;
+    background-color: aquamarine;
+    display: none;
+}
+
+.overlay3 {
+     padding-top: 50px;
+    text-align: center;
+    width: 250px;
+    height: 100%;
+    margin-top: 0px;
+    margin-left: -15px;
+    background-color: aquamarine;
+    display: none;
+}
+
+.overlay4 {
+     padding-top: 50px;
+    text-align: center;
+     width: 250px;
+    height: 100%;
+    margin-top: 0px;
+    margin-left: -15px;
+    background-color: aquamarine;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+#perfil {
+    width:auto;
+    height: 240px;
+    background-image:url(../img/food.jpg);
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: -25px;  
+}
+p
+{    
+    text-align: right;
+    padding-top: 18px;
+    padding-right: 6px;
+    font-size: 20px;
+    color: white;
+    text-decoration-color: white;
+    font-family: 'Droid Sans', sans-serif;
+
+}
+
+#iconoperfil{ 
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 100px;
+    align-content: center;
+   }
+.nombreusuario
+{
+    padding-left: 130px;
+    margin-top: -100px;
+    font-size: 40px;
+    color: white;
+    font-family: 'Droid Sans Bold', sans-serif;
+}
+.rangousuario{
+    padding-left: 130px;
+    margin-top: -10px;
+    font-size: 17px;
+    color: white;
+    font-family: 'Droid Sans Bold', sans-serif;
+    
+}
+.infousuario{
+    padding-left: 130px;
+    margin-top: 0px;
+    font-size: 12px;
+    color: white;
+    font-family: 'Droid Sans Bold', sans-serif;
+    
+}
+
+
+
+
+#menu{
+    background-color:#c0efde;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 56px;
+    width: auto;
+    display: inline-block;
+}
+#menuperfil li{
+    display: inline-block;
+    text-align: center;
+    margin-left: 140px;
+    margin-right: 100px;
+    list-style-type: none;
+    color: white;
+    font-size: 24px;
+    margin-top: 15px;
+    font-family: 'Droid Sans Bold', sans-serif;
+}
+
