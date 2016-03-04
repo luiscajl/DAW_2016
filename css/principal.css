@@ -1,35 +1,32 @@
-.logo{
-
-   height: 113px;    
+.logo {
+    height: 113px;
 }
 
-.recetas{
+.recetas {
     height: auto;
-    background-color: rgb(192,239,222);
+    background-color: rgb(192, 239, 222);
     margin-top: -22px;
     padding: 20px;
-   
 }
 
-.carnes{
-  background-image: url(../img/car.jpg);
-     background-size: cover;
+.carnes {
+    background-image: url(../img/car.jpg);
+    background-size: cover;
 }
 
-.pescados{
+.pescados {
     background-image: url(../img/pes.jpg);
-     background-size: cover;
+    background-size: cover;
 }
 
-.verduras{
+.verduras {
     background-image: url(../img/ver.jpg);
-     background-size: cover;
-    
+    background-size: cover;
 }
 
-.postres{
+.postres {
     background-image: url(../img/pos.jpg);
-     background-size: cover;
+    background-size: cover;
 }
 
 .overlay {
@@ -44,7 +41,7 @@
 }
 
 .overlay2 {
-      padding-top: 50px;
+    padding-top: 50px;
     text-align: center;
     width: 250px;
     height: 100%;
@@ -55,7 +52,7 @@
 }
 
 .overlay3 {
-     padding-top: 50px;
+    padding-top: 50px;
     text-align: center;
     width: 250px;
     height: 100%;
@@ -66,9 +63,9 @@
 }
 
 .overlay4 {
-     padding-top: 50px;
+    padding-top: 50px;
     text-align: center;
-     width: 250px;
+    width: 250px;
     height: 100%;
     margin-top: 0px;
     margin-left: -15px;
@@ -76,3 +73,69 @@
     display: none;
 }
 
+fieldset {
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 40px;
+    background: white;
+    border-radius: 5px;
+}
+
+input,
+button {
+    position: relative;
+    width: 200px;
+    height: 40px;
+    padding: 0;
+    display: inline-block;
+    float: left;
+}
+
+input {
+    color: #666;
+    z-index: 2;
+    border: 0 none;
+}
+
+input:focus {
+    outline: 0 none;
+}
+
+input:focus + button {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+input:focus + button .fa {
+    -webkit-transform: translate(0px, 0);
+    transform: translate(0px, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    color: black;
+}
+
+button {
+    z-index: 1;
+    width: 30px;
+    border: 0 none;
+    background: rgb(192, 239, 222);
+    -webkit-transform: translate(-50px, 0);
+    transform: translate(-50px, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.fa-search {
+    font-size: 1.4rem;
+    color: #BBB;
+    z-index: 3;
+    top: 25%;
+    -webkit-transform: translate(-190px, 0);
+    transform: translate(-190px, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
