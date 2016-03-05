@@ -5,16 +5,13 @@
     <link rel="icon" type="image/png" href="/img/favicon.png">
     <link rel=”stylesheet” type=”text/css” href=”https://fonts.googleapis.com/css?family="Droid+Sans:700,400">
     <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    
     <link href="/css/principal.css" rel="stylesheet">
     <link href="/css/bootrstrap_mod.css" rel="stylesheet">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="//code.jquery.com/jquery-1.9.1.js"></script>
     <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-    
-    
-   
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -23,8 +20,12 @@
         $(document).ready(function () {
             
             $("#log").click(function() { 
-                $( "#dialog" ).dialog({ resizable: false, height:200, modal: true, show: "scale", position: 'center', top:163});    
+                $( "#dialog" ).dialog({ resizable: false, height:350, width:450, modal: true, show: "scale", position: 'center', top:163, dialogClass: 'success-dialog'});    
             }); 
+            
+            $("#dialog").bind('clickoutside',function(){
+            $(this).hide();
+            });
             
             $(".carnes").mouseover(function () {
                 $(".overlay").css("display", "block").fadeIn("slow");
@@ -91,7 +92,7 @@
 
 
                     <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                    <li><a id="log" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li><a id="log" data-toggle="modal" data-target="#myModal" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                 </ul>
             </div>
     </nav>
@@ -99,24 +100,7 @@
     <div class="recetas">
 
         
-    <div id="dialog" title="Basic dialog" style="display: none";>
-   <div class="top-row">
-            <div class="field-wrap">
-              <label>
-                Nombre de usuario<span class="req">*</span>
-              </label>
-              <input type="text" required autocomplete="off" />
-            </div>
-        
-            <div class="field-wrap">
-              <label>
-                Contraseña<span class="req">*</span>
-              </label>
-              <input type="password"required autocomplete="off"/>
-            </div>
-          </div>
-</div>
-        
+   
          
         <div class="container">
             <div class="row">
@@ -140,7 +124,63 @@
     </div>
     
 
-
+ <!-- ÉSTE DIALOG NO LO USAREMOS POR EL MOMENTO <div id="dialog" title="Basic dialog" style="display: none";>
+   <div class="logueo">
+        <div class="user">
+              <label>
+               &nbsp; &nbsp; &nbsp; &nbsp; Usuario
+              </label>
+              <br>
+              <input type="text">
+        </div>
+        <div class="pass">
+              <br><br><label>
+               &nbsp; &nbsp; &nbsp; Contraseña
+              </label>
+              <br>
+              <input align="center" type="password"required autocomplete="off"/>
+        </div>
+            </div>
+          </div>-->
+        
+ 
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
     
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="img/logo_transparent_2.png">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+              
+              
+              
+              
+        <form action="/" method="post">
+          <div class="logueo">
+        <div class="user">
+              <label>
+               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Usuario
+              </label>
+              <br>
+              <input type="text">
+        </div>
+        <div class="pass">
+              <br><br><label>
+               &nbsp; &nbsp; &nbsp; &nbsp; Contraseña
+              </label>
+              <br>
+              <input align="center" type="password"required autocomplete="off"/>
+        </div>
+            </div>
+        </form>     
+        </div>
+      </div>
+    </div>
+</div>   
     
 </body>
