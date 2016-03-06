@@ -1,0 +1,74 @@
+
+.contenedor_receta{
+    height: 1200px;
+    width: 100%;
+}
+
+.fondo1{
+    height: 100%;
+    
+   background-image: url(../img/apple_256.png);
+   background-repeat:no-repeat; /* Indicamos que no se repetira */
+	background-attachment: fixed; /* Establecemos una posicion fija para la imagen */ 
+
+}
+
+.fondo2{
+    height: 100%;
+   background-image: url(../img/Tenedor.png);
+   background-repeat:no-repeat; /* Indicamos que no se repetira */
+	background-attachment: fixed; /* Establecemos una posicion fija para la imagen */ 
+}
+
+.fondo3{
+    height: 100%;
+   background-image: url(../img/muffin.png);
+   background-repeat:no-repeat; /* Indicamos que no se repetira */
+	background-attachment: fixed; /* Establecemos una posicion fija para la imagen */ 
+}
+
+.cabecera_receta{
+    margin-top: 10px;
+    padding: 30px;
+    background-color: rgb(237,237,237);
+}
+
+.cabecera_receta img{
+    width: 100%;
+}
+
+
+.receta_herramienta{
+    background-color: rgb(146, 217, 192);
+    color: white;
+    border-bottom: solid rgba(99, 186, 155, 1) 5px;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.list-inline li{
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    background-color: rgb(146, 217, 192);
+    height: 40px;
+}
+
+.receta_ingredientes{
+    padding: 20px;
+    background-color: rgb(237,225,184);
+    border-bottom: solid rgba(202, 186, 131, 1) 5px;
+    padding-left: 25%;
+    padding-right: 25%;
+    text-align: center;
+    
+}
+
+.receta_elaboracion{
+    padding: 40px;
+     background-color: rgba(237,237,237,0.9);
+}
+
+ul,ol{
+    margin-bottom: 0px;
+}
