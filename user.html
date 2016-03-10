@@ -4,7 +4,7 @@
         <title>TastIT</title>
         <meta name="viewport" content="width=device-width">
         <link rel="icon" type="image/png" href="/img/favicon.png">
-        <link rel=”stylesheet” type=”text/css” href=”https://fonts.googleapis.com/css?family="Droid+Sans:700,400">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Sans" />
         <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">    
         <link href="/css/user.css" rel="stylesheet"> 
         <link href="/css/bootrstrap_mod.css" rel="stylesheet">
@@ -105,16 +105,18 @@
         <div class="row">
             <div class="col-md-1" id=imagenicono>
             <img class="img-circle" id="iconoperfil" src="img/iconos/icon.png" height="100px" width="100px"></img></div>
-            <div class="col-md-8" id="nombreusurangoinfo">
-                <div class="container">    
-                    <div class="col-md-8" id="nombreusuario">Luisca </div>
-                    <div class="col-md-8" id="rangousuario">Aprendiz de cocina(RANGO)</div>
-                    <div class="col-md-8" id="infousuario"> Me gusta cocinar, pero no me gusta ser cocinado</div>
-                </div>
+            <div class="col-md-2" id="nombreusurangoinfo">
+                  
+                    <h2 id="nombreusuario">Luisca </h2>
+                    <h3 id="rangousuario">Aprendiz de cocina(RANGO)</h3>
+                    <h3 id="infousuario"> Me gusta cocinar, pero no me gusta ser cocinado</h3>
+                
             </div>
         
         </div>
-    
+        <div class="row" id=seguidoresrecetas>
+            <div> Tu padre</div>
+        </div>
          
      </div>
     
@@ -131,7 +133,7 @@
         
         <div class="container" id="containerrecetas">
            <div class="row" id="receta1">
-               <div class="col-md-4" id="fotoreceta1"><img id="iconoperfil" src="img/pollorelleno.jpg" height="170px" width="280px"></img></div>
+               <div class="col-md-3" id="fotoreceta1"><img id="iconoperfil" src="img/pollorelleno.jpg" height="170px" width="280px"></img></div>
                <div class="col-md-6" id="textoreceta1">
                     <div id="nombrereceta" >Pechuga de pollo rellena
                     </div>
@@ -140,7 +142,10 @@
                     <div id="dificultadreceta"> Dificultad: Facil</div>
                                    
                </div>
-               <div class="col-md-2" id="idreceta1">hola perfil receta</div>
+               <div class="col-md-2" id="idreceta1">
+                   <img class="img-circle" id="iconoperfil" src="img/iconos/icon.png" height="100px" width="100px"></img>
+                    <h2 id="nombreusuarioreceta">Luisca </h2>
+            </div>
            </div>
            <div class="row" id="receta2">
                <div class="col-md-2" id="fotoreceta2"></div>
