@@ -64,7 +64,7 @@
         
  
     <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
+        <div class="container-fluid" id=barradearriba>
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Desplegar navegación</span>
@@ -101,7 +101,7 @@
   
   
    <div class="container" id="perfil">
-        <div class="row" id="rowperfil"><p id="editperfil">Editar Perfil</p></div>
+        <div class="row" id="rowperfil"><p id="editperfil"><span class="glyphicon glyphicon-pencil"></span></span> Editar Perfil</p></div>
         <div class="row">
             <div class="col-md-1" id=imagenicono>
             <img class="img-circle" id="iconoperfil" src="img/iconos/icon.png" height="100px" width="100px"></img></div>
@@ -114,17 +114,34 @@
             </div>
         
         </div>
+        
+        
+        
+        
         <div class="row" id=seguidoresrecetas>
-            <div> Tu padre</div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2">XXX Seguidores</div>
+            <div class="col-md-2">XXX Recetas</div>
+            <div class="col-md-2">XXX Recetarios</div>
+            
+            <div class="col-md-2"></div>
+            
         </div>
+         
+         
+         
+         
+         
+         
          
      </div>
     
      <div class="container" id="menu">
         <div class="row" id="menuperfil">
-             <div class="col-md-4">Recetas</div>
-             <div class="col-md-4">Recetario</div>
-             <div class="col-md-4">Comentar</div>
+             <div class="col-md-4"><span class="glyphicon glyphicon-list-alt"></span> Recetas</div>
+             <div class="col-md-4"><span class="glyphicon glyphicon-cutlery"></span> Recetario</div>
+             <div class="col-md-4"><span class="glyphicon glyphicon-comment"></span> Comentar</div>
       </div>
         </div>
         
@@ -133,8 +150,8 @@
         
         <div class="container" id="containerrecetas">
            <div class="row" id="receta1">
-               <div class="col-md-3" id="fotoreceta1"><img id="iconoperfil" src="img/pollorelleno.jpg" height="170px" width="280px"></img></div>
-               <div class="col-md-6" id="textoreceta1">
+               <div class="col-md-4" id="fotoreceta1"><img id="iconoperfil" src="img/pollorelleno.jpg"  class="img-responsive"></img></div>
+               <div class="col-md-4" id="textoreceta1">
                     <div id="nombrereceta" >Pechuga de pollo rellena
                     </div>
                     <div id="textoreceta">Una pechuga muy jugosa y rica.
@@ -142,15 +159,30 @@
                     <div id="dificultadreceta"> Dificultad: Facil</div>
                                    
                </div>
-               <div class="col-md-2" id="idreceta1">
-                   <img class="img-circle" id="iconoperfil" src="img/iconos/icon.png" height="100px" width="100px"></img>
+               <div class="col-md-4" id="idreceta1">
+                   <img class="img-responsive" id="iconoperfil" src="img/iconos/icon.png" height="100px" width="100px"></img>
                     <h2 id="nombreusuarioreceta">Luisca </h2>
             </div>
            </div>
-           <div class="row" id="receta2">
-               <div class="col-md-2" id="fotoreceta2"></div>
-               <div class="col-md-8" id="textoreceta2"></div>
-               <div class="col-md-2" id="idreceta2"></div>
+           
+           
+           
+                  
+           
+           
+           <div class="row" id="receta1">
+               <div class="col-md-4" id="fotoreceta1"><img id="iconoperfil" src="img/albondigas.jpg"  class="img-responsive"></img></div>
+               <div class="col-md-4" id="textoreceta1">
+                   <div id="nombrereceta" >Albóndigas de carne al microondas
+                    </div>
+                    <div id="textoreceta">Realizar las albóndigas al microondas
+                    </div>
+                    <div id="dificultadreceta"> Dificultad: Normal</div>
+               </div>
+               <div class="col-md-4" id="idreceta1">
+                   <img class="img-responsive" id="iconoperfil" src="img/iconos/icon.png" height="100px" width="100px"></img>
+                    <h2 id="nombreusuarioreceta">Luisca </h2>
+               </div>
            </div>
             
         </div>
