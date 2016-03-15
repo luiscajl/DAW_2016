@@ -1,10 +1,12 @@
 body{
+    padding-top: 70px;
     background-color: rgb(237,237,237);
 }
 
 .logo {
     height: 113px;
 }
+
 
 .recetas {
     height: auto;
@@ -193,3 +195,13 @@ button {
     width: 80px;
     margin-top: -10px;
 }
+
+
+
+
+
+
+
+
+
+
