@@ -1,3 +1,6 @@
+#barradearriba{
+    background-color: #79B6C7;
+}
 .logo{
 
    height: 113px;    
@@ -6,158 +9,162 @@ body{
     background-color: #ededed;
 }
 
-.recetas{
+#recetas{
     height: auto;
     background-color: rgb(192,239,222);
-    margin-top: -22px;
-    padding: 20px;
-   
-}
-
-.carnes{
-  background-image: url(../img/car.jpg);
-     background-size: cover;
-}
-
-.pescados{
-    background-image: url(../img/pes.jpg);
-     background-size: cover;
-}
-
-.verduras{
-    background-image: url(../img/ver.jpg);
-     background-size: cover;
     
 }
 
-.postres{
-    background-image: url(../img/pos.jpg);
-     background-size: cover;
-}
-
-.overlay {
-    padding-top: 50px;
-    text-align: center;
-    width: 250px;
-    height: 100%;
-    margin-top: 0px;
-    margin-left: -15px;
-    background-color: aquamarine;
-    display: none;
-}
-
-.overlay2 {
-      padding-top: 50px;
-    text-align: center;
-    width: 250px;
-    height: 100%;
-    margin-top: 0px;
-    margin-left: -15px;
-    background-color: aquamarine;
-    display: none;
-}
-
-.overlay3 {
-     padding-top: 50px;
-    text-align: center;
-    width: 250px;
-    height: 100%;
-    margin-top: 0px;
-    margin-left: -15px;
-    background-color: aquamarine;
-    display: none;
-}
-
-.overlay4 {
-     padding-top: 50px;
-    text-align: center;
-     width: 250px;
-    height: 100%;
-    margin-top: 0px;
-    margin-left: -15px;
-    background-color: aquamarine;
-    display: none;
-}
-
-
-
-
-
-
-
-
 
 #perfil {
-    width:auto;
-    height: 240px;
+    height: auto;
+    width: auto;
     background-image:url(../img/food.jpg);
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: -25px;  
 }
-p
+
+#editperfil
 {    
     text-align: right;
-    padding-top: 18px;
-    padding-right: 6px;
     font-size: 20px;
+    padding-top: 15px;
+    padding-right: 8px;
     color: white;
     text-decoration-color: white;
     font-family: 'Droid Sans', sans-serif;
 
 }
 
-#iconoperfil{ 
+#imagenicono{ 
     margin-left: 20px;
-    margin-top: 20px;
     height: 100px;
     align-content: center;
    }
-.nombreusuario
+#nombreusuario
 {
-    padding-left: 130px;
-    margin-top: -100px;
     font-size: 40px;
+background-color: rgba(0,0,0,0.5);
+    text-align: center;
     color: white;
-    font-family: 'Droid Sans Bold', sans-serif;
+    font-family: 'Droid Sans', sans-serif;
 }
-.rangousuario{
-    padding-left: 130px;
-    margin-top: -10px;
+#rangousuario{
+   
+   
     font-size: 17px;
+   
     color: white;
-    font-family: 'Droid Sans Bold', sans-serif;
+    font-family: 'Droid Sans', sans-serif;
     
 }
-.infousuario{
-    padding-left: 130px;
-    margin-top: 0px;
+#infousuario{
+   
+
+ 
     font-size: 12px;
+    
     color: white;
-    font-family: 'Droid Sans Bold', sans-serif;
+    font-family: 'Droid Sans', sans-serif;
     
 }
+#nombreusurangoinfo{
+    
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+#seguidoresrecetas{
+    height: auto;
+    width: auto;
+    font-family: 'Droid Sans', sans-serif;
+    color: white;
+}
+
+
 
 
 
 
 #menu{
-    background-color:#c0efde;
-    margin-left: 100px;
-    margin-right: 100px;
-    height: 56px;
+    background-color:#92D9C0;
+    height: auto;
     width: auto;
-    display: inline-block;
 }
-#menuperfil li{
-    display: inline-block;
+#menuperfil{
     text-align: center;
-    margin-left: 140px;
-    margin-right: 100px;
-    list-style-type: none;
     color: white;
     font-size: 24px;
-    margin-top: 15px;
-    font-family: 'Droid Sans Bold', sans-serif;
+    margin-top: 4px;
+    font-family: 'Droid Sans', sans-serif;
 }
+
+
+
+
+
+
+
+
+#containerrecetas{
+  background-color: white;
+    height: auto;
+    width: auto;
+    margin-left: 100px;
+    margin-right:100px;
+    
+    
+    
+}
+#receta1{
+    box-shadow: 5px 5px 5px #888888;
+
+}
+#fotoreceta1{
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    
+    
+}
+#textoreceta1{
+    margin-top: 50px;
+}
+
+#nombrereceta{
+    font-size: 20px;
+    font-family: 'Droid Sans', sans-serif;
+}
+#textoreceta{
+    font-size: 14px;
+    font-family: 'Droid Sans', sans-serif;
+    
+}
+#dificultadreceta{
+    font-size: 12px;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+#idreceta1{
+    margin-top: 30px;
+}
+#nombreusuarioreceta{
+    
+}
+
+@media (max-width:875px) { 
+    
+     #containerrecetas {
+    
+    margin-left: 10px;
+    margin-right: 10px;
+}
+    #idreceta1{
+        align-content: center;
+    }
+
+
+
+
+
+
 

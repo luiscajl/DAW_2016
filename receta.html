@@ -6,6 +6,7 @@
     <link rel=”stylesheet” type=”text/css” href=”https://fonts.googleapis.com/css?family="Droid+Sans:700,400">
     <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/principal.css" rel="stylesheet">
+    <link href="/css/navbar.css" rel="stylesheet">
     <link href="/css/bootrstrap_mod.css" rel="stylesheet">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -70,9 +71,9 @@ $(document).ready(function(){
 
                 <ul class="nav navbar-nav navbar-right">
                     <li><form class="navbar-form nav navbar-nav " role="search">
-                        <fieldset>
-                            <input type="search" />
-                            <button type="submit"><i class="fa fa-search"></i></button>
+                         <fieldset class="busqueda">
+                            <input class="busqueda" type="search" />
+                            <button class="busqueda" type="submit"><i class="fa fa-search"></i></button>
                         </fieldset>
                     </form>
                         </li>
@@ -97,23 +98,33 @@ $(document).ready(function(){
         <div class="container">
             <div class="row">
        
-        <div class="col-md-4"><img src="img/pos.jpg"></div>
-        <div class="col-md-8">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+        
+        <div class="col-md-12">
+        <div class="col-md-4">
+        <img src="img/pos.jpg">
+        </div>
+        <div class="col-md-8">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
         <br>
-        <hr>
-        <span>Dificultad: Fácil&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;30 min </span>
-         </div>
+
+        </div></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4"></div>
+               <div class="info col-md-8">
+        <span>Dificultad: Fácil&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-time"></span> 30 min </span>
+         </div> 
             </div>
         </div>
     
     </div> 
     <div class="receta_herramienta">
        <ul class="list-inline">
-      <li>Guardar</li>
-      <li>Compartir</li>
-      <li>Imprimir</li>
-      <li>La he hecho</li>
-      <li>Comentar</li>
+      <li><a href="#"><span class="glyphicon glyphicon-floppy-disk"></span> Guardar</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-share"></span> Compartir</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-print"></span> Imprimir</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-check"></span> La he hecho</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-comment"></span> Comentar</a></li>
        </ul>
     </div>
     

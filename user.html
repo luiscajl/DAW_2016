@@ -4,77 +4,201 @@
         <title>TastIT</title>
         <meta name="viewport" content="width=device-width">
         <link rel="icon" type="image/png" href="/img/favicon.png">
-        <link rel=”stylesheet” type=”text/css” href=”https://fonts.googleapis.com/css?family="Droid+Sans:700,400">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Sans" />
         <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">    
         <link href="/css/user.css" rel="stylesheet"> 
         <link href="/css/bootrstrap_mod.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" type="image/png" href="/img/favicon.png">
+        <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/css/principal.css" rel="stylesheet">
+        <link href="/css/bootrstrap_mod.css" rel="stylesheet">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        
 
     </head>
     <body>
+       <script type="text/javascript">
+        $(document).ready(function () {
+            
+            $("#log").click(function() { 
+                $( "#dialog" ).dialog({ resizable: false, height:350, width:450, modal: true, show: "scale", position: 'center', top:163, dialogClass: 'success-dialog'});    
+            }); 
+            
+            $("#dialog").bind('clickoutside',function(){
+            $(this).hide();
+            });
+            
+            $(".carnes").mouseover(function () {
+                $(".overlay").css("display", "block").fadeIn("slow");
+            })
+            $(".carnes").mouseout(function () {
+                $(".overlay").css("display", "none").fadeIn("slow");
+            })
+            $(".pescados").mouseover(function () {
+                $(".overlay2").css("display", "block");
+            })
+            $(".pescados").mouseleave(function () {
+                $(".overlay2").css("display", "none");
+            })
+            $(".verduras").mouseover(function () {
+                $(".overlay3").css("display", "block");
+            })
+            $(".verduras").mouseleave(function () {
+                $(".overlay3").css("display", "none");
+            })
+            $(".postres").mouseover(function () {
+                $(".overlay4").css("display", "block");
+            })
+            $(".postres").mouseleave(function () {
+                $(".overlay4").css("display", "none");
+            })
+        });
+    </script>
         
- <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse"
-            data-target=".navbar-ex1-collapse">
-      <span class="sr-only">Desplegar navegación</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-      <a class="navbar-brand" href="index.html"></a>
-    </div>
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
-    <ul class="nav navbar-nav ">
-      <li class=""><a href="index.html">Inicio</a></li>
-      <!--<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Recetas<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Carne</a></li>
-          <li><a href="#">Verduras</a></li>
-          <li><a href="#">Pescado</a></li>
-        </ul>
-      </li>-->
-      <li><a href="suscripcions.html">Suscripciones</a></li>
-    </ul>
-    <form class="navbar-form nav navbar-nav " role="search">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Buscar">
-      </div>
-      <button type="submit" class="btn btn-default">Enviar</button>
-    </form>
-    <ul class="nav navbar-nav navbar-right">
-      <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>-->
-      <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    </ul>
-  </div>
-</nav>
+ 
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid" id=barradearriba>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Desplegar navegación</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav ">
+                    <li class=""><a href="index.html">Inicio</a></li>
+                    <li><a href="suscripcions.html">Suscripciones</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><form class="navbar-form nav navbar-nav " role="search">
+                        <fieldset>
+                            <input type="search" />
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </fieldset>
+                    </form>
+                        </li>
+
+
+
+                    <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a id="log" data-toggle="modal" data-target="#myModal" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+    </nav>
+
   
     
   
   
    <div class="container" id="perfil">
-        <div class="row" id="rowperfil"><p>Editar Perfil</p></div>
-        <div class="icon">
-            <img class="img-circle" id="iconoperfil" src="img/iconos/icon.png" height="100px" width="100px">
-            <div class="nombreusuario">Luisca</div>
-            <div class="rangousuario">Aprendiz de cocina(RANGO)
+        <div class="row" id="rowperfil"><p id="editperfil"><span class="glyphicon glyphicon-pencil"></span></span> Editar Perfil</p></div>
+        <div class="row">
+            <div class="col-md-1" id=imagenicono>
+            <img class="img-circle" id="iconoperfil" src="img/iconos/icon.png" height="100px" width="100px"></img></div>
+            <div class="col-md-2" id="nombreusurangoinfo">
+                  
+                    <h2 id="nombreusuario">Luisca </h2>
+                    <h3 id="rangousuario">Aprendiz de cocina(RANGO)</h3>
+                    <h3 id="infousuario"> Me gusta cocinar, pero no me gusta ser cocinado</h3>
+                
             </div>
-            <div class="infousuario"> Me gusta cocinar, pero no me gusta ser cocinado</div>
-            </img>
         
         </div>
-    
+        
+        
+        
+        
+        <div class="row" id=seguidoresrecetas>
+            <div class="col-md-2"></div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2">XXX Seguidores</div>
+            <div class="col-md-2">XXX Recetas</div>
+            <div class="col-md-2">XXX Recetarios</div>
+            
+            <div class="col-md-2"></div>
+            
+        </div>
+         
+         
+         
+         
+         
+         
          
      </div>
     
      <div class="container" id="menu">
-        <ul id="menuperfil">
-         <li>Recetas</li>
-         <li>Recetario</li>
-         <li>Comentar</li>
-      </ul>
+        <div class="row" id="menuperfil">
+             <div class="col-md-4"><span class="glyphicon glyphicon-list-alt"></span> Recetas</div>
+             <div class="col-md-4"><span class="glyphicon glyphicon-cutlery"></span> Recetario</div>
+             <div class="col-md-4"><span class="glyphicon glyphicon-comment"></span> Comentar</div>
+      </div>
+        </div>
+        
+        
+        
+        
+        <div class="container" id="containerrecetas">
+           <div class="row" id="receta1">
+               <div class="col-md-4" id="fotoreceta1"><img id="iconoperfil" src="img/pollorelleno.jpg"  class="img-responsive"></img></div>
+               <div class="col-md-4" id="textoreceta1">
+                    <div id="nombrereceta" >Pechuga de pollo rellena
+                    </div>
+                    <div id="textoreceta">Una pechuga muy jugosa y rica.
+                    </div>
+                    <div id="dificultadreceta"> Dificultad: Facil</div>
+                                   
+               </div>
+               <div class="col-md-4" id="idreceta1">
+                   <img class="img-responsive" id="iconoperfil" src="img/iconos/icon.png" height="100px" width="100px"></img>
+                    <h2 id="nombreusuarioreceta">Luisca </h2>
+            </div>
+           </div>
+           
+           
+           
+                  
+           
+           
+           <div class="row" id="receta1">
+               <div class="col-md-4" id="fotoreceta1"><img id="iconoperfil" src="img/albondigas.jpg"  class="img-responsive"></img></div>
+               <div class="col-md-4" id="textoreceta1">
+                   <div id="nombrereceta" >Albóndigas de carne al microondas
+                    </div>
+                    <div id="textoreceta">Realizar las albóndigas al microondas
+                    </div>
+                    <div id="dificultadreceta"> Dificultad: Normal</div>
+               </div>
+               <div class="col-md-4" id="idreceta1">
+                   <img class="img-responsive" id="iconoperfil" src="img/iconos/icon.png" height="100px" width="100px"></img>
+                    <h2 id="nombreusuarioreceta">Luisca </h2>
+               </div>
+           </div>
+            
+        </div>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
      
        
    </div>
