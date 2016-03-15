@@ -48,7 +48,7 @@ a {
 .form {
     background-color: rgb(168, 214, 227);
     padding: 20px;
-    max-width: 27%;
+    max-width: 350px;
     margin: 40px auto;
     border-radius: $br;
     box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.3);
