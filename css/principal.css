@@ -12,7 +12,7 @@ body{
     height: auto;
     background-color: rgb(192, 239, 222);
     margin-top: -22px;
-    padding: 20px;
+    padding: 50px;
 }
 
 .carnes {
@@ -79,7 +79,7 @@ body{
     display: none;
 }
 
-fieldset {
+.busqueda{
     position: relative;
     display: inline-block;
     padding: 0 0 0 40px;
@@ -87,8 +87,8 @@ fieldset {
     border-radius: 5px;
 }
 
-input,
-button {
+.busqueda input,
+.busqueda button {
     position: relative;
     width: 200px;
     height: 40px;
@@ -97,24 +97,24 @@ button {
     float: left;
 }
 
-input {
+.busqueda input {
     color: #666;
     z-index: 2;
     border: 0 none;
 }
 
-input:focus {
+.busqueda input:focus {
     outline: 0 none;
 }
 
-input:focus + button {
+.busqueda input:focus + button {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
 }
 
-input:focus + button .fa {
+.busqueda input:focus + button .fa {
     -webkit-transform: translate(0px, 0);
     transform: translate(0px, 0);
     -webkit-transition-duration: 0.3s;
@@ -122,7 +122,7 @@ input:focus + button .fa {
     color: black;
 }
 
-button {
+.busqueda button {
     z-index: 1;
     width: 30px;
     border: 0 none;
@@ -133,7 +133,7 @@ button {
     transition-duration: 0.3s;
 }
 
-.fa-search {
+.busqueda .fa-search {
     font-size: 1.4rem;
     color: #BBB;
     z-index: 3;
