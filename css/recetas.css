@@ -35,17 +35,19 @@
 
 .cabecera_receta img{
     width: 100%;
-    border-radius: 15px;
+     border-radius: 15px;
+
 }
 
-.cabecera_receta .col-md-8{
-    background-color: rgba(121, 182, 199, 1);
-    padding: 20px;
-    border-radius: 15px;
+.cabecera_receta .col-md-12{
+        padding-top: 20px;
     color: white;
 }
 
-
+.cabecera_receta .container{
+    background-color: rgba(121, 182, 199, 1);
+    border-radius: 15px;
+}
 
 
 .receta_herramienta{
@@ -97,12 +99,13 @@ ul,ol{
 
 
 .info{
+    float: bottom;
     padding: 10px;
     padding-left: 20px;
     background-color: black;
-    margin: -20px;
-    margin-top: 10px;
-    border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: rgb(76, 141, 160);
+    color: white;
+    margin-top: 5px;
+    border-top-left-radius: 15px;
 }
