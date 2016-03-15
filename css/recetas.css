@@ -35,7 +35,17 @@
 
 .cabecera_receta img{
     width: 100%;
+    border-radius: 15px;
 }
+
+.cabecera_receta .col-md-8{
+    background-color: rgba(121, 182, 199, 1);
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+}
+
+
 
 
 .receta_herramienta{
@@ -48,10 +58,22 @@
 
 .list-inline li{
     padding-top: 10px;
-    padding-right: 30px;
-    padding-left: 30px;
-    background-color: rgb(146, 217, 192);
-    height: 40px;
+   height: 40px;
+    
+}
+
+.list-inline li a:hover{
+    background-color: rgb(99, 186, 155);
+}
+
+.list-inline li a { 
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: white;
+    text-decoration: none;
+
 }
 
 .receta_ingredientes{
@@ -71,4 +93,16 @@
 
 ul,ol{
     margin-bottom: 0px;
+}
+
+
+.info{
+    padding: 10px;
+    padding-left: 20px;
+    background-color: black;
+    margin: -20px;
+    margin-top: 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgb(76, 141, 160);
 }
