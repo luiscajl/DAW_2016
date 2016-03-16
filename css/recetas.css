@@ -1,3 +1,6 @@
+body{
+font-family: 'Droid Sans', sans-serif;    
+}
 
 .contenedor_receta{
     height: 1200px;
@@ -31,6 +34,8 @@
     margin-top: 10px;
     padding: 30px;
     background-color: rgb(237,237,237);
+    background-image: url(../img/pos.jpg);
+    background-size: cover;
 }
 
 .cabecera_receta .img_receta{
