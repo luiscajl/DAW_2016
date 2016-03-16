@@ -33,16 +33,20 @@
     background-color: rgb(237,237,237);
 }
 
-.cabecera_receta img{
-    width: 100%;
+.cabecera_receta .img_receta{
+    height: 200px;
      border-radius: 15px;
-
+    background-image: url(../img/pos.jpg);
+    background-size: cover;
+    padding-left: 15px;
 }
+
 
 .cabecera_receta .col-md-12{
         padding-top: 20px;
     color: white;
 }
+
 
 .cabecera_receta .container{
     background-color: rgba(121, 182, 199, 1);
@@ -79,13 +83,21 @@
 }
 
 .receta_ingredientes{
-    padding: 20px;
-    background-color: rgb(237,225,184);
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.3em;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    background-image: url(../img/iconos/notas2.png);
+    background-repeat: repeat;
     border-bottom: solid rgba(202, 186, 131, 1) 5px;
     padding-left: 25%;
     padding-right: 25%;
     text-align: center;
     
+}
+
+.receta_ingredientes ol{
+    padding-top: 10px;
 }
 
 .receta_elaboracion{
@@ -99,7 +111,6 @@ ul,ol{
 
 
 .info{
-    float: bottom;
     padding: 10px;
     padding-left: 20px;
     background-color: black;
@@ -108,4 +119,52 @@ ul,ol{
     color: white;
     margin-top: 5px;
     border-top-left-radius: 15px;
+}
+
+.glyphicon-star{
+    color: yellow;
+}
+
+
+.rank{
+    text-align: center;
+        padding-top: 15px;
+}
+
+.titulo_receta{
+    text-align: center;
+    height: 50px;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute; /* con esta linea estoy consiguiendo el centrado de texto en un div */
+    height: 80px;  
+    bottom: 0; 
+    width: 100%;
+    margin-left: -15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.datos_receta img{
+    height: 100px;
+   
+}
+
+.datos_receta{
+    padding-top: 5px;
+}
+
+.usuario_receta{
+    text-align: center;
+    padding: 5px;
+    height: 150px;
+    background-color: rgba(76, 141, 160, 0.5);
+    float: right;
+    border-radius: 15px;
+    margin-right: -15px; /* porque el background de la imagen de la receta se excluye del padding, y para obtener el mismo margen en esta clase(margin rompe el responsive) necesito un margen negativo */
+}
+
+.seguir{
+    margin-top: 5px;
+    
 }
