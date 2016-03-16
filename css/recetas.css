@@ -36,8 +36,13 @@ font-family: 'Droid Sans', sans-serif;
     background-color: rgb(237,237,237);
     background-image: url(../img/pos.jpg);
     background-size: cover;
+    background-repeat: repeat-y;
 }
 
+.iconos img{
+    width: 40px;
+    
+}
 .cabecera_receta .img_receta{
     height: 200px;
      border-radius: 15px;
@@ -56,6 +61,7 @@ font-family: 'Droid Sans', sans-serif;
 .cabecera_receta .container{
     background-color: rgba(121, 182, 199, 1);
     border-radius: 15px;
+    opacity: 0.95;
 }
 
 
@@ -108,6 +114,7 @@ font-family: 'Droid Sans', sans-serif;
 .receta_elaboracion{
     padding: 40px;
      background-color: rgba(237,237,237,0.9);
+
 }
 
 ul,ol{
@@ -150,7 +157,7 @@ ul,ol{
     border-bottom-right-radius: 15px;
 }
 
-.datos_receta img{
+.logo_cocinero{
     height: 100px;
    
 }
@@ -173,3 +180,12 @@ ul,ol{
     margin-top: 5px;
     
 }
+
+
+.nav-pills{
+     position: fixed;
+    left: 0px;
+    top: 500px;
+    z-index: 999;
+}
+
