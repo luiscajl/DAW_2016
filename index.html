@@ -12,6 +12,10 @@
     <script src="//code.jquery.com/jquery-1.9.1.js"></script>
     <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+    <!-- Randall -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <!-- Randall -->
 </head>
 
 <body>
@@ -51,6 +55,20 @@
             $(".postres").mouseleave(function () {
                 $(".overlay4").css("display", "none");
             })
+                
+          /* Randall */
+
+            $('#Salir').click(function(){
+                $('#AdvanceSearch').fadeOut(3000)
+            })
+            $('#advanced-search-button').click(function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                $('#AdvanceSearch').fadeIn(1000);
+            
+            })/* Randall */
+            
+            
         });
     </script>
      
@@ -65,6 +83,7 @@
                 </button>
                 <a class="navbar-brand" href="index.html"></a>
             </div>
+        
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav ">
                     <li class=""><a href="index.html">Inicio</a></li>
@@ -81,22 +100,81 @@
 
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><form class="navbar-form nav navbar-nav " role="search">
-                        <fieldset>
-                            <input type="search" />
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                        </fieldset>
-                    </form>
+                    <li><form class="navbar-form nav navbar-nav" role="search">
+  <fieldset>
+    <input type="search" />
+    <a href="#" id="advanced-search-button" class="btn btn-default">
+      <i class="fa fa-search" ></i>
+    </a>
+  </fieldset>
+</form>
                         </li>
-
 
 
                     <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                     <li><a id="log" data-toggle="modal" data-target="#myModal" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                 </ul>
             </div>
+        </div>
     </nav>
 
+    
+    <div id="AdvanceSearch">
+        <div id="Form1">
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label for="ejemplo_email_3" class="col-lg-2 control-label"> <a class="FontStyle">Palabras clave</a> </label>
+                    <div class="col-lg-10">
+                        <input type="email" class="form-control" id="InputWord" placeholder="sofrito">
+                    </div>
+                </div>
+            </form>
+        
+            
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label for="ejemplo_email_3" class="col-lg-2 control-label"> <a class="FontStyle">Ingredientes</a> </label>
+                    <div class="col-lg-10">
+                        <input type="email" class="form-control" id="InputWord" placeholder="tomate, cebolla, zanahoria...">
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        
+        <div id="ContForm">
+            <div id="Cajamitad1">
+              <div class="checkbox">
+                <label>
+                <input type="checkbox" value=""><a class="LittleFontStyle">Soy Vegano</a>
+                </label> 
+              </div>
+                
+              <div class="checkbox">
+                <label>
+                <input  type="checkbox" value=""><a class="LittleFontStyle">Soy diabetico</a>
+                </label> 
+              </div>    
+            </div>
+            
+            <div id="Cajamitad2">
+            <select class="form-control">
+                    <option>Verduras</option>
+                    <option>Pescado</option>
+                    <option>Carne</option>    
+
+            </select>
+                        <select class="form-control">
+                    <option>Entrantes</option>
+                    <option>Segundos</option>
+                    <option>Postres</option>
+ 
+            </select>
+            </div>
+
+        </div>   
+    </div>       
+            
     <div class="recetas">
 
         
@@ -162,13 +240,13 @@
               
         <form action="/" method="post">
           <div class="logueo">
-        <div class="user">
+            <div class="user">
               <label>
                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Usuario
               </label>
               <br>
               <input type="text">
-        </div>
+            </div>
         <div class="pass">
               <br><br><label>
                &nbsp; &nbsp; &nbsp; &nbsp; Contraseña
@@ -183,4 +261,6 @@
     </div>
 </div>   
     
+
+        
 </body>
