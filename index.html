@@ -8,6 +8,7 @@
     <link href="/css/principal.css" rel="stylesheet">
     <link href="/css/bootrstrap_mod.css" rel="stylesheet">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="//code.jquery.com/jquery-1.9.1.js"></script>
     <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
@@ -16,6 +17,9 @@
     <!-- Randall -->
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <!-- Randall -->
+          <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 </head>
 
 <body>
@@ -70,6 +74,26 @@
             
             
         });
+        
+        $(function() {
+            var availableTutorials = [
+               "Cebolla",
+               "Pepino",
+               "Tomate",
+               "Huevos",
+               "Patata",
+               "Arroz",
+               "Pasta",
+               "Atun",
+               "Pollo",
+               "Salmon",
+               "Merluza",
+               "Conejo",
+            ];
+            $( "#InputWord2" ).autocomplete({
+               source: availableTutorials
+            });
+         });
     </script>
      
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -125,7 +149,7 @@
                 <div class="form-group">
                     <label for="ejemplo_email_3" class="col-lg-2 control-label"> <a class="FontStyle">Palabras clave</a> </label>
                     <div class="col-lg-10">
-                        <input type="email" class="form-control" id="InputWord" placeholder="sofrito">
+                        <input type="text" class="form-control" id="InputWord" placeholder="sofrito">
                     </div>
                 </div>
             </form>
@@ -135,7 +159,7 @@
                 <div class="form-group">
                     <label for="ejemplo_email_3" class="col-lg-2 control-label"> <a class="FontStyle">Ingredientes</a> </label>
                     <div class="col-lg-10">
-                        <input type="email" class="form-control" id="InputWord" placeholder="tomate, cebolla, zanahoria...">
+                        <input type="text" class="form-control" id="InputWord2" placeholder="tomate, cebolla, zanahoria...">
                     </div>
                 </div>
             </form>

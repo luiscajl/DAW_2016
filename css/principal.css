@@ -57,12 +57,46 @@ input[type="checkbox"] {
     width: 40%;
     float:right;
 }
-#InputWord{
+#InputWord, #InputWord2{
     width: 50%;
     
 }
+/*
+.ui-widget{
+    color: #9CDEC6 !important;
+    font-size: 14px !important;
+    font-family: 'Droid Sans', sans-serif !important;
+}*/
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-bottom-right-radius: 14px !important;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+    border-bottom-left-radius: 14px !important ;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+    border-top-right-radius: 14px !important;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+    border-top-left-radius: 14px !important;
+}
+
+ul.ui-autocomplete.ui-menu li a{
+    color: #9CDEC6;   
+}
+ul.ui-autocomplete.ui-menu li:hover a{
+    color: white;   
+}
 
 /* Randall */
+/*
+.ui-menu .ui-menu-item a{
+    background:red;
+    height:10px;
+    font-size:8px;
+}
+ui-menu-item:hover{
+    background-color: blue;
+}*/
 .recetas {
     height: auto;
     background-color: rgb(192, 239, 222);
