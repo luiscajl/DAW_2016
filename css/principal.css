@@ -17,7 +17,7 @@ input[type="checkbox"] {
     height: 370px;
     width: 100%;
     display: none;
-    padding: 30px;
+    padding-top: 30px;;
 }
 .form-control{
     width: 30%;
@@ -28,6 +28,13 @@ input[type="checkbox"] {
 button{
     width: 78px !important;
     background: rgb(192, 239, 222) !important;
+}
+#Checkboxes{
+    width: 50%;
+    float:left;}
+#Lists{
+    width: 50%;
+    float: right;
 }
 .btn-success {
     color: #fff;
@@ -44,13 +51,13 @@ button{
     font-size: 14px;
     font-family: 'Droid Sans', sans-serif;
 }
-#Form1{
+#FormPart1{
     margin: -9px auto;
     width: 100%;
     height: 100px;
     padding-left: 285px;
 }
-#ContForm{
+#FormPart2{
     display: inline;
     box-sizing: border-box;
 }
@@ -62,20 +69,9 @@ button{
 .checkbox input[type="checkbox"]{
     margin-left: 5px;
 }
-#Cajamitad1{
 
-    margin-top: 10px;
-    width: 40%;
-    float: left;
-    padding-left: 200px;
-}
-#Cajamitad2{
-    margin-top: 10px;
-    width: 40%;
-    float:right;
-}
 
-#InputWord, #InputWord2{
+#InputWord,#InputWord2{
     width: 50%;
     
 }

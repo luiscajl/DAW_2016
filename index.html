@@ -172,10 +172,10 @@
 
     
     <div id="AdvanceSearch">
-        <div id="Form1">
+        <div id="FormPart1">
             <form class="form-horizontal" role="form">
                 <div class="form-group">
-                    <label for="ejemplo_email_3" class="col-lg-2 control-label"> <a class="FontStyle">Palabras clave</a> </label>
+                    <label class="col-lg-2 control-label"> <a class="FontStyle">Palabras clave</a> </label>
                     <div class="col-lg-10">
                         <input type="text" class="form-control" id="InputWord" placeholder="sofrito">
                     </div>
@@ -185,7 +185,7 @@
             
             <form class="form-horizontal" role="form">
                 <div class="form-group">
-                    <label for="ejemplo_email_3" class="col-lg-2 control-label"> <a class="FontStyle">Ingredientes</a> </label>
+                    <label class="col-lg-2 control-label"> <a class="FontStyle">Ingredientes</a> </label>
                     <div class="col-lg-10">
                         <input type="text" class="form-control" id="InputWord2" placeholder="tomate, cebolla, zanahoria...">
                     </div>
@@ -194,10 +194,11 @@
         </div>
         
         
-        <div id="ContForm">
+        <div id="FormPart2">
             
-            <div id="Cajamitad1">
+
                 <form role="form">
+                    <div id="Checkboxes">
                     <div class="checkbox">
                         <label><input type="checkbox" value="" >
                         <a class="FontStyle">Vegano</a>
@@ -213,11 +214,9 @@
                         <a class="FontStyle">Celiaco</a>
                         </label>
                     </div>
-                </form>
-                <button type="button" class="btn btn-success">Success</button>
-            </div>
-            <div id="Cajamitad2">
-                <form class="form-horizontal" role="form">
+                    </div>
+                <div id="Lists">  
+
                     <div class="form-group">
                         <label for="ejemplo_email_3" class="col-lg-2 control-label"> <a class="FontStyle">Plato</a> </label>
                         <select class="form-control">
@@ -227,7 +226,7 @@
  
                         </select>
                     </div>
-                </form>
+             
                 <form class="form-horizontal" role="form">
                     <div class="form-group">
                         <label for="ejemplo_email_3" class="col-lg-2 control-label"> <a class="FontStyle">Plato</a> </label>
@@ -239,7 +238,11 @@
                         </select>
                     </div>
                 </form>
-            </div>
+                </div>
+                </form>
+                <button type="button" class="btn btn-success">Success</button>
+
+
             
         </div>   
     </div>       
