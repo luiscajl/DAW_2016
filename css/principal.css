@@ -35,11 +35,13 @@ button{
 #Lists{
     width: 50%;
     float: right;
+    margin-top: 10px;
 }
 .btn-success {
     color: #fff;
     background-color: rgb(192, 239, 222);
     border-color: rgb(192, 239, 222);
+    margin-top: 40px;
 }
 .FontStyle{
     color: white;
@@ -190,8 +192,7 @@ fieldset {
     border-radius: 5px;
 }
 
-input,
-button {
+input{
     position: relative;
     width: 200px;
     height: 40px;

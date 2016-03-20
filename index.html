@@ -82,7 +82,17 @@
                 e.stopPropagation();
                 $('#AdvanceSearch').fadeIn(1000);
             
-            })/* Randall */
+            })
+            
+            $('#BuscarButton').click(function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                $('#AdvanceSearch').fadeOut(1000);
+            
+            })
+            
+            
+            /* Randall */
             
             
         });
@@ -240,7 +250,7 @@
                 </form>
                 </div>
                 </form>
-                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-success" id="BuscarButton">Buscar</button>
 
 
             
