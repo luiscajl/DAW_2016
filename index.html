@@ -16,6 +16,17 @@
     
     <!-- Randall -->
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    
+    	<link rel="stylesheet" type="text/css" href="jquery.tagsinput.css" />
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.tagsinput.js"></script>
+	<!-- To test using the original jQuery.autocomplete, uncomment the following -->
+	<!--
+	<script type='text/javascript' src='http://xoxco.com/x/tagsinput/jquery-autocomplete/jquery.autocomplete.min.js'></script>
+	<link rel="stylesheet" type="text/css" href="http://xoxco.com/x/tagsinput/jquery-autocomplete/jquery.autocomplete.css" />
+	-->
+	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js'></script>
+	<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/themes/start/jquery-ui.css" />
     <!-- Randall -->
           <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
       <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
@@ -25,6 +36,7 @@
 <body>
 
     <script type="text/javascript">
+
         $(document).ready(function () {
             
             $("#log").click(function() { 
@@ -75,6 +87,8 @@
             
         });
         
+
+        
         $(function() {
             var availableTutorials = [
                "Cebolla",
@@ -94,6 +108,20 @@
                source: availableTutorials
             });
          });
+        
+        function onAddTag(tag) {
+			alert("Added a tag: " + tag);
+		}
+		function onRemoveTag(tag) {
+			alert("Removed a tag: " + tag);
+		}
+
+		function onChangeTag(input,tag) {
+			alert("Changed a tag: " + tag);
+		}
+        $(function() {
+
+			$('#InputWord1').tagsInput({width:'auto'});})
     </script>
      
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -167,35 +195,52 @@
         
         
         <div id="ContForm">
+            
             <div id="Cajamitad1">
-              <div class="checkbox">
-                <label>
-                <input type="checkbox" value=""><a class="LittleFontStyle">Soy Vegano </a>
-                </label> 
-              </div>
-                
-              <div class="checkbox">
-                <label>
-                <input  type="checkbox" value=""><a class="LittleFontStyle">Soy diabetico </a>
-                </label> 
-              </div>    
+                <form role="form">
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="" >
+                        <a class="FontStyle">Vegano</a>
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="">
+                        <a class="FontStyle">Diabetico</a>
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="">
+                        <a class="FontStyle">Celiaco</a>
+                        </label>
+                    </div>
+                </form>
+                <button type="button" class="btn btn-success">Success</button>
+            </div>
+            <div id="Cajamitad2">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="ejemplo_email_3" class="col-lg-2 control-label"> <a class="FontStyle">Plato</a> </label>
+                        <select class="form-control">
+                            <option>Verduras</option>
+                            <option>Carnes</option>
+                            <option>Pescado</option>
+ 
+                        </select>
+                    </div>
+                </form>
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="ejemplo_email_3" class="col-lg-2 control-label"> <a class="FontStyle">Plato</a> </label>
+                        <select class="form-control">
+                            <option>Entrantes</option>
+                            <option>Segundos</option>
+                            <option>Postres</option>
+ 
+                        </select>
+                    </div>
+                </form>
             </div>
             
-            <div id="Cajamitad2">
-            <select class="form-control">
-                    <option>Verduras</option>
-                    <option>Pescado</option>
-                    <option>Carne</option>    
-
-            </select>
-                        <select class="form-control">
-                    <option>Entrantes</option>
-                    <option>Segundos</option>
-                    <option>Postres</option>
- 
-            </select>
-            </div>
-
         </div>   
     </div>       
             

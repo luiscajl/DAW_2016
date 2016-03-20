@@ -14,7 +14,7 @@ input[type="checkbox"] {
 }
 #AdvanceSearch{
     background-color:#9CDEC6;
-    height: 250px;
+    height: 370px;
     width: 100%;
     display: none;
     padding: 30px;
@@ -24,6 +24,15 @@ input[type="checkbox"] {
     margin-top: 6px;
     color: #9CDEC6;
     border-radius: 30px;
+}
+button{
+    width: 78px !important;
+    background: rgb(192, 239, 222) !important;
+}
+.btn-success {
+    color: #fff;
+    background-color: rgb(192, 239, 222);
+    border-color: rgb(192, 239, 222);
 }
 .FontStyle{
     color: white;
@@ -45,6 +54,14 @@ input[type="checkbox"] {
     display: inline;
     box-sizing: border-box;
 }
+.checkbox{
+    margin: 10px;
+    padding: 10px;
+}
+
+.checkbox input[type="checkbox"]{
+    margin-left: 5px;
+}
 #Cajamitad1{
 
     margin-top: 10px;
@@ -57,6 +74,7 @@ input[type="checkbox"] {
     width: 40%;
     float:right;
 }
+
 #InputWord, #InputWord2{
     width: 50%;
     
