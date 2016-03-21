@@ -9,8 +9,6 @@
     <link href="/css/bootrstrap_mod.css" rel="stylesheet">
     <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
 
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
@@ -19,21 +17,6 @@
 </head>
 
 <body>
-
-    <script>
-        $(document).ready(function () {
-
-            $(".tabContainer a").click(function (e) {
-                e.preventDefault();
-                loadUrl($(this).attr("href"));
-            });
-        });
-
-        function loadUrl(url) {
-            $(".helper").load(url);
-        }
-    </script>
-
 
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
@@ -79,64 +62,20 @@
             <img src="http://autokadabra.ru/system/uploads/users/20/20303/small.png?1319912650" />
             <h2>Frostq</h2>
         </header>
-        <ul class="tabContainer">
-
-            <li class=""><a href="/controlpanel/editaperfil.html">Editar perfil</a></li>
-            <li class=""><a href="/controlpanel/admrecetas.html">Administrar recetas</a></li>
-            <li class=""><a href="/controlpanel/admrecetarios.html">Administrar recetarios</a></li>
-            <li class=""><a href="/controlpanel/contraseña.html">Email y contraseña</a></li>
-            <li class=""><a href="/controlpanel/notificaciones.html">Notificaciones</a></li>
-            <li class=""><a href="/controlpanel/ajustes.html">Ajustes</a></li>
-
-           
+        <ul>
+            <li tabindex="0" class="icon-perfil"><span>Editar perfil</span></li>
+            <li tabindex="0" class="icon-recetas"><span>Administrar recetas</span></li>
+            <li tabindex="0" class="icon-recetarios"><span>Administrar recetarios</span></li>
+            <li tabindex="0" class="icon-Privacidad"><span>Privacidad</span></li>
+            <li tabindex="0" class="icon-Ajustes"><span>Ajustes</span></li>
+            <li tabindex="0" class="icon-Notificaciones"><span>Notificaciones</span></li>
         </ul>
     </nav>
 
-
-
-
     <main>
         <div class="helper">
-            <h2>Editar perfil</h2>
-            <div class="cambiarimagenes">
-                <div class="cambiaravatar">
-                    <h3>Cambiar imagen de perfil</h3>
-                    <header class="avatar-right">
-                        <img src="http://autokadabra.ru/system/uploads/users/20/20303/small.png?1319912650" />
-                        <h2>Frostq</h2>
-                    </header>
-                    <div class="upload-image btn">
-                        <span>Upload your photo</span>
-                        <input class="upload-image-input" type="file">
-                    </div>
-                </div>
-
-
-                <div class="cambiarbanner">
-                    <h3>Cambiar encabezado</h3>
-                    <header class="banner-perfil">
-                        <img src="https://s-media-cache-ak0.pinimg.com/736x/80/5f/d0/805fd0f1ee7356e49147132453a93ab8.jpg" />
-                    </header>
-
-                    <div class="upload-image btn">
-                        <span>Upload your photo</span>
-                        <input class="upload-image-input" type="file">
-                    </div>
-                </div>
-            </div>
-
-
-
-            <h3>Cambiar biografia</h3>
-            <div class="bio">
-                <textarea id="txtArea" rows="6" cols="50">
-                    yo qe se tio xdd
-                </textarea>
-                <br>
-                <input type="submit" value="Guardar cambios">
-            </div>
-
 
         </div>
+    </main>
 
 </body>
