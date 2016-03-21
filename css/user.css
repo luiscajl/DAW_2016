@@ -1,3 +1,4 @@
+
 #barradearriba{
     background-color: #79B6C7;
 }
@@ -8,6 +9,9 @@
 body{
     background-color: #ededed;
 }
+
+
+
 
 #recetas{
     height: auto;
@@ -43,7 +47,7 @@ body{
 {
     font-size: 40px;
 background-color: rgba(0,0,0,0.5);
-    text-align: center;
+    text-align: left;
     color: white;
     font-family: 'Droid Sans', sans-serif;
 }
@@ -72,6 +76,10 @@ background-color: rgba(0,0,0,0.5);
     margin-right: 40px;
 }
 
+#botonseguir{
+    text-align: right;
+    padding-top: 70px;
+}
 
 #seguidoresrecetas{
     height: auto;
@@ -119,15 +127,59 @@ background-color: rgba(0,0,0,0.5);
     box-shadow: 5px 5px 5px #888888;
 
 }
-#fotoreceta1{
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-bottom: 30px;
+#fotoreceta{
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    width: 100%;
+    max-height: 240px;
+
+
     
     
 }
+    
+ec-stars-wrapper {
+	/* Espacio entre los inline-block (los hijos, los `a`) 
+	   http://ksesocss.blogspot.com/2012/03/display-inline-block-y-sus-empeno-en.html */
+	font-size: 0;
+	/* Podríamos quitarlo, 
+		pero de esta manera (siempre que no le demos padding), 
+		sólo aplicará la regla .ec-stars-wrapper:hover a cuando
+		también se esté haciendo hover a alguna estrella */
+	display: inline-block;
+}
+.ec-stars-wrapper a {
+	text-decoration: none;
+	display: inline-block;
+	/* Volver a dar tamaño al texto */
+	font-size: 32px;
+	font-size: 2rem;
+	
+	color: #888;
+}
+
+.ec-stars-wrapper:hover a {
+	color: rgb(39, 130, 228);
+}
+/*
+ * El selector de hijo, es necesario para aumentar la especifidad
+ */
+.ec-stars-wrapper > a:hover ~ a {
+	color: #888;
+}
+#votacion{
+    margin-top: 15px;}
+    
+#fecha{
+    padding-top: 170px;
+    font-family: 'Droid Sans', sans-serif;
+    
+}  
+
 #textoreceta1{
-    margin-top: 50px;
+    margin-top: 15px;
 }
 
 #nombrereceta{
@@ -141,6 +193,7 @@ background-color: rgba(0,0,0,0.5);
 }
 #dificultadreceta{
     font-size: 12px;
+    padding-top: 130px;
     font-family: 'Droid Sans', sans-serif;
 }
 
@@ -157,14 +210,16 @@ background-color: rgba(0,0,0,0.5);
     
     margin-left: 10px;
     margin-right: 10px;
-}
-    #idreceta1{
-        align-content: center;
     }
+    
+    
+    #dificultadreceta{padding-top:0px;}
+}
+   
 
 
+    
 
-
-
-
-
+    
+    
+    
