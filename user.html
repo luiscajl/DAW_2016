@@ -12,57 +12,66 @@
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <script src="//code.jquery.com/jquery-1.9.1.js"></script>
         <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-        
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js'></script>
         <meta name="viewport" content="width=device-width">
-        <link rel="icon" type="image/png" href="/img/favicon.png">
+        <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/css/principal.css" rel="stylesheet">
+        <link href="/css/bootrstrap_mod.css" rel="stylesheet">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
         <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="/css/principal.css" rel="stylesheet">
         <link href="/css/bootrstrap_mod.css" rel="stylesheet">
         <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        
+        
+        
+        
+        
+        
         
 
     </head>
     <body>
+      
+
+      
        <script type="text/javascript">
-        $(document).ready(function () {
-            
-            $("#log").click(function() { 
-                $( "#dialog" ).dialog({ resizable: false, height:350, width:450, modal: true, show: "scale", position: 'center', top:163, dialogClass: 'success-dialog'});    
-            }); 
-            
-            $("#dialog").bind('clickoutside',function(){
-            $(this).hide();
-            });
-            
-            $(".carnes").mouseover(function () {
-                $(".overlay").css("display", "block").fadeIn("slow");
-            })
-            $(".carnes").mouseout(function () {
-                $(".overlay").css("display", "none").fadeIn("slow");
-            })
-            $(".pescados").mouseover(function () {
-                $(".overlay2").css("display", "block");
-            })
-            $(".pescados").mouseleave(function () {
-                $(".overlay2").css("display", "none");
-            })
-            $(".verduras").mouseover(function () {
-                $(".overlay3").css("display", "block");
-            })
-            $(".verduras").mouseleave(function () {
-                $(".overlay3").css("display", "none");
-            })
-            $(".postres").mouseover(function () {
-                $(".overlay4").css("display", "block");
-            })
-            $(".postres").mouseleave(function () {
-                $(".overlay4").css("display", "none");
-            })
-        });
+$(document).ready(function(){
+
+	$(window).scroll(function(){
+		var barra = $(window).scrollTop();
+		var posicion =  (barra * 0.10);
+        var posicion2 =  (barra * 0.20);
+        var posicion3 =  (barra * 0.30);
+        
+        $('.fondo1').css({
+			'background-position': '0 -' + posicion + 'px'
+		});
+        
+        $('.fondo2').css({
+			'background-position': '0 -' + posicion2 + 'px'
+		});
+        
+        $('.fondo3').css({
+			'background-position': '0 -' + posicion3 + 'px'
+		});
+
+	});
+
+});
     </script>
         
  
+   
+   
+   
+   
+   
+   
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid" id=barradearriba>
             <div class="navbar-header">
@@ -80,10 +89,10 @@
                     <li><a href="suscripcions.html">Suscripciones</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><form class="navbar-form nav navbar-nav " role="search">
-                        <fieldset>
-                            <input type="search" />
-                            <button type="submit"><i class="fa fa-search"></i></button>
+                     <li><form class="navbar-form nav navbar-nav " role="search">
+                        <fieldset class="busqueda">
+                            <input class="busqueda" type="search" />
+                            <button class="busqueda" type="submit"><i class="fa fa-search"></i></button>
                         </fieldset>
                     </form>
                         </li>
@@ -94,13 +103,21 @@
                     <li><a id="log" data-toggle="modal" data-target="#myModal" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                 </ul>
             </div>
+        </div>
     </nav>
 
+
+  
+  
+  
   
     
   
   
+  
+  
    <div class="container" id="perfil">
+             
         <div class="row" id="rowperfil"><p id="editperfil"><span class="glyphicon glyphicon-pencil"></span></span> Editar Perfil</p></div>
         <div class="row">
             <div class="col-md-1" id=imagenicono>
@@ -112,6 +129,7 @@
                     <h3 id="infousuario"> Me gusta cocinar, pero no me gusta ser cocinado</h3>
                 
             </div>
+    <div class="col-md-1" id="botonseguir"> <button type="button" class="btn btn-primary seguir">  Seguir  </button></div>
         
         </div>
         
@@ -124,7 +142,6 @@
             <div class="col-md-2">XXX Seguidores</div>
             <div class="col-md-2">XXX Recetas</div>
             <div class="col-md-2">XXX Recetarios</div>
-            
             <div class="col-md-2"></div>
             
         </div>
@@ -135,7 +152,7 @@
          
          
          
-     </div>
+     </div> 
     
      <div class="container" id="menu">
         <div class="row" id="menuperfil">
@@ -150,16 +167,27 @@
         
         <div class="container" id="containerrecetas">
            <div class="row" id="receta1">
-               <div class="col-md-4" id="fotoreceta1"><img id="iconoperfil" src="img/pollorelleno.jpg"  class="img-responsive"></img></div>
+               <div class="col-md-4" id="fotoreceta1"><img id="fotoreceta" src="img/pollorelleno.jpg"  class="img-responsive"></img></div>
                <div class="col-md-4" id="textoreceta1">
                     <div id="nombrereceta" >Pechuga de pollo rellena
                     </div>
+                   <div>-------------------------------------------------------------------------------------------------</div>
                     <div id="textoreceta">Una pechuga muy jugosa y rica.
                     </div>
                     <div id="dificultadreceta"> Dificultad: Facil</div>
                                    
                </div>
-               <div class="col-md-4" id="idreceta1">
+               <div class="col-md-2">
+                        <div class="ec-stars-wrapper" id="votacion">
+                            <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                            <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                            <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                            <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                            <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+                        </div>
+                   <div id="fecha"> 12/5/2015</div>
+                   </div>
+               <div class="col-md-2" id="idreceta1">
                    <img class="img-responsive" id="iconoperfil" src="img/iconos/icon.png" height="100px" width="100px"></img>
                     <h2 id="nombreusuarioreceta">Luisca </h2>
             </div>
@@ -171,7 +199,7 @@
            
            
            <div class="row" id="receta1">
-               <div class="col-md-4" id="fotoreceta1"><img id="iconoperfil" src="img/albondigas.jpg"  class="img-responsive"></img></div>
+               <div class="col-md-4" id="fotoreceta1"><img id="fotoreceta" src="img/albondigas.jpg"  class="img-responsive"></img></div>
                <div class="col-md-4" id="textoreceta1">
                    <div id="nombrereceta" >Albóndigas de carne al microondas
                     </div>
@@ -184,8 +212,30 @@
                     <h2 id="nombreusuarioreceta">Luisca </h2>
                </div>
            </div>
+           
+           
+           <div class="row" id="receta1">
+               <div class="col-md-4" id="fotoreceta1"><img id="fotoreceta" src="img/albondigas.jpg"  class="img-responsive"></img></div>
+               <div class="col-md-4" id="textoreceta1">
+                   <div id="nombrereceta" >Albóndigas de carne al microondas
+                    </div>
+                    <div id="textoreceta">Realizar las albóndigas al microondas
+                    </div>
+                    <div id="dificultadreceta"> Dificultad: Normal</div>
+               </div>
+               <div class="col-md-4" id="idreceta1">
+                   <img class="img-responsive" id="iconoperfil" src="img/iconos/icon.png" height="100px" width="100px"></img>
+                    <h2 id="nombreusuarioreceta">Luisca </h2>
+               </div>
+           </div>
+           
+           
             
         </div>
+     <!--
+      <nav class="navbar navbar-default navbar-fixed-bottom"> <div class="navbar-inner navbar-content-center">
+<p class="text-center">&copy; Design by U-tad</p> </div>
+</nav>-->
      
      
      
@@ -195,14 +245,6 @@
      
      
      
-     
-     
-     
-     
-     
-       
-   </div>
-   
    
     </body>
 </html>
