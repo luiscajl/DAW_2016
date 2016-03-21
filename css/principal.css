@@ -1,6 +1,7 @@
 body{
     padding-top: 70px;
-    background-color: rgb(237,237,237);
+    background-color:rgb(192, 239, 222);
+
 }
 
 .logo {
@@ -14,10 +15,12 @@ input[type="checkbox"] {
 }
 #AdvanceSearch{
     background-color:#9CDEC6;
-    height: 370px;
+    height: auto;
     width: 100%;
     display: none;
-    padding-top: 30px;;
+    padding-top: 30px;
+    border-radius: 0px 0px 60px 60px;
+
 }
 .form-control{
     width: 30%;
@@ -42,6 +45,7 @@ button{
     background-color: rgb(192, 239, 222);
     border-color: rgb(192, 239, 222);
     margin-top: 40px;
+    margin-bottom: 10px;
 }
 .FontStyle{
     color: white;
@@ -116,7 +120,7 @@ ui-menu-item:hover{
 .recetas {
     height: auto;
     background-color: rgb(192, 239, 222);
-    margin-top: -22px;
+    margin-top: 0px;
     padding: 20px;
 }
 
@@ -140,7 +144,37 @@ ui-menu-item:hover{
     background-size: cover;
 }
 
-.overlay {
+.overlay{
+    padding-top: 50px;
+    text-align: center;
+    width: 250px;
+    height: 100%;
+    margin-top: 0px;
+    margin-left: -15px;
+    background-color: aquamarine;
+    display: none;
+}
+.overlay2{
+    padding-top: 50px;
+    text-align: center;
+    width: 250px;
+    height: 100%;
+    margin-top: 0px;
+    margin-left: -15px;
+    background-color: aquamarine;
+    display: none;
+}
+.overlay3{
+    padding-top: 50px;
+    text-align: center;
+    width: 250px;
+    height: 100%;
+    margin-top: 0px;
+    margin-left: -15px;
+    background-color: aquamarine;
+    display: none;
+}
+.overlay4{
     padding-top: 50px;
     text-align: center;
     width: 250px;
@@ -151,38 +185,7 @@ ui-menu-item:hover{
     display: none;
 }
 
-.overlay2 {
-    padding-top: 50px;
-    text-align: center;
-    width: 250px;
-    height: 100%;
-    margin-top: 0px;
-    margin-left: -15px;
-    background-color: aquamarine;
-    display: none;
-}
 
-.overlay3 {
-    padding-top: 50px;
-    text-align: center;
-    width: 250px;
-    height: 100%;
-    margin-top: 0px;
-    margin-left: -15px;
-    background-color: aquamarine;
-    display: none;
-}
-
-.overlay4 {
-    padding-top: 50px;
-    text-align: center;
-    width: 250px;
-    height: 100%;
-    margin-top: 0px;
-    margin-left: -15px;
-    background-color: aquamarine;
-    display: none;
-}
 
 fieldset {
     position: relative;
@@ -301,7 +304,45 @@ button {
 }
 
 
+#containerrecetas{
+    margin-left: 100px;
+    margin-right: 100px; 
+    height: auto;
+    margin-top: 30px;
+    width: auto;
+    display: block;
+    background-color: white;
+    border-radius: 30px;
+    
+}
+#fotoreceta1{
+    align-content: center;
+    background-color: white;
+    height: auto;
+    width: auto;
+}
+#textoreceta1{
 
+    padding-top: 30px;
+
+}
+#idreceta1{
+    margin-top: 30px;
+}
+#nombrereceta{
+    font-size: 18px;
+    font-family: 'Droid Sans', sans-serif;
+}
+#textoreceta{
+    font-size: 14px;
+    font-family: 'Droid Sans', sans-serif;
+}
+#dificultadreceta{
+     font-size: 12px;
+    font-family: 'Droid Sans', sans-serif;
+    padding-top: 10px;
+        
+}
 
 
 
