@@ -113,8 +113,8 @@ font-family: 'Droid Sans', sans-serif;
 
 .receta_elaboracion{
     padding: 40px;
-     background-color: rgba(237,237,237,0.9);
-
+     background-color: rgba(237,237,237,1);
+  border-bottom: solid rgba(173, 173, 173, 1) 5px;
 }
 
 ul,ol{
@@ -189,3 +189,65 @@ ul,ol{
     z-index: 999;
 }
 
+.pasos ol {
+  counter-reset: section;             
+  list-style-type: none;
+background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+}
+
+
+.pasos li::before {
+padding-left: 8px;
+    padding-right: 8px;
+    margin-right: 5px;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  color: white;
+  border-radius: 50%;
+  background-color: dimgrey;
+  counter-increment: section;
+   content: counter(section);
+}
+
+.galeria{
+    background-color: rgb(255, 248, 225);
+    padding: 15px;
+    border-bottom: solid rgba(202, 186, 131, 1) 5px;
+}
+
+.modal-body{
+    position:relative;
+    display: table-cell;
+    vertical-align:middle;
+    text-align:center;
+}
+  
+.modal-body img{
+   width: 100%;
+    position:relative;
+    display: table-cell;
+    vertical-align:middle;
+    text-align:center;
+}
+
+.modal-header{
+    height: 10px;
+    background: none;
+    padding: 0px;
+    border-bottom: 0px;
+}
+
+.col-md-3{
+ 
+    background: none;
+
+}
+
+.galeria_imagenes img{
+    height: 100px;
+}
