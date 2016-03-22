@@ -47,6 +47,7 @@ button{
     margin-top: 40px;
     margin-bottom: 10px;
 }
+/*Fonts Styles*/
 .FontStyle{
     color: white;
     font-size: 17px;
@@ -57,6 +58,8 @@ button{
     font-size: 14px;
     font-family: 'Droid Sans', sans-serif;
 }
+
+/*Fonts Styles*/
 #FormPart1{
     margin: -9px auto;
     width: 100%;
@@ -127,6 +130,11 @@ ui-menu-item:hover{
 .carnes {
     background-image: url(../img/car.jpg);
     background-size: cover;
+
+}
+.carnes:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=50);
 }
 
 .pescados {
@@ -134,57 +142,43 @@ ui-menu-item:hover{
     background-size: cover;
 }
 
+.pescados:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=50);
+}
+
 .verduras {
     background-image: url(../img/ver.jpg);
     background-size: cover;
 }
+.verduras:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=50);
+}
+
 
 .postres {
     background-image: url(../img/pos.jpg);
     background-size: cover;
 }
-
-.overlay{
-    padding-top: 50px;
-    text-align: center;
-    width: 250px;
-    height: 100%;
-    margin-top: 0px;
-    margin-left: -15px;
-    background-color: aquamarine;
-    display: none;
-}
-.overlay2{
-    padding-top: 50px;
-    text-align: center;
-    width: 250px;
-    height: 100%;
-    margin-top: 0px;
-    margin-left: -15px;
-    background-color: aquamarine;
-    display: none;
-}
-.overlay3{
-    padding-top: 50px;
-    text-align: center;
-    width: 250px;
-    height: 100%;
-    margin-top: 0px;
-    margin-left: -15px;
-    background-color: aquamarine;
-    display: none;
-}
-.overlay4{
-    padding-top: 50px;
-    text-align: center;
-    width: 250px;
-    height: 100%;
-    margin-top: 0px;
-    margin-left: -15px;
-    background-color: aquamarine;
-    display: none;
+.postres:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=50);
 }
 
+.overlay, .overlay2, .overlay3, .overlay4{
+    padding-top: 50px;
+    text-align: center;
+    width: 250px;
+    height: 100%;
+    margin-top: 0px;
+    margin-left: -15px;
+    display: none;
+    color: white;
+
+    font-size: 32px;
+    font-family: 'Droid Sans', sans-serif;
+}
 
 
 fieldset {

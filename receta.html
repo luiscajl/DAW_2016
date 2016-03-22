@@ -6,18 +6,13 @@
     <link rel=”stylesheet” type=”text/css” href=”https://fonts.googleapis.com/css?family="Droid+Sans:700,400">
     <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/principal.css" rel="stylesheet">
-    <link href="/css/navbar.css" rel="stylesheet">
-     <link href="/css/bootrstrap_mod.css" rel="stylesheet">
+    <link href="/css/bootrstrap_mod.css" rel="stylesheet">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="/css/recetas.css" rel="stylesheet">
     <script src="//code.jquery.com/jquery-1.9.1.js"></script>
     <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-
-    
 </head>
 
 
@@ -29,7 +24,6 @@ $(document).ready(function(){
 		var posicion =  (barra * 0.10);
         var posicion2 =  (barra * 0.20);
         var posicion3 =  (barra * 0.30);
-        var posicion4 =  (barra * 0.20);
         
         $('.fondo1').css({
 			'background-position': '0 -' + posicion + 'px'
@@ -41,10 +35,6 @@ $(document).ready(function(){
         
         $('.fondo3').css({
 			'background-position': '0 -' + posicion3 + 'px'
-		});
-        
-        $('.cabecera_receta').css({
-			'background-position': '0 -' + posicion4 + 'px'
 		});
 
 	});
@@ -58,7 +48,7 @@ $(document).ready(function(){
 
 
 
-<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">    
+<body>    
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -80,9 +70,9 @@ $(document).ready(function(){
 
                 <ul class="nav navbar-nav navbar-right">
                     <li><form class="navbar-form nav navbar-nav " role="search">
-                         <fieldset class="busqueda">
-                            <input class="busqueda" type="search" />
-                            <button class="busqueda" type="submit"><i class="fa fa-search"></i></button>
+                        <fieldset>
+                            <input type="search" />
+                            <button type="submit"><i class="fa fa-search"></i></button>
                         </fieldset>
                     </form>
                         </li>
@@ -96,7 +86,7 @@ $(document).ready(function(){
     </nav>
     
     
-    <div class="contenedor_receta" id="section1">
+    <div class="contenedor_receta">
         <div class="fondo1">
            <div class="fondo2">
                <div class="fondo3">
@@ -107,172 +97,62 @@ $(document).ready(function(){
         <div class="container">
             <div class="row">
        
-        
-        <div class="col-md-12">
-        <div class="col-md-4 img_receta">
-        <span class="glyphicon glyphicon-asterisk" style="float:left; padding:5px;"></span>
-        <div class="titulo_receta"><h3>Tarta de queso</h3><h5>15/3/16</h5></div>
-        </div>
-        <div class="col-md-8 datos_receta">
-        <div class="usuario_receta"><img class="logo_cocinero" src="img/iconos/alberto.png"><br><button type="button" class="btn btn-primary seguir">Seguir</button></div>
-       Esta receta de tarta de queso fría es una receta que es más habitual encontrar en los últimos tiempos que la tarta de queso de toda la vida, la que se hace con horno. Cada una tiene una textura diferente, ya que mientras la tradicional es más como un bizcocho esponjoso y húmedo, esta tarta de queso fría es más cremosa y tiene una base más bien crujiente hecha a base de galletas. 
-        
-        <div class="row">
-        <div class="col-md-8 iconos">
-       <br><h4>Diabeticos - Al horno - Con video - Bla bla bla</h4> 
-       <img src="img/diabet.png">&nbsp;&nbsp;&nbsp;<img src="img/iconos/horno.png">&nbsp;&nbsp;&nbsp;<img src="https://www.youtube.com/yt/brand/media/image/YouTube-icon-dark.png">
-       
-       
-       
-       
-       
-       
-       
-        </div></div>
+        <div class="col-md-4"><img src="img/pos.jpg"></div>
+        <div class="col-md-8">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
         <br>
-
-        </div></div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 rank">
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                </div>
-               <div class="info col-md-8">
-        <span>Dificultad: Fácil&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-time"></span> 30 min </span>
-         </div> 
+        <hr>
+        <span>Dificultad: Fácil&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;30 min </span>
+         </div>
             </div>
         </div>
     
     </div> 
     <div class="receta_herramienta">
        <ul class="list-inline">
-      <li><a href="#"><span class="glyphicon glyphicon-floppy-disk"></span> Guardar</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-share"></span> Compartir</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-print"></span> Imprimir</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-check"></span> La he hecho</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-comment"></span> Comentar</a></li>
+      <li>Guardar</li>
+      <li>Compartir</li>
+      <li>Imprimir</li>
+      <li>La he hecho</li>
+      <li>Comentar</li>
        </ul>
     </div>
     
-       <div class="receta_ingredientes"><h2>Ingredientes:</h2>
+       <div class="receta_ingredientes">
         <ol>
-        <li>Queso crema, 200 gramos <input type="checkbox" value=""></li>
-        <li>Huevos, 4 grandes <input type="checkbox" value=""></li>
-        <li>Nata líquida, un vaso de yogur <input type="checkbox" value=""></li>
-        <li>Queso crema, 200 gramos <input type="checkbox" value=""></li>
-        <li>Queso crema, 200 gramos <input type="checkbox" value=""></li>
-        <li>Queso crema, 200 gramos <input type="checkbox" value=""></li>
+        <li>Queso crema, 200 gramos</li>
+        <li>Huevos, 4 grandes</li>
+        <li>Nata líquida, un vaso de yogur</li>
+        <li>Queso crema, 200 gramos</li>
+        <li>Queso crema, 200 gramos</li>
+        <li>Queso crema, 200 gramos</li>
         </ol>
         </div>
     
-    <div class="receta_elaboracion"> 
-    
-            
-                    
-          <!-- <div class="container">
-  <div class="row">
-    <nav class="col-sm-3" id="myScrollspy">
-      <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#section1">Section 1</a></li>
-        <li><a href="#section2">Section 2</a></li>
-        <li><a href="#section3">Section 3</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#section41">Section 4-1</a></li>
-            <li><a href="#section42">Section 4-2</a></li>                     
-          </ul>
-        </li>
-      </ul>
-    </nav>
-
-  </div>
-</div> esto pertenece al menú que te sigue por la web no implementado -->           
-                                    
-                                            
-                                                    
-                                                            
-                                                                            
-    <div class="container pasos">
+    <div class="receta_elaboracion">
+    <div class="container">
             <div class="row">
-            <div class="col-md-12" id="section2">
-            
-            
- <ol>
-<li>Lo primero que haremos será ocuparnos de las galletas. En esta receta usaremos las galletas más tradicionales y clásicas que son las maría, pero podéis usar las que más os gusten a vosotros. Tenemos que machacar lo equivalente a un paquete hasta convertirlas en polvo. Podemos colocarlas en un cuenco y con el mortero irlas aplastando o triturarlas directamente en la batidora.</li>
-<li>Aprovechad ahora para poner en un vaso de agua las láminas de gelatina para que se vayan hidratando.</li>
-<li>Ya estando trituraditas, ponemos las galletas en un bol y echamos la mantequilla. Es mejor que al echarla ya esté a temperatura ambiente. Empezamos a remover para mezclar bien la mantequilla con el polvo de galletas, cosa que haremos con las manos, hasta formar una masa.</li>
-<li>Coged el molde que vayáis a usar, mejor si es desmontable, y extender la masa que habéis hecho con las galletas y la mantequilla por todo el molde. Eso será la base de la tarta de queso, así que aseguraos de extenderla bien por todo el molde.</li>
-<li>Seguimos con lo que será el queso de la tarta; en un cuenco mediano echamos toda la nata y le añadimos las láminas de gelatina (vigilad que estén bien hidratadas) y lo removemos todo bien para que se mezclen. Ya conseguido lo echamos todo al vaso de la batidora junto con el queso cremoso (o puede ser queso fresco, como queráis), y tres o cuatro cucharadas de azúcar. Batirlo todo bien hasta conseguir una mezcla parecida a una crema, que no quede ni un solo ingrediente mal mezclado.</li>
-<li>Ya mezclado todo, verter la crema que se formará en el molde sobre la base de galleta que preparamos antes. Extenderlo todo bien para que quede bien igualado. Lo metemos en la nevera durante un par de horas para que cuaje bien.</li>
-</ol>
-   
-   
-   
-   
-   
+            <div class="col-md-12">
+  La tarta de queso tradicional es una tarta que se prepara de forma sencilla y se hornea posteriormente, y es diferente a las tartas de queso frías que hoy en día es más común encontrar en cualquier sitio, las cuales, como su nombre indican, se preparan sin necesidad de hornearlas. 
+
+La receta que os vamos a mostrar a continuación nos permite preparar una estupenda tarta de queso que adornaremos al final con una mermelada por encima para darle sabor y color a la misma. Es una receta que gusta mucho en casa y solemos prepararla a menudo. Te vamos a indicar como hacerla paso a paso. No pierdas detalle de la misma. 
+
+Empieza precalentando el horno a 180ºC y con el calor activado tanto abajo como arriba. Mientras preparamos la tarta el horno alcanzará esa temperatura deseado y podremos hornearla inmediatamente. Prepara también el molde donde vayamos a hornearla. Os recomendamos emplear un molde redondo, mejor si es desmoldable, para que luego sea más fácil maneja la tarta. Engrásalo con un poco de mantequilla o manteca y échale un poco de harina, así no se pegará la tarta en sus paredes ni en la base. 
+
+Empezamos ya a preparar la masa de la tarta. Coge un bol amplio y vierte en el mismo los huevos, el queso crema, el yogur natural, azúcar, la leche y la nata, y bátelo bien hasta que formen como una crema. Añade después la levadura y la harina tamizadas, vertiéndolas poco a poco y sin dejar de remover, ya que así facilitamos la integración de las mismas a la crema anterior. Déjala bien fina y sin grumos, y que repose hasta que horno alcance la temperatura deseada. 
+
+Una vez el horno esté a 180ºC, vierte la masa de la tarta en el molde y hornéalo durante unos 45-50 minutos. Verás que la tarta crece mucho, es normal, ya después bajará y tendrá el tamaño adecuado, no te preocupes. Pasado ese tiempo comprueba que por dentro está bien hecha, pinchando con un cuchillo. Si aún no está bien hecha, déjala unos minutos más, teniendo en cuenta que si por fuera ya está con buen color, puedes poner el calor solo abajo, para que no se nos queme por arriba. Si el cuchillo sale limpio, y ya está dorada por fuera, apaga el horno, abre la puerta y déjala enfriar dentro. 
+
+Cuando la tarta de enfríe del todo, la desmoldamos, colocamos en la bandeja donde vayamos a servirla, y adornamos por encima con abundante mermelada. Podéis emplear el sabor que más os guste, pero os recomendamos emplear de frambuesa o arándanos, que son los sabores más tradicionales y que mejor combinan. 
+
+Esperamos que os guste estar riquísima receta de tarta de queso tradicional. 
+  
     </div>
         </div>
         </div>
         </div>
-            
-     <div class="galeria">
-        <div class="container galeria_imagenes">
-         <div class="row">
-  <div class="col-sm-6 col-md-3">
-    <a href="#" class="thumbnail" data-toggle="modal" data-target="#myModal">
-        <img src="./img/pos.jpg" alt="..."></a>
-  </div>
-  <div class="col-sm-6 col-md-3">
-    <a href="#" class="thumbnail" data-toggle="modal" data-target="#myModal">
-        <img src="./img/tarta.jpg" alt="..."></a>
-  </div>
-  <div class="col-sm-6 col-md-3">
-    <a href="#" class="thumbnail" data-toggle="modal" data-target="#myModal">
-         <img src="./img/pos.jpg" alt="..."></a>
-  </div>
-  <div class="col-sm-6 col-md-3">
-    <a href="#" class="thumbnail" data-toggle="modal" data-target="#myModal">
-         <img src="./img/tarta.jpg" alt="..."></a>
-  </div>
-</div>  
-        </div>
-    </div>   
-            
              </div>
                </div>
                 </div>
             
-    </div>
-    
-     
-      
-       
-        <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-       
-        <div class="modal-body">
-         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <img src="./img/pos.jpg" alt="...">      
-    
-        </div>
-      </div>
-    </div>
-</div>   
-    
-         
-          
-           
-            
-              
+    </div> 
 </body>
