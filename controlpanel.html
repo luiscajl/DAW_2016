@@ -1,5 +1,4 @@
-
-   <head>
+<head>
     <meta charset="utf-8">
     <title>TastIT</title>
     <meta name="viewport" content="width=device-width">
@@ -16,23 +15,23 @@
 
 </head>
 
-  <script>
-        $(document).ready(function () {
+<script>
+    $(document).ready(function () {
 
-            $(".tabContainer a").click(function (e) {
-                e.preventDefault();
-                loadUrl($(this).attr("href"));
-            });
+        $(".tabContainer a").click(function (e) {
+            e.preventDefault();
+            loadUrl($(this).attr("href"));
         });
+    });
 
-        function loadUrl(url) {
-            $(".helper").load(url);
-        }
-    </script>
+    function loadUrl(url) {
+        $(".helper").load(url);
+    }
+</script>
 
 <body>
 
-  
+
 
 
     <nav class="navbar navbar-inverse">
@@ -72,79 +71,78 @@
     </nav>
 
 
-<div class="contenido">
-    <div class="menu" tabindex="0">
-        <div class="smartphone-menu-trigger"></div>        
+    <div class="contenido">
+        <div class="menu" tabindex="0">
+            <div class="smartphone-menu-trigger"></div>
             <h2>Frostq</h2>
-       
-        
-        <ul class="tabContainer">
-
-            <li class=""><a href="/controlpanel/editaperfil.html">Editar perfil</a></li>
-            <li class=""><a href="/controlpanel/admrecetas.html">Administrar recetas</a></li>
-            <li class=""><a href="/controlpanel/admrecetarios.html">Administrar recetarios</a></li>
-            <li class=""><a href="/controlpanel/contraseña.html">Email y contraseña</a></li>
-            <li class=""><a href="/controlpanel/notificaciones.html">Notificaciones</a></li>
-            <li class=""><a href="/controlpanel/ajustes.html">Ajustes</a></li>
-
-           
-        </ul>
-    </div>
 
 
+            <ul class="tabContainer">
+
+                <li class=""><a href="/controlpanel/editaperfil.html">Editar perfil</a></li>
+                <li class=""><a href="/controlpanel/admrecetas.html">Administrar recetas</a></li>
+                <li class=""><a href="/controlpanel/admrecetarios.html">Administrar recetarios</a></li>
+                <li class=""><a href="/controlpanel/contraseña.html">Email y contraseña</a></li>
+                <li class=""><a href="/controlpanel/notificaciones.html">Notificaciones</a></li>
+                <li class=""><a href="/controlpanel/ajustes.html">Ajustes</a></li>
 
 
-        <div class= "container">
-        <div id="helper" class="col-md-12">
-           <h2>Editar perfil</h2>
-<div class="cambiarimagenes">
-    <div class="cambiaravatar">
-        <h3>Cambiar imagen de perfil</h3>
-        <header class="avatar-right">
-            <img src="https://pbs.twimg.com/profile_images/600917670649798656/4aqgOSMU.jpg" />
-            <h2>Frostq</h2>
-        </header>
-        <div class="upload-image btn">
-            <span>Upload your photo</span>
-            <br>
-            <input type="file" class="custom-file-input">
+            </ul>
         </div>
 
-    </div>
-    Nota: El tamaño máximo de tu imagen personal es de 120 por 120 pixeles o 24,4 KB.
-    <br> Para mejorar la navegación en entornos públicos, de trabajo o familiares (niños cerca, etc), no estan permitidos avatares que incluya contenido inadecuado para menores de 18 años o NSFW.
-    <br> Su utilización provocará el bloqueo permanente de la cuenta.
-    <br>
 
-    <div class="cambiarbanner">
-        <h3>Cambiar encabezado</h3>
-        <header class="banner-perfil">
-            <img id="fotobanner" src="https://s-media-cache-ak0.pinimg.com/736x/80/5f/d0/805fd0f1ee7356e49147132453a93ab8.jpg" />
-        </header>
 
-        <div class="upload-image btn">
-            <span>Upload your photo</span>
-            <br>
-            <input type="file" class="custom-file-input">
+
+        <div class="container">
+            <div id="helper" class="col-md-12">
+                <h2>Editar perfil</h2>
+                <div class="cambiarimagenes">
+                    <div class="cambiaravatar">
+                        <h3>Cambiar imagen de perfil</h3>
+                        <header class="avatar-right">
+                            <img src="https://pbs.twimg.com/profile_images/600917670649798656/4aqgOSMU.jpg" />
+                            <h2>Frostq</h2>
+                        </header>
+                        <div class="upload-image btn">
+
+                            <input type="file" class="custom-file-input">
+                        </div>
+
+                    </div>
+                    Nota: El tamaño máximo de tu imagen personal es de 120 por 120 pixeles o 24,4 KB.
+                    <br> Para mejorar la navegación en entornos públicos, de trabajo o familiares (niños cerca, etc), no estan permitidos avatares que incluya contenido inadecuado para menores de 18 años o NSFW.
+                    <br> Su utilización provocará el bloqueo permanente de la cuenta.
+                    <br>
+
+                    <div class="cambiarbanner">
+                        <h3>Cambiar encabezado</h3>
+                        <header class="banner-perfil">
+                            <img id="fotobanner" src="https://s-media-cache-ak0.pinimg.com/736x/80/5f/d0/805fd0f1ee7356e49147132453a93ab8.jpg" />
+                        </header>
+
+                        <div class="upload-image btn">
+
+
+                            <input type="file" class="custom-file-input">
+                        </div>
+                    </div>
+                    Nota: El tamaño máximo de tu imagen de cabecera es de 1900 por 400 pixeles o 29KB.
+                </div>
+
+
+
+                <h3>Cambiar biografia</h3>
+                <div class="bio">
+                    <textarea id="txtArea" rows="6" cols="50">
+                        yo qe se tio xdd
+                    </textarea>
+                    <br>
+                    <input type="submit" value="Guardar cambios">
+                </div>
+
+
+            </div>
         </div>
-    </div>
-    Nota: El tamaño máximo de tu imagen de cabecera es de 1900 por 400 pixeles o 29KB.
-</div>
 
-
-
-<h3>Cambiar biografia</h3>
-<div class="bio">
-    <textarea id="txtArea" rows="6" cols="50">
-        yo qe se tio xdd
-    </textarea>
-    <br>
-    <input type="submit" value="Guardar cambios">
-</div>
-
-
-        </div>
-</div>
-    
     </div>
 </body>
