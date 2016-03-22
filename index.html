@@ -77,7 +77,7 @@
             $('#Salir').click(function(){
                 $('#AdvanceSearch').fadeOut(3000)
             })
-            $('#advanced-search-button').click(function(e) {
+            $('#AdvanceSearchtext').click(function(e) {
                 e.preventDefault();
                 e.stopPropagation();
                 $('#AdvanceSearch').fadeIn(1000);
@@ -88,7 +88,7 @@
                 e.preventDefault();
                 e.stopPropagation();
                 $('#AdvanceSearch').fadeOut(1000);
-            
+                $('#containerrecetas').fadeIn(1000);
             })
             
             
@@ -180,8 +180,36 @@
         </div>
     </nav>
 
-   
-    <div id="AdvanceSearch">
+        
+    <div class="recetas">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 carnes">
+                    <div class="overlay">Carnes</div>
+                </div>
+                <div class="col-md-3 pescados">
+                    <a href="receta.html"><div class="overlay2">Pescado</div></a>
+                </div>
+
+                <div class="col-md-3 verduras">
+                    <div class="overlay3">Ensaladas</div>
+                </div>
+
+                <div class="col-md-3 postres">
+                    <div class="overlay4">Postres</div>
+                </div>
+
+            </div>
+            <div id="AdvanceSearchtext">
+                <button type="button" class="btn btn-success" ><a class="FontStyle">Busqueda Avanzada</a></button>
+            </div>
+                
+        </div>
+        
+    </div>
+    
+
+        <div id="AdvanceSearch">
         
         <div id="FormPart1">
             <form class="form-horizontal" role="form">
@@ -259,36 +287,6 @@
                             <button type="button" class="btn btn-success" id="BuscarButton">Buscar</button>
 
     </div>       
-     
-    <div class="recetas">
-
-        
-   
-         
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 carnes">
-                    <div class="overlay">Carnes</div>
-                </div>
-                <div class="col-md-3 pescados">
-                    <a href="receta.html"><div class="overlay2">Pescado</div></a>
-                </div>
-
-                <div class="col-md-3 verduras">
-                    <div class="overlay3">Ensaladas</div>
-                </div>
-
-                <div class="col-md-3 postres">
-                    <div class="overlay4">Postres</div>
-                </div>
-
-            </div>
-
-        </div>
-        
-    </div>
-    
-
  <!-- ÉSTE DIALOG NO LO USAREMOS POR EL MOMENTO <div id="dialog" title="Basic dialog" style="display: none";>
    <div class="logueo">
         <div class="user">
