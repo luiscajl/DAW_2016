@@ -20,7 +20,11 @@ input[type="checkbox"] {
     display: none;
     padding-top: 30px;
     border-radius: 0px 0px 60px 60px;
+}
 
+#AdvanceSearchtext .btn-success{
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 .form-control{
     width: 30%;
@@ -29,8 +33,13 @@ input[type="checkbox"] {
     border-radius: 30px;
 }
 button{
-    width: 78px !important;
+    /*width: 78px !important; */
     background: rgb(192, 239, 222) !important;
+}
+#AdvanceSearchtext{
+    color: blue;
+    text-align: center;
+
 }
 #Checkboxes{
     width: 50%;
@@ -46,12 +55,18 @@ button{
     border-color: rgb(192, 239, 222);
     margin-top: 40px;
     margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
 }
 /*Fonts Styles*/
 .FontStyle{
     color: white;
     font-size: 17px;
     font-family: 'Droid Sans', sans-serif;
+}
+#buscar2{
+        margin-left: -15px;
+    margin-right: -15px;
 }
 .LittleFontStyle{
     color: white;
@@ -225,7 +240,7 @@ input:focus + button .fa {
 
 button {
     z-index: 1;
-    width: 30px;
+ /*   width: 30px;*/
     border: 0 none;
     background: rgb(192, 239, 222);
     -webkit-transform: translate(-50px, 0);
@@ -304,7 +319,7 @@ button {
     height: auto;
     margin-top: 30px;
     width: auto;
-    display: block;
+    display: none;
     background-color: white;
     border-radius: 30px;
     
