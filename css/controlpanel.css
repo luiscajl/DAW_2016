@@ -13,26 +13,22 @@ body {
 }
 
 .contenido {
-    height: 100%;
+    height: 90%;
     display: table;
-    width: 100%;
+    min-width: 100%;
 }
 
-.container {
-    margin-top: -20px;
-    min-height: 100%;
-}
-
-.container .helper {
+.container #helper {
     color: black;
     margin: auto;
     background-color: white;
     text-align: center;
-    margin-left: 25%;
+    margin-left: 17%;
     height: 100%;
+    position: relative;
 }
 
-.container .helper span {
+.container #helper span {
     color: rgba(0, 0, 0, 0.2);
     font-size: 0.4em;
     display: block;
@@ -46,6 +42,7 @@ body {
     display: table-cell;
     position: absolute;
     float: left;
+    z-index: 1;
 }
 
 .menu h2 {
@@ -88,7 +85,7 @@ body {
     outline: none;
 }
 
-li:before {
+.menu li:before {
     /*Using a Bootstrap glyphicon as the bullet point*/
     content: "\e080";
     font-family: 'Glyphicons Halflings';
@@ -96,7 +93,7 @@ li:before {
     float: left;
     margin-top: 4px;
     margin-left: -17px;
-    color: #CCCCCC;
+    color: white;
 }
 
 @media screen and (max-width: 900px) and (min-width: 600px) {
@@ -138,9 +135,9 @@ li:before {
         opacity: 1;
         transform: translate3d(0px, -50%, 0);
     }
-    .container .helper {
-        margin-left: 15%;
-        width: 100%;
+    .container {
+        margin-left: 5%;
+        width: 90%;
     }
     #fotobanner {
         width: 400px;
@@ -155,7 +152,7 @@ li:before {
     .menu {
         position: fixed;
         width: 230px;
-        margin-top: 70px;
+        margin-top: 0px;
         box-shadow: 0 0 0 100em rgba(0, 0, 0, 0);
         transform: translate3d(-230px, 0, 0);
         transition: all 0.3s ease-in-out;
@@ -193,7 +190,7 @@ li:before {
     .menu:focus .smartphone-menu-trigger {
         pointer-events: none;
     }
-    .container .helper {
+    .container #helper {
         margin-left: 0px;
         width: 100%;
     }
