@@ -1,0 +1,346 @@
+body{
+    padding-top: 70px;
+    background-color:rgb(192, 239, 222);
+
+}
+
+.logo {
+    height: 113px;
+}
+/* Randall */
+input[type="checkbox"] {
+    margin: -11px 0 0;
+    margin-top: 1px \9;
+    line-height: normal;
+}
+#AdvanceSearch{
+    background-color:#9CDEC6;
+    height: auto;
+    width: 100%;
+    display: none;
+    padding-top: 30px;
+    border-radius: 0px 0px 60px 60px;
+
+}
+.form-control{
+    width: 30%;
+    margin-top: 6px;
+    color: #9CDEC6;
+    border-radius: 30px;
+}
+button{
+    width: 78px !important;
+    background: rgb(192, 239, 222) !important;
+}
+#Checkboxes{
+    width: 50%;
+    float:left;}
+#Lists{
+    width: 50%;
+    float: right;
+    margin-top: 10px;
+}
+.btn-success {
+    color: #fff;
+    background-color: rgb(192, 239, 222);
+    border-color: rgb(192, 239, 222);
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+/*Fonts Styles*/
+.FontStyle{
+    color: white;
+    font-size: 17px;
+    font-family: 'Droid Sans', sans-serif;
+}
+.LittleFontStyle{
+    color: white;
+    font-size: 14px;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+/*Fonts Styles*/
+#FormPart1{
+    margin: -9px auto;
+    width: 100%;
+    height: 100px;
+    padding-left: 285px;
+}
+#FormPart2{
+    display: inline;
+    box-sizing: border-box;
+}
+.checkbox{
+    margin: 10px;
+    padding: 10px;
+}
+
+.checkbox input[type="checkbox"]{
+    margin-left: 5px;
+}
+
+
+#InputWord,#InputWord2{
+    width: 50%;
+    
+}
+/*
+.ui-widget{
+    color: #9CDEC6 !important;
+    font-size: 14px !important;
+    font-family: 'Droid Sans', sans-serif !important;
+}*/
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-bottom-right-radius: 14px !important;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+    border-bottom-left-radius: 14px !important ;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+    border-top-right-radius: 14px !important;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+    border-top-left-radius: 14px !important;
+}
+
+ul.ui-autocomplete.ui-menu li a{
+    color: #9CDEC6;   
+}
+ul.ui-autocomplete.ui-menu li:hover a{
+    color: white;   
+}
+
+/* Randall */
+/*
+.ui-menu .ui-menu-item a{
+    background:red;
+    height:10px;
+    font-size:8px;
+}
+ui-menu-item:hover{
+    background-color: blue;
+}*/
+.recetas {
+    height: auto;
+    background-color: rgb(192, 239, 222);
+    margin-top: 0px;
+    padding: 20px;
+}
+
+.carnes {
+    background-image: url(../img/car.jpg);
+    background-size: cover;
+
+}
+.carnes:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=50);
+}
+
+.pescados {
+    background-image: url(../img/pes.jpg);
+    background-size: cover;
+}
+
+.pescados:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=50);
+}
+
+.verduras {
+    background-image: url(../img/ver.jpg);
+    background-size: cover;
+}
+.verduras:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=50);
+}
+
+
+.postres {
+    background-image: url(../img/pos.jpg);
+    background-size: cover;
+}
+.postres:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=50);
+}
+
+.overlay, .overlay2, .overlay3, .overlay4{
+    padding-top: 50px;
+    text-align: center;
+    width: 250px;
+    height: 100%;
+    margin-top: 0px;
+    margin-left: -15px;
+    display: none;
+    color: white;
+
+    font-size: 32px;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+
+fieldset {
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 40px;
+    background: white;
+    border-radius: 5px;
+}
+
+input{
+    position: relative;
+    width: 200px;
+    height: 40px;
+    padding: 0;
+    display: inline-block;
+    float: left;
+}
+
+input {
+    color: #666;
+    z-index: 2;
+    border: 0 none;
+}
+
+input:focus {
+    outline: 0 none;
+}
+
+input:focus + button {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+input:focus + button .fa {
+    -webkit-transform: translate(0px, 0);
+    transform: translate(0px, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    color: black;
+}
+
+button {
+    z-index: 1;
+    width: 30px;
+    border: 0 none;
+    background: rgb(192, 239, 222);
+    -webkit-transform: translate(-50px, 0);
+    transform: translate(-50px, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.fa-search {
+    font-size: 1.4rem;
+    color: #BBB;
+    z-index: 3;
+    top: 25%;
+    -webkit-transform: translate(-190px, 0);
+    transform: translate(-190px, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+
+.ui-widget-content.success-dialog{
+   background: rgb(168,214,227); 
+}
+
+.ui-dialog.success-dialog {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: .8em;
+}
+
+.ui-widget-header{
+	display: none;
+}
+
+.logueo{
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+   padding-left:30%;
+}
+
+.modal-header{
+    height: 90px;
+    color: white;
+     background: rgb(168,214,227);
+    text-align: center;
+    border-top-left-radius: 15px;
+     border-top-right-radius: 15px;
+}
+
+.modal-body{
+     height: 200;
+    border-radius: 15px;
+    background-color: rgb(237,237,237);
+}
+
+.modal-body input{
+    border-radius: 10px;
+}
+
+.modal-content{
+    border-radius: 15px;
+    background-color: rgb(237,237,237);
+}
+
+.modal-header img{
+    width: 80px;
+    margin-top: -10px;
+}
+
+
+#containerrecetas{
+    margin-left: 100px;
+    margin-right: 100px; 
+    height: auto;
+    margin-top: 30px;
+    width: auto;
+    display: block;
+    background-color: white;
+    border-radius: 30px;
+    
+}
+#fotoreceta1{
+    align-content: center;
+    background-color: white;
+    height: auto;
+    width: auto;
+}
+#textoreceta1{
+
+    padding-top: 30px;
+
+}
+#idreceta1{
+    margin-top: 30px;
+}
+#nombrereceta{
+    font-size: 18px;
+    font-family: 'Droid Sans', sans-serif;
+}
+#textoreceta{
+    font-size: 14px;
+    font-family: 'Droid Sans', sans-serif;
+}
+#dificultadreceta{
+     font-size: 12px;
+    font-family: 'Droid Sans', sans-serif;
+    padding-top: 10px;
+        
+}
+
+
+
+
+
+
+
