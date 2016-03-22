@@ -32,7 +32,7 @@ html {
 }
 
 body {
-    background-image: url(../img/bg.jpg);
+    background: $body-bg;
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -46,13 +46,12 @@ a {
 }
 
 .form {
+    background-color: rgb(168, 214, 227);
     padding: 20px;
-    padding-top: 60px;
-    max-width: 360px;
+    max-width: 350px;
     margin: 40px auto;
-    border-radius: 10px;
-    background-color: rgba(0,0,0,0.1);
-    box-shadow: box-shadow: 30px 30px 35px #888888;
+    border-radius: $br;
+    box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.3);
 }
 
 .tab-group {
@@ -90,11 +89,14 @@ a {
 h1 {
     text-align: center;
     color: white;
+    font-weight: $thin;
     margin: 0 0 40px;
-    font-size: 35px
+    font-size: 25px
 }
 
 label {
+    display: block;
+    position: relative;
     transform: translateY(6px);
     left: 13px;
     color: black;
@@ -276,7 +278,7 @@ textarea {
 input[type="submit"] {
     text-align: center;
     border-radius: 10px 10px 10px 10px;
-    background: #a8d6e3;
+    background: #c0efde;
     color: #black;
     border: 1px solid #0a5378;
     border-radius: 3px;
