@@ -1,7 +1,3 @@
-
-#barradearriba{
-    background-color: #79B6C7;
-}
 .logo{
 
    height: 113px;    
@@ -9,9 +5,6 @@
 body{
     background-color: #ededed;
 }
-
-
-
 
 #recetas{
     height: auto;
@@ -30,8 +23,8 @@ body{
 {    
     text-align: right;
     font-size: 20px;
-    padding-top: 15px;
-    padding-right: 8px;
+    padding-top: 12px;
+    padding-right: 5px;
     color: white;
     text-decoration-color: white;
     font-family: 'Droid Sans', sans-serif;
@@ -46,8 +39,8 @@ body{
 #nombreusuario
 {
     font-size: 40px;
-background-color: rgba(0,0,0,0.5);
-    text-align: left;
+
+    
     color: white;
     font-family: 'Droid Sans', sans-serif;
 }
@@ -71,21 +64,15 @@ background-color: rgba(0,0,0,0.5);
     
 }
 #nombreusurangoinfo{
-    
+    background-color: rgba(0,0,255,0.2);
     margin-left: 40px;
     margin-right: 40px;
 }
 
-#botonseguir{
-    text-align: right;
-    padding-top: 70px;
-}
 
 #seguidoresrecetas{
     height: auto;
     width: auto;
-    font-family: 'Droid Sans', sans-serif;
-    color: white;
 }
 
 
@@ -94,7 +81,7 @@ background-color: rgba(0,0,0,0.5);
 
 
 #menu{
-    background-color:#92D9C0;
+    background-color:#c0efde;
     height: auto;
     width: auto;
 }
@@ -102,10 +89,9 @@ background-color: rgba(0,0,0,0.5);
     text-align: center;
     color: white;
     font-size: 24px;
-    margin-top: 4px;
+    margin-top: 1px;
     font-family: 'Droid Sans', sans-serif;
 }
-
 
 
 
@@ -114,112 +100,51 @@ background-color: rgba(0,0,0,0.5);
 
 
 #containerrecetas{
-  background-color: white;
+    margin-left: 100px;
+    margin-right: 100px; 
+    height: auto;
+    margin-top: 30px;
+    width: auto;
+    display: block;
+    background-color: white;
+    
+    
+}
+#fotoreceta1{
+    align-content: center;
+   
     height: auto;
     width: auto;
-    margin-left: 100px;
-    margin-right:100px;
-    
-    
-    
 }
-#receta1{
-    box-shadow: 5px 5px 5px #888888;
-
-}
-#fotoreceta{
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-bottom: 15px;
-    padding-right: 15px;
-    width: 100%;
-    max-height: 240px;
-
-
-    
-    
-}
-    
-ec-stars-wrapper {
-	/* Espacio entre los inline-block (los hijos, los `a`) 
-	   http://ksesocss.blogspot.com/2012/03/display-inline-block-y-sus-empeno-en.html */
-	font-size: 0;
-	/* Podríamos quitarlo, 
-		pero de esta manera (siempre que no le demos padding), 
-		sólo aplicará la regla .ec-stars-wrapper:hover a cuando
-		también se esté haciendo hover a alguna estrella */
-	display: inline-block;
-}
-.ec-stars-wrapper a {
-	text-decoration: none;
-	display: inline-block;
-	/* Volver a dar tamaño al texto */
-	font-size: 32px;
-	font-size: 2rem;
-	
-	color: #888;
-}
-
-.ec-stars-wrapper:hover a {
-	color: rgb(39, 130, 228);
-}
-/*
- * El selector de hijo, es necesario para aumentar la especifidad
- */
-.ec-stars-wrapper > a:hover ~ a {
-	color: #888;
-}
-#votacion{
-    margin-top: 15px;}
-    
-#fecha{
-    padding-top: 170px;
-    font-family: 'Droid Sans', sans-serif;
-    
-}  
-
 #textoreceta1{
-    margin-top: 15px;
-}
 
+    padding-top: 30px;
+
+}
+#idreceta1{
+    margin-top: 30px;
+}
 #nombrereceta{
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Droid Sans', sans-serif;
 }
 #textoreceta{
     font-size: 14px;
     font-family: 'Droid Sans', sans-serif;
-    
 }
 #dificultadreceta{
-    font-size: 12px;
-    padding-top: 130px;
+     font-size: 12px;
     font-family: 'Droid Sans', sans-serif;
-}
-
-#idreceta1{
-    margin-top: 30px;
 }
 #nombreusuarioreceta{
     
 }
 
-@media (max-width:875px) { 
-    
-     #containerrecetas {
-    
-    margin-left: 10px;
-    margin-right: 10px;
-    }
-    
-    
-    #dificultadreceta{padding-top:0px;}
-}
-   
 
 
-    
 
-    
-    
-    
+
+
+
+
+

@@ -48,7 +48,7 @@ a {
 .form {
     background-color: rgb(168, 214, 227);
     padding: 20px;
-    max-width: 350px;
+    max-width: 500px;
     margin: 40px auto;
     border-radius: $br;
     box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.3);
@@ -91,7 +91,6 @@ h1 {
     color: white;
     font-weight: $thin;
     margin: 0 0 40px;
-    font-size: 25px
 }
 
 label {
@@ -103,7 +102,7 @@ label {
     transition: all 0.25s ease;
     -webkit-backface-visibility: hidden;
     pointer-events: none;
-    font-size: 15px;
+    font-size: 22px;
     .req {
         margin: 2px;
         color: $main;
@@ -125,10 +124,11 @@ label.highlight {
 
 input,
 textarea {
+    font-size: 22px;
     text-align: left;
     width: 100%;
-    height: 5%;
-    padding: 5px 15px;
+    height: 70%;
+    padding: 5px 10px;
     color: black;
     background-color: rgb(237, 237, 237);
     border: 1px solid #bbb;
