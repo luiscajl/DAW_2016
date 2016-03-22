@@ -251,3 +251,29 @@ padding-left: 8px;
 .galeria_imagenes img{
     height: 100px;
 }
+
+.comentario{
+
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+min-height: 150px;
+}
+
+.comentarios{
+    background-color: bisque;
+    overflow: scroll;
+    height: 500px;
+}
+
+.USUARIO_RECETA_2{
+    text-align: center;
+    padding: 5px;
+    height: 150px;
+    background-color: rgba(76, 141, 160, 0.5);
+    border-radius: 15px;
+}
+
+.comentarios_cuerpo{
+   
+}
