@@ -162,16 +162,9 @@
 
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li> <!--
-                        <form class="navbar-form nav navbar-nav " role="search">
-                        <fieldset class="busqueda">
-                            <input class="busqueda" type="search" />
-                            <button class="busqueda" type="submit"><i class="fa fa-search"></i></button>
-                        </fieldset>
-                            </form> -->
-                        
-                <div class="col-sm-3 col-md-3">
-        <form class="navbar-form" role="search"">
+                    <li>
+                           <div class="col-sm-3 col-md-3">
+        <form class="navbar-form" role="search">
         <div class="input-group">
             <input type="text" class="form-control" placeholder="Search" name="q">
             <div class="input-group-btn">
@@ -179,8 +172,8 @@
             </div>
         </div>
         </form>
-    </div>
-                        </li>
+    </div> 
+                    </li>
 
 
                     <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -222,15 +215,20 @@
         <div id="AdvanceSearch">
         
         <div id="FormPart1">
+                           
             <form class="form-horizontal" role="form">
+             
                 <div class="form-group">
+                    <div id="testx">
                     <label class="col-lg-2 control-label"> <a class="FontStyle">Palabras clave</a> </label>
                     <div class="col-lg-10">
                         <input type="text" class="form-control" id="InputWord" placeholder="sofrito">
                     </div>
+                     </div>                                                           
                 </div>
+                                                                                                    
             </form>
-        
+            
             
             <form class="form-horizontal" role="form">
                 <div class="form-group">
@@ -239,15 +237,31 @@
                         <input type="text" class="form-control" id="InputWord2" placeholder="tomate, cebolla, zanahoria...">
                     </div>
                 </div>
-            </form>
-        </div>
-        
-        
-        <div id="FormPart2">
-            
 
-                <form role="form">
+            </form>
+                            <form role="form">
                     <div id="Checkboxes">
+                        
+                            <div class="test">
+                                <a class="FontStyle">
+                                Celiaco
+                                 </a>
+                                <input type="checkbox" value>
+                            </div>
+                                                        
+                             <div class="test">
+                                <a class="FontStyle">
+                                Diabetico
+                                 </a>
+                                <input type="checkbox" value>
+                            </div> 
+                             <div class="test">
+                                <a class="FontStyle">
+                                Vegano
+                                 </a>
+                                <input type="checkbox" value>
+                            </div>                           
+                    <!--
                     <div class="checkbox">
                         <label><input type="checkbox" value="" >
                         <a class="FontStyle">Vegano</a>
@@ -262,9 +276,11 @@
                         <label><input type="checkbox" value="">
                         <a class="FontStyle">Celiaco</a>
                         </label>
+                    </div>-->
                     </div>
-                    </div>
-                <div id="Lists">  
+                    
+                    
+                    <div id="Lists">  
 
                     <div class="form-group">
                         <label for="ejemplo_email_3" class="col-lg-2 control-label"> <a class="FontStyle">Plato</a> </label>
@@ -288,16 +304,28 @@
                     </div>
                 </form>
                 </div>
+                    
+
                 </form>
 
+            <form class="form-horizontal" role="form">
+                <div class="form-group" id="prueba">
+                                    
+                        <button type="button" class="btn btn-success" id="BuscarButton">Buscar</button>
+                </div>
+            </form>
 
-
-            
         </div>
-                            <button type="button" class="btn btn-success" id="BuscarButton">Buscar</button>
+        
+        <div class="Part2">
+                            
+
+
+            </div>
 
     </div>       
  <!-- ÉSTE DIALOG NO LO USAREMOS POR EL MOMENTO <div id="dialog" title="Basic dialog" style="display: none";>
+   <div class="logueo">
    <div class="logueo">
         <div class="user">
               <label>
