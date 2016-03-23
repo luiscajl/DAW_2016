@@ -11,15 +11,19 @@ body{
 
 #AdvanceSearch{
     margin: 0 auto;
-    width: 100%;
+    width: 85%;
     background-color:#9CDEC6;
     height: auto;
-    width: 100%;
+
     display: none;
     padding-top: 30px;
-    border-radius: 0px 0px 60px 60px;
+    border-radius: 30px 30px 60px 60px;
 }
-
+#AdvanceSearch button.close{
+    margin-right: 25px;
+    font-size: 46px;
+    margin-top: -20px;
+}
 #AdvanceSearch .btn-success {
     color: #fff;
     background-color: rgb(192, 239, 222);
@@ -112,19 +116,14 @@ input[type="checkbox"] {
 #Lists .form-group{
     width: 70%;
     text-align: right;
-        margin-left: auto;
+    margin-left: auto;
 }
 
 /*FormAdvance Search */
 #FormPart1{
     margin: -9px auto;
-    width: 50%;
+    width: 60%;
     height: auto;
-}
-#FormPart2{
-    width: 50%;
-    display: inline;
-    box-sizing: border-box;
 }
 
 #InputWord,#InputWord2{
