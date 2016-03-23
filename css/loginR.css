@@ -8,11 +8,7 @@ body{
     height: 113px;
 }
 /* Randall */
-input[type="checkbox"] {
-    margin: -11px 0 0;
-    margin-top: 1px \9;
-    line-height: normal;
-}
+
 #AdvanceSearch{
     margin: 0 auto;
     width: 100%;
@@ -54,12 +50,7 @@ input[type="checkbox"] {
     text-align: center;
 
 }
-#Checkboxes{
-    margin-top: 10px;
-    width: 50%;
-    float:left;
-    text-align: left;
-}
+
         
 #Lists{
     width: 50%;
@@ -90,7 +81,7 @@ input[type="checkbox"] {
 /*Fonts Styles*/
 .FontStyle{
     color: white;
-    font-size: 17px;
+    font-size: 20px;
     font-family: 'Droid Sans', sans-serif;
 }
 .LittleFontStyle{
@@ -101,21 +92,41 @@ input[type="checkbox"] {
 
 /*Fonts Styles*/
 
+
+/*----Checkboxes-----*/
+#Checkboxes{
+    margin-top: 10px;
+    width: 50%;
+    float:left;
+    text-align: left;
+}
+input[type="checkbox"] {
+    margin: 7px 0 0;
+    line-height: normal;
+        float: right;
+
+}
+.ContentCheckbox{
+    margin-top: 19px;
+    width: 30%;
+}
 #checkboxes .checkbox{
     width: 70%;
     margin: 10px;
     margin: 10px;
     padding: 10px;
 }
+.checkbox input[type="checkbox"]{
+    margin-left: 5px;
+}
+/*----Checkboxes-----*/
 
 #Lists .form-group{
     width: 70%;
     text-align: right;
         margin-left: auto;
 }
-.checkbox input[type="checkbox"]{
-    margin-left: 5px;
-}
+
 /*FormAdvance Search */
 #FormPart1{
     margin: -9px auto;
@@ -213,10 +224,7 @@ ui-menu-item:hover{
     background-image: url(../img/pes.jpg);
     background-size: cover;
 }
-#testx{
-    margin-left: auto;
-    margin-right: auto;
-}
+
 .pescados:hover {
     opacity: 0.6;
     filter: alpha(opacity=50);
