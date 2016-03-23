@@ -80,17 +80,26 @@
             $('#AdvanceSearchtext').click(function(e) {
                 e.preventDefault();
                 e.stopPropagation();
-                $('#AdvanceSearch').fadeIn(1000);
+                $('#Recetas').fadeOut("fast");
+                $('#AdvanceSearch').fadeIn("fast");
             
             })
             
             $('#BuscarButton').click(function(e) {
                 e.preventDefault();
                 e.stopPropagation();
-                $('#AdvanceSearch').fadeOut(1000);
-                $('#containerrecetas').fadeIn(1000);
+                $('#AdvanceSearch').fadeOut("fast");
+                $('#Recetas').fadeIn("fast");
+                $('#containerrecetas').fadeIn("fast");
+                
             })
-            
+            $('#CloseButton').click(function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                $('#AdvanceSearch').fadeOut("fast");
+                $('#Recetas').fadeIn("fast");
+                
+            })
             
             /* Randall */
             
@@ -184,7 +193,7 @@
     </nav>
 
         
-    <div class="recetas">
+    <div class="recetas" id="Recetas">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 carnes">
@@ -212,10 +221,10 @@
     </div>
     
 
-        <div id="AdvanceSearch">
-        
+    <div id="AdvanceSearch">
+                        <button type="button" class="close" data-dismiss="modal" id="CloseButton">&times;</button>    
         <div id="FormPart1">
-                           
+       
             <form class="form-horizontal" role="form">
              
                 <div class="form-group">
@@ -339,7 +348,7 @@
         
  
   <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
     
       <!-- Modal content-->
@@ -432,7 +441,7 @@
            </div>
 
             
-        </div>   
+    </div>   
 
     
 
