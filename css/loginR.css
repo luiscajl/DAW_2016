@@ -25,14 +25,16 @@ input[type="checkbox"] {
 #AdvanceSearchtext .btn-success{
     margin-top: 20px;
     margin-bottom: 10px;
+    background: rgb(192, 239, 222) !important;
+    border-color: #9CDEC6 !important;
 }
-.form-control{
+#AdvanceSearch .form-control{
     width: 30%;
     margin-top: 6px;
     color: #9CDEC6;
-    border-radius: 30px;
+border-radius:30px;
 }
-button{
+#AdvanceSearch button{
     /*width: 78px !important; */
     background: rgb(192, 239, 222) !important;
 }
@@ -49,7 +51,7 @@ button{
     float: right;
     margin-top: 10px;
 }
-.btn-success {
+#AdvanceSearch .btn-success {
     color: #fff;
     background-color: rgb(192, 239, 222);
     border-color: rgb(192, 239, 222);
@@ -63,10 +65,6 @@ button{
     color: white;
     font-size: 17px;
     font-family: 'Droid Sans', sans-serif;
-}
-#buscar2{
-        margin-left: -15px;
-    margin-right: -15px;
 }
 .LittleFontStyle{
     color: white;
@@ -135,6 +133,8 @@ ul.ui-autocomplete.ui-menu li:hover a{
 ui-menu-item:hover{
     background-color: blue;
 }*/
+
+/*Cabecera */
 .recetas {
     height: auto;
     background-color: rgb(192, 239, 222);
@@ -195,16 +195,40 @@ ui-menu-item:hover{
     font-family: 'Droid Sans', sans-serif;
 }
 
+/*Cabecera */
 
+
+
+/*Search Button*/
+.navbar-right .col-md-3{
+    width: 250px; 
+    margin-top: auto;
+    height: auto;
+    margin-bottom: auto;
+    background-color: #A8D6E3;
+}
+.navbar-right .col-md-3 .input-group-btn{
+    height: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+.navbar-right .btn-default{
+    padding: 9px 12px;
+}
+
+/*Search Button*/
+/* Old Search Button
 fieldset {
     position: relative;
     display: inline-block;
     padding: 0 0 0 40px;
     background: white;
     border-radius: 5px;
-}
+    vertical-align:middle;
+} 
 
-input{
+
+.busqueda input{
     position: relative;
     width: 200px;
     height: 40px;
@@ -230,6 +254,8 @@ input:focus + button {
     transition-duration: 0.3s;
 }
 
+
+
 input:focus + button .fa {
     -webkit-transform: translate(0px, 0);
     transform: translate(0px, 0);
@@ -239,8 +265,9 @@ input:focus + button .fa {
 }
 
 button {
+
     z-index: 1;
- /*   width: 30px;*/
+    width: 30px;
     border: 0 none;
     background: rgb(192, 239, 222);
     -webkit-transform: translate(-50px, 0);
@@ -261,8 +288,7 @@ button {
     -webkit-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
 }
-
-
+*/
 .ui-widget-content.success-dialog{
    background: rgb(168,214,227); 
 }
