@@ -34,6 +34,7 @@ html {
 body {
     background: $body-bg;
     font-family: 'Titillium Web', sans-serif;
+       background-image: url(../img/bg.jpg);
 }
 
 a {
@@ -46,12 +47,13 @@ a {
 }
 
 .form {
-    background-color: rgb(168, 214, 227);
+    background-color: rgba(0,0,0,0.1);
     padding: 20px;
     max-width: 350px;
     margin: 40px auto;
     border-radius: $br;
-    box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .tab-group {
@@ -91,14 +93,14 @@ h1 {
     color: white;
     font-weight: $thin;
     margin: 0 0 40px;
-    font-size: 25px
+    font-size: 35px
 }
 
+
 label {
-    display: block;
-    position: relative;
-    transform: translateY(6px);
-    left: 13px;
+ 
+   
+   
     color: black;
     transition: all 0.25s ease;
     -webkit-backface-visibility: hidden;
