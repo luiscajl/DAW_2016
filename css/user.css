@@ -1,3 +1,4 @@
+.body{font-family: 'Droid Sans', sans-serif;}
 
 #barradearriba{
     background-color: #79B6C7;
@@ -24,6 +25,7 @@ body{
     height: auto;
     width: auto;
     background-image:url(../img/food.jpg);
+    background-size: cover;
 }
 
 #editperfil
@@ -46,9 +48,10 @@ body{
 #nombreusuario
 {
     font-size: 40px;
-background-color: rgba(0,0,0,0.5);
+    /*background-color: rgba(0,0,0,0.5);*/
     text-align: left;
     color: white;
+    
     font-family: 'Droid Sans', sans-serif;
 }
 #rangousuario{
@@ -74,6 +77,10 @@ background-color: rgba(0,0,0,0.5);
     
     margin-left: 40px;
     margin-right: 40px;
+    background-color: rgba(76, 141, 160, 0.5);
+    opacity: 0.9;
+    margin-bottom: 10px;
+    border-radius: 15px;
 }
 
 #botonseguir{
@@ -86,6 +93,8 @@ background-color: rgba(0,0,0,0.5);
     width: auto;
     font-family: 'Droid Sans', sans-serif;
     color: white;
+    background-color: rgb(76, 141, 160);
+    opacity: 0.9;
 }
 
 
@@ -97,6 +106,8 @@ background-color: rgba(0,0,0,0.5);
     background-color:#92D9C0;
     height: auto;
     width: auto;
+    border-bottom: solid rgba(99, 186, 155, 1);
+    
 }
 #menuperfil{
     text-align: center;
@@ -107,6 +118,34 @@ background-color: rgba(0,0,0,0.5);
 }
 
 
+
+.receta_herramienta{
+    background-color: rgb(146, 217, 192);
+    color: white;
+    border-bottom: solid rgba(99, 186, 155, 1) 5px;
+    padding-left: 40%;
+    padding-right: 25%;
+    max-height: 40px;
+}
+.list-inline li{
+padding-top: 10px;
+   height: 40px;
+    
+}
+
+.list-inline li a:hover{
+    background-color: rgb(99, 186, 155);
+}
+
+.list-inline li a { 
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: white;
+    text-decoration: none;
+
+}
 
 
 
@@ -119,21 +158,65 @@ background-color: rgba(0,0,0,0.5);
     width: auto;
     margin-left: 100px;
     margin-right:100px;
+    /*background-image: url(../img/iconos/notas2.png);
+    background-repeat: repeat;*/
+    
+    background-color: solid rgba(237,225,184, 0);
     
     
     
 }
 #receta1{
-    box-shadow: 5px 5px 5px #888888;
+    /*box-shadow: 5px 5px 5px #888888;*/
+    border-bottom: solid rgba(173, 173, 173, 1)
 
 }
+
+
+
+
+
+
+.img_receta{
+    height: 200px;
+     border-radius: 15px;           
+    background-image: url(../img/pollorelleno.jpg);
+    background-size: cover;
+    padding-left: 15px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.titulo_receta {
+    text-align: center;
+    height: 50px;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    height: 80px;
+    color:white;
+    bottom: 0;
+    width: 100%;
+    margin-left: -15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+
+
+
+#apanio{font-size: 12px;
+font-family: 'Droid Sans', sans-serif;}
+
 #fotoreceta{
     padding-top: 15px;
     padding-left: 15px;
     padding-bottom: 15px;
-    padding-right: 15px;
     width: 100%;
     max-height: 240px;
+    max-width: 400px;
 
 
     
@@ -173,13 +256,16 @@ ec-stars-wrapper {
     margin-top: 15px;}
     
 #fecha{
-    padding-top: 170px;
+    padding-top: 160px;
+    font-size: 12px;
     font-family: 'Droid Sans', sans-serif;
     
 }  
 
 #textoreceta1{
     margin-top: 15px;
+    background-color: white;
+    text-align: left;
 }
 
 #nombrereceta{
@@ -191,9 +277,9 @@ ec-stars-wrapper {
     font-family: 'Droid Sans', sans-serif;
     
 }
-#dificultadreceta{
+#dificultadytiemporeceta{
     font-size: 12px;
-    padding-top: 130px;
+    padding-top: 40px;
     font-family: 'Droid Sans', sans-serif;
 }
 
@@ -213,13 +299,119 @@ ec-stars-wrapper {
     }
     
     
-    #dificultadreceta{padding-top:0px;}
+    .receta_herramienta{
+        height: auto;
+        max-height: 300px;
+        
+    }
+    
+#dificultadreceta{padding-top:0px;}
 }
    
 
 
+#compartirfacebook{
+    /*background-image: url(../img/iconos/facebook.png)*/
+    background-size: 50px 50px;
+    height: 50px;
+    width: 50px;
     
+}
+#compartirtwitter{
+    background-size: 50px 50px;
+    height: 50px;
+    width: 50px;
+}
+#compartirgoogle{
+background-size: 50px 50px;
+    height: 50px;
+    width: 50px;
+}
+
+
+#iconoperfil{
+    max-height: 100px;
+    max-width: 100px;
+    
+}
+
+
+#estrellas{
+    
+}
+
+
+
+.star1 {
+
+background:url(../images/gray_star.png) no-repeat;
+/*background-size: 40px 40px;*/
+max-height: 40px;
+max-width: 40px;
+margin-top: 60px;
+}
+.star2 {
+
+background:url(../images/gray_star.png) no-repeat;
+background-size: 40px 40px;
+height: 40px;
+margin-left: 45px;
+width: 40px;
+}
+.star3 {
+
+background:url(../images/gray_star.png) no-repeat;
+background-size: 40px 40px;
+margin-left: 45px;
+height: 40px;
+width: 40px;
+}
+.star4 {
+
+background:url(../images/gray_star.png) no-repeat;
+background-size: 40px 40px;
+height: 40px;
+width: 40px;
+margin-left: 45px;
+}
+.star5 {
+
+background:url(../images/gray_star.png) no-repeat;
+background-size: 40px 40px;
+height: 40px;
+width: 40px;
+margin-left: 45px;
+}
+.star1:hover {
+background:url(../images/gold_star.png) no-repeat;
+    background-size: 40px 40px;
+}
+.star2:hover {
+background:url(../images/gold_star.png) no-repeat;
+    background-size: 40px 40px;
+}
+.star3:hover {
+background:url(../images/gold_star.png) no-repeat;
+    background-size: 40px 40px;
+}
+.star4:hover {
+background:url(../images/gold_star.png) no-repeat;
+    background-size: 40px 40px;
+}
+.star5:hover {
+background:url(../images/gold_star.png) no-repeat;
+    background-size: 40px 40px;
+}
+
+
+
+
+
 
     
-    
+#footer{
+    background-color: rgb(255, 248, 225);
+    width: auto;
+    margin-top: 20px;
+}
     
