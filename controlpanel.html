@@ -1,3 +1,5 @@
+<html>
+
 <head>
     <meta charset="utf-8">
     <title>TastIT</title>
@@ -6,6 +8,7 @@
     <link rel=”stylesheet” type=”text/css” href=”https://fonts.googleapis.com/css?family="Droid+Sans:700,400">
     <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/controlpanel.css" rel="stylesheet">
+    <link href="/css/navbar.css" rel="stylesheet">
     <link href="/css/bootrstrap_mod.css" rel="stylesheet">
     <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -48,24 +51,25 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav ">
                     <li class=""><a href="index.html">Inicio</a></li>
-                    <!--<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Recetas<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Carne</a></li>
-          <li><a href="#">Verduras</a></li>
-          <li><a href="#">Pescado</a></li>
-        </ul>
-      </li>-->
                     <li><a href="suscripcions.html">Suscripciones</a></li>
                 </ul>
-                <form class="navbar-form nav navbar-nav " role="search">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Buscar">
-                    </div>
-                    <button type="submit" class="btn btn-default">Enviar</button>
-                </form>
+
+
+
                 <ul class="nav navbar-nav navbar-right">
-                    <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>-->
-                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li>
+                        <form class="navbar-form nav navbar-nav " role="search">
+                            <fieldset class="busqueda">
+                                <input class="busqueda" type="search" />
+                                <button class="busqueda" type="submit"><i class="fa fa-search"></i></button>
+                            </fieldset>
+                        </form>
+                    </li>
+
+
+
+                    <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a id="log" data-toggle="modal" data-target="#myModal" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                 </ul>
             </div>
     </nav>
@@ -84,7 +88,7 @@
                 <li class=""><a href="/controlpanel/admrecetarios.html">Administrar recetarios</a></li>
                 <li class=""><a href="/controlpanel/contraseña.html">Email y contraseña</a></li>
                 <li class=""><a href="/controlpanel/notificaciones.html">Notificaciones</a></li>
-                
+
 
 
             </ul>
@@ -146,3 +150,5 @@
 
     </div>
 </body>
+
+</html>
