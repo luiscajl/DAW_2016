@@ -14,16 +14,6 @@ $br: 4px;
     height: 113px;
 }
 
-
-
-
-
-
-
-
-
-
-
 .recetas {
     height: auto;
     background-color: rgb(192, 239, 222);
@@ -47,7 +37,7 @@ body {
        background-image: url(../img/bg.jpg);
 }
 
-a {
+.form a {
     text-decoration: none;
     color: $main;
     transition: .5s ease;
@@ -81,7 +71,7 @@ a {
         padding: 15px;
         background: rgba($gray-light, .25);
         color: $gray-light;
-        font-size: 20px;
+        font-size: 1.25em;
         float: left;
         width: 50%;
         text-align: center;
@@ -103,7 +93,6 @@ h1 {
     color: white;
     font-weight: $thin;
     margin: 0 0 40px;
-    font-size: 35px
 }
 
 
@@ -115,7 +104,7 @@ label {
     transition: all 0.25s ease;
     -webkit-backface-visibility: hidden;
     pointer-events: none;
-    font-size: 15px;
+    font-size: 1em;
     .req {
         margin: 2px;
         color: $main;
@@ -125,7 +114,7 @@ label {
 label.active {
     transform: translateY(50px);
     left: 2px;
-    font-size: 14px;
+    font-size: 1em;
     .req {
         opacity: 0;
     }
@@ -135,23 +124,21 @@ label.highlight {
     color: white;
 }
 
-input,
+.form input,
 textarea {
     text-align: left;
     width: 100%;
-    height: 5%;
-    padding: 5px 15px;
     color: black;
     background-color: rgb(237, 237, 237);
     border: 1px solid #bbb;
     padding: 0 0 0 10px;
-    font-size: 20px;
+    font-size: 1.25em;
     &:focus {
         border: 1px solid #3498db;
     }
 }
 
-textarea {
+.form textarea {
     border: 2px solid gray;
     resize: vertical;
 }
@@ -311,56 +298,8 @@ input[type="submit"]:hover {
 
 
 
-.logueo{
-    font-size: 20px;
-    width: 100%;
-    height: 200px;
-    padding-left: 0px;
-}
-
-#modal-header{
-    height: 100px;
-    color: white;
-    background: #79B6C7;
-    text-align: center;
-    border-radius: 15px;
-}
-
-#modal-body{
-    height: 300px;
-    border-radius: 15px;
-    background-color: rgb(237,237,237);
-}
-
-.modal-body input{
-    border-radius: 10px;
-}
-
-#modal-content{
-    border-radius: 15px;
-    /*background-color: rgb(237,237,237);*/
-    height: 80px;
-}
-
-.modal-header img{
-    width: 80px;
-    margin-top: -10px;
-}
-.modal-dialog{
-    height: 400px;}
-
 #formaction{
     height: 200px;
 }
 
-
-#botonlogin{
-    align-content: center;
-    text-align: center;
-    margin-left: 30px;
-    margin-top: 30px;
-    background-color: #79B6C7;
-    border-color: none;
-    border-bottom-color: none;
-}
 

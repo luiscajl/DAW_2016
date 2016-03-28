@@ -1,177 +1,23 @@
-<html>
-    <head>  
-            <meta charset="utf-8">
-                <title>TastIT</title>
-                <meta name="viewport" content="width=device-width">
-                <link rel="icon" type="image/png" href="/img/favicon.png">
-                <link href="css/Jnwvb.css" rel="stylesheet">
-                <link href="css/Jnwvb.less.css" rel="stylesheet">
-                <link href="/css/navbar.css" rel="stylesheet">
-                <link href="/css/loginR.css" rel="stylesheet">
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
-                </script>
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-                <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-                <script src="//code.jquery.com/jquery-1.9.1.js"></script>
-                <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-                <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js'></script>
-                <link href="/css/principal.css" rel="stylesheet">
-                <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-                <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-        
-                <link href="/css/bootrstrap_mod.css" rel="stylesheet">
-                <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-                <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-                <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-                <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-                <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
-                <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-        
-                <link href="/css/bootrstrap_mod.css" rel="stylesheet">
-                <script src="//code.jquery.com/jquery-1.9.1.js"></script>
-                <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-                <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-                <!-- Randall -->
-                <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
-                    <link rel="stylesheet" type="text/css" href="jquery.tagsinput.css" />
-                <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-                <script type="text/javascript" src="jquery.tagsinput.js"></script>
-                <!-- To test using the original jQuery.autocomplete, uncomment the following -->
-                <!--
-                <script type='text/javascript' src='http://xoxco.com/x/tagsinput/jquery-autocomplete/jquery.autocomplete.min.js'></script>
-                <link rel="stylesheet" type="text/css" href="http://xoxco.com/x/tagsinput/jquery-autocomplete/jquery.autocomplete.css" />
-                -->
-                <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/jquery-ui.min.js'></script>
-                <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.13/themes/start/jquery-ui.css" />
-                <!-- Randall -->
-                      <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
-                  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-                  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<head>
+    <meta charset="utf-8">
+    <title>TastIT</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <link rel=”stylesheet” type=”text/css” href=”https://fonts.googleapis.com/css?family="Droid+Sans:700,400">
+    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/principal.css" rel="stylesheet">
+    <link href="/css/bootrstrap_mod.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 </head>
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-<body>
-
-    <script type="text/javascript">
-
-        $(document).ready(function () {
-            
-            $("#log").click(function() { 
-                $( "#dialog" ).dialog({ resizable: false, height:350, width:450, modal: true, show: "scale", position: 'center', top:163, dialogClass: 'success-dialog'});    
-            }); 
-            
-            $("#dialog").bind('clickoutside',function(){
-            $(this).hide();
-            });
-            
-            $(".carnes").mouseover(function () {
-                $(".overlay").css("display", "block").fadeIn("slow");
-            })
-            $(".carnes").mouseout(function () {
-                $(".overlay").css("display", "none").fadeOut("slow");
-            })
-            $(".pescados").mouseover(function () {
-                $(".overlay2").css("display", "block");
-            })
-            $(".pescados").mouseleave(function () {
-                $(".overlay2").css("display", "none");
-            })
-            $(".verduras").mouseover(function () {
-                $(".overlay3").css("display", "block");
-            })
-            $(".verduras").mouseleave(function () {
-                $(".overlay3").css("display", "none");
-            })
-            $(".postres").mouseover(function () {
-                $(".overlay4").css("display", "block");
-            })
-            $(".postres").mouseleave(function () {
-                $(".overlay4").css("display", "none");
-            })
-                
-          /* Randall */
-
-            $('#Salir').click(function(){
-                $('#AdvanceSearch').fadeOut(3000)
-            })
-            $('#AdvanceSearchtext').click(function(e) {
-                e.preventDefault();
-                e.stopPropagation();
-                $('#Recetas').fadeOut("fast");
-                $('#AdvanceSearch').fadeIn("fast");
-            
-            })
-            
-            $('#BuscarButton').click(function(e) {
-                e.preventDefault();
-                e.stopPropagation();
-                $('#AdvanceSearch').fadeOut("fast");
-                $('#Recetas').fadeIn("fast");
-                $('#containerrecetas').fadeIn("fast");
-                
-            })
-            $('#CloseButton').click(function(e) {
-                e.preventDefault();
-                e.stopPropagation();
-                $('#AdvanceSearch').fadeOut("fast");
-                $('#Recetas').fadeIn("fast");
-                
-            })
-            
-            /* Randall */
-            
-            
-        });
-        
-
-        
-        $(function() {
-            var availableTutorials = [
-               "Cebolla",
-               "Pepino",
-               "Tomate",
-               "Huevos",
-               "Patata",
-               "Arroz",
-               "Pasta",
-               "Atun",
-               "Pollo",
-               "Salmon",
-               "Merluza",
-               "Conejo",
-            ];
-            $( "#InputWord2" ).autocomplete({
-               source: availableTutorials
-            });
-         });
-        
-        function onAddTag(tag) {
-			alert("Added a tag: " + tag);
-		}
-		function onRemoveTag(tag) {
-			alert("Removed a tag: " + tag);
-		}
-
-		function onChangeTag(input,tag) {
-			alert("Changed a tag: " + tag);
-		}
-        $(function() {
-
-			$('#InputWord1').tagsInput({width:'auto'});})
-    </script>
-     
+<body>     
     <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid" id=barradearriba>
+        <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">Desplegar navegación</span>
@@ -184,10 +30,20 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav ">
                     <li class=""><a href="index.html">Inicio</a></li>
+                    <!--<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Recetas<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Carne</a></li>
+          <li><a href="#">Verduras</a></li>
+          <li><a href="#">Pescado</a></li>
+        </ul>
+      </li>-->
                     <li><a href="suscripcions.html">Suscripciones</a></li>
                 </ul>
+
+
+
                 <ul class="nav navbar-nav navbar-right">
-                     <li><form class="navbar-form nav navbar-nav " role="search">
+                    <li><form class="navbar-form nav navbar-nav " role="search">
                         <fieldset class="busqueda">
                             <input class="busqueda" type="search" />
                             <button class="busqueda" type="submit"><i class="fa fa-search"></i></button>
@@ -201,145 +57,36 @@
                     <li><a id="log" data-toggle="modal" data-target="#myModal" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                 </ul>
             </div>
-        </div>
     </nav>
 
+    <div class="recetas">
+
         
-    <div class="recetas" id="Recetas">
+   
+         
         <div class="container">
             <div class="row">
                 <div class="col-md-3 carnes">
-                    <div class="overlay">Carnes</div>
+                    <div class="overlay">Visitar</div>
                 </div>
                 <div class="col-md-3 pescados">
-                    <a href="receta.html"><div class="overlay2">Pescado</div></a>
+                    <a href="receta.html"><div class="overlay2">visitar</div></a>
                 </div>
 
                 <div class="col-md-3 verduras">
-                    <div class="overlay3">Ensaladas</div>
+                    <div class="overlay3">Visitar</div>
                 </div>
 
                 <div class="col-md-3 postres">
-                    <div class="overlay4">Postres</div>
+                    <div class="overlay4">Visitar</div>
                 </div>
 
             </div>
-            <div id="AdvanceSearchtext">
-                <button type="button" class="btn btn-success" ><a class="FontStyle">Busqueda Avanzada</a></button>
-            </div>
-                
         </div>
-        
     </div>
     
 
-    <div id="AdvanceSearch">
-                        <button type="button" class="close" data-dismiss="modal" id="CloseButton">&times;</button>    
-        <div id="FormPart1">
-       
-            <form class="form-horizontal" role="form">
-             
-                <div class="form-group">
-                    <label class="col-lg-2 control-label"> <a class="FontStyle">Palabras clave</a> </label>
-                    <div class="col-lg-10">
-                        <input type="text" class="form-control" id="InputWord" placeholder="sofrito">
-                    </div>
-                                                          
-                </div>
-                                                                                                    
-            </form>
-            
-            
-            <form class="form-horizontal" role="form">
-                <div class="form-group">
-                    <label class="col-lg-2 control-label"> <a class="FontStyle">Ingredientes</a> </label>
-                    <div class="col-lg-10">
-                        <input type="text" class="form-control" id="InputWord2" placeholder="tomate, cebolla, zanahoria...">
-                    </div>
-                </div>
-
-            </form>
-                            <form role="form">
-                    <div id="Checkboxes">
-                        
-                            <div class="ContentCheckbox">
-                                <a class="FontStyle">
-                                Celiaco  
-                                 </a>
-                                <input type="checkbox" value>
-                            </div>
-                                                        
-                             <div class="ContentCheckbox">
-                                <a class="FontStyle">
-                                Diabetico
-                                 </a>
-                                <input type="checkbox" value>
-                            </div> 
-                             <div class="ContentCheckbox">
-                                <a class="FontStyle">
-                                Vegano
-                                 </a>
-                                <input type="checkbox" value>
-                            </div>                           
-                    <!--
-                    <div class="checkbox">
-                        <label><input type="checkbox" value="" >
-                        <a class="FontStyle">Vegano</a>
-                        </label>
-                    </div>
-                    <div class="checkbox">
-                        <label><input type="checkbox" value="">
-                        <a class="FontStyle">Diabetico</a>
-                        </label>
-                    </div>
-                    <div class="checkbox">
-                        <label><input type="checkbox" value="">
-                        <a class="FontStyle">Celiaco</a>
-                        </label>
-                    </div>-->
-                    </div>
-                    
-                    
-                    <div id="Lists">  
-
-                    <div class="form-group">
-                        <label for="ejemplo_email_3" class="col-lg-2 control-label"> <a class="FontStyle">Plato</a> </label>
-                        <select class="form-control">
-                            <option>Verduras</option>
-                            <option>Carnes</option>
-                            <option>Pescado</option>
- 
-                        </select>
-                    </div>
-             
-                <form class="form-horizontal" role="form">
-                    <div class="form-group">
-                        <label for="ejemplo_email_3" class="col-lg-2 control-label"> <a class="FontStyle">Plato</a> </label>
-                        <select class="form-control">
-                            <option>Entrantes</option>
-                            <option>Segundos</option>
-                            <option>Postres</option>
- 
-                        </select>
-                    </div>
-                </form>
-                </div>
-                    
-
-                </form>
-
-            <form class="form-horizontal" role="form">
-                <div class="form-group" id="SearchButton">
-                                    
-                        <button type="button" class="btn btn-success" id="BuscarButton">Buscar</button>
-                </div>
-            </form>
-
-        </div>
-
-    </div>       
  <!-- ÉSTE DIALOG NO LO USAREMOS POR EL MOMENTO <div id="dialog" title="Basic dialog" style="display: none";>
-   <div class="logueo">
    <div class="logueo">
         <div class="user">
               <label>
@@ -360,50 +107,43 @@
         
  
   <!-- Modal -->
-    <div class="modal fade" id="myModal" role="dialog">
-                <div class="modal-dialog">
-
-                  <!-- Modal content-->
-                  <div class="modal-content" id="modal-content">
-                    <div class="modal-header" id="modal-header">
-                      <img src="img/logo_transparent_2.png">
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title"></h4>
-                    </div>
-                    <div class="modal-body" id="modal-body">
-
-                        <form action="/" method="post" id="formaction">
-                          <div class="logueo" id="formlogueo">
-                             <div class="user">
-                                  <label>
-                                   &nbsp; &nbsp; &nbsp; &nbsp;Usuario
-                                  </label>
-                                  <br>
-                                  <input type="text">
-                              </div>
-                              <div class="pass">
-                                  <br><br><label>
-                                   &nbsp; &nbsp; &nbsp; &nbsp; Contraseña
-                                  </label>
-                                  <br>
-                                  <input align="center" type="password"required autocomplete="off"/>
-                                  
-                              </div>
-                              <button type="button" class="btn btn-primary seguir" id="botonlogin"> Login </button>
-                           </div>
-                        </form>     
-                    </div>
-                  </div>
-                </div>
-            </div> 
-         
-            
-         
-         
-
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
     
-
-        
-
-    </body>
-</html>
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="img/logo_transparent_2.png">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+              
+              
+              
+              
+        <form action="/" method="">
+          <div class="logueo">
+        <div class="user">
+              <label>
+               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Usuario
+              </label>
+              <br>
+              <input type="text">
+        </div>
+        <div class="pass">
+              <label>
+               &nbsp; &nbsp; &nbsp; &nbsp; Contraseña
+              </label>
+              <br>
+              <input align="center" type="password"required autocomplete="off"/>
+        </div>
+           <a href="user.html">Entrar</a>
+            </div>
+        </form>     
+        </div>
+      </div>
+    </div>
+</div>   
+    
+</body>
