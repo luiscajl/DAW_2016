@@ -66,6 +66,8 @@
     color: white;
     border-bottom: solid rgba(99, 186, 155, 1) 5px;
     text-align: center;
+     box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.3);
+text-align: center;
 }
 
 .list-inline li{
@@ -95,7 +97,7 @@
     padding-bottom: 25px;
     background-image: url(../img/iconos/notas2.png);
     background-repeat: repeat;
-    border-bottom: solid rgba(202, 186, 131, 1) 5px;
+     box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.4);
     padding-left: 25%;
     padding-right: 25%;
     text-align: center;
@@ -109,7 +111,7 @@
 .receta_elaboracion{
     padding: 40px;
      background-color: rgba(237,237,237,1);
-  border-bottom: solid rgba(173, 173, 173, 1) 5px;
+    box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.2);
 }
 
 ul,ol{
@@ -142,7 +144,7 @@ ul,ol{
     text-align: center;
     height: 50px;
     background-color: black;
-    opacity: 0.5;
+    opacity: 0.7;
     position: absolute; /* con esta linea estoy consiguiendo el centrado de texto en un div */
     height: 80px;  
     bottom: 0; 
@@ -150,6 +152,10 @@ ul,ol{
     margin-left: -15px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+}
+
+.titulo_receta h3{
+    
 }
 
 .logo_cocinero{
@@ -210,9 +216,9 @@ padding-left: 8px;
 }
 
 .galeria{
-    background-color: rgb(255, 248, 225);
+ background-color: rgb(168,214,227);
     padding: 15px;
-    border-bottom: solid rgba(202, 186, 131, 1) 5px;
+  
 }
 
 .modal-body{
@@ -249,14 +255,14 @@ padding-left: 8px;
 
 .comentario{
 
-    background-color: white;
+   background-color: rgba(237,237,237,0.6);
     padding: 10px;
     border-radius: 10px;
-min-height: 150px;
+    height: 150px;
 }
 
 .comentarios{
-    background-color: bisque;
+    background-color: white;
     overflow: ;
 }
 
@@ -274,10 +280,40 @@ min-height: 150px;
 
 .pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus{
    background-color:  rgb(146, 217, 192);
-    border-color: rgb(99, 186, 155);
+       box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.2);
 }
 
 .logo_cocinero_comentarios{
     height: 80px;
    
 }
+
+#fecha_comentario{
+    text-align: right;
+    
+}
+
+#texto_comentario{
+   height: 95px;
+    
+}
+
+#likes_comentario{
+        
+    display:inline;
+    margin-top: 80px;
+}
+
+#dislikes_comentario{
+       
+    display:inline;
+     margin-top: 80px;
+}
+
+#titulo_galeria{
+    color: white;
+    text-align: center;
+    margin-top: -10px;
+    
+}
+
