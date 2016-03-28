@@ -64,6 +64,8 @@
 .receta_herramienta{
     background-color: rgb(146, 217, 192);
     color: white;
+    border-bottom: solid rgba(99, 186, 155, 1) 5px;
+    text-align: center;
      box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.3);
 text-align: center;
 }
@@ -215,7 +217,6 @@ padding-left: 8px;
 
 .galeria{
  background-color: rgb(168,214,227);
-      box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.2);
     padding: 15px;
   
 }
