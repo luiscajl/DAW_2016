@@ -13,7 +13,7 @@ body {
 }
 
 .contenido {
-    height: 90%;
+    
     display: table;
     width: 90%;
 }
@@ -24,7 +24,7 @@ body {
     background-color: white;
     text-align: center;
     margin-left: 17%;
-    height: 100%;
+
     position: relative;
 }
 
