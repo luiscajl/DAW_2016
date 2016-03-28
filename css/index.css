@@ -1,0 +1,32 @@
+.busqueda_avanzada {
+    max-width: 600px;
+    height: 410px;
+    transition: height 2s;
+    margin: 0 auto;
+    margin-top: -395px;
+    position: relative;
+    text-align: center;
+
+}
+
+.busqueda_avanzada:hover{
+    background-color: rgb(146, 217, 192);
+      margin-top: -20px;
+
+}
+
+.boton_busqueda_av{
+    width: 150px;
+    padding-top: 8px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 30px;
+     background-color: rgb(146, 217, 192);
+    position: absolute;
+    bottom: 5px;
+    margin-left: 35%;
+}
+
+.boton_busqueda_av a{
+    color: aliceblue;
+}

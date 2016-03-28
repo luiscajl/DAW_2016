@@ -1,3 +1,5 @@
+<html>
+
 <head>
     <meta charset="utf-8">
     <title>TastIT</title>
@@ -74,13 +76,13 @@
             </br>
             <div class="inputlabel">
                 <label id="labelreceta">Nombre de la receta</label>
-                <input id="recetainput" type="text" name="name" class="form-control" ng-model="user.name" required>
+                <input id="pasosinput" type="text" class="form-control" required>
             </div>
             <br>
 
             <div class="inputlabel">
                 <label id="labelreceta">Breve descripcion de la receta</label>
-                <input id="recetainput" type="text" name="name" class="form-control" ng-model="user.name" required>
+                <input id="recetainput" type="text" class="form-control" required>
             </div>
             <br>
 
@@ -98,11 +100,8 @@
             </div>
             <br>
 
-            <div class="inputlabel">
-                <label id="labelreceta">Pasos de la receta</label>
-                <input id="pasosinput" type="text" name="name" class="form-control" ng-model="user.name" required>
-            </div>
-            <br>
+
+
             <div class="pasos">
 
 
@@ -112,108 +111,113 @@
                     <li>
                         <textarea id="pasosinput" rows="10" type="text" name="name" class="form-control" ng-model="user.name" required></textarea>
                     </li>
-                    <input id="submitpasos" type="submit" value="Añadir">
+                    <br>
+                    <div class="añadirpaso" style="text-align:center;">
+                        <input id="recetabutton" type="submit" value="Añadir paso" </div>
                 </ol>
 
 
+                </div>
+                <br>
+
+
+
+
             </div>
 
 
+            <div id="categorias" role="main">
+                <div class="row">
+                    <div class="col-md-5 col-md-offset-2">
+
+                        </br>
+                        <div class="inputlabel">
+                            <label id="labelreceta">Tiempo medio de preparación:</label>
+                            <input id="tiempoinput" type="text" class="form-control" required>
+                        </div>
+                        <br>
+                        <div class="inputlabel">
+                            <label id="labelreceta">Tipo de plato:</label>
+
+                            <select name="tipoplato" id="tipoplato" type="option" value="" class="valid">
+                                <option value="1">Entrantes</option>
+                                <option value="8">Aliños y salsas</option>
+                                <option value="11">Ensaladas</option>
+                                <option value="2">Plato Principal</option>
+                                <option value="3">Postres</option>
+                                <option value="9">Reposteria</option>
+                                <option value="7">Otros</option>
+                            </select>
+                        </div>
+                        </br>
+                        <div class="inputlabel">
+                            <label id="labelreceta">Enlace del video de la receta:</label>
+                            <input id="pasosinput" type="text" class="form-control" required>
+                        </div>
+                        </br>
+
+
+
+
+
+                    </div>
+                    </br>
+                    <div class="col-md-5">
+                        <div class="inputlabel">
+                            </br>
+                            </br>
+                            <div class="field-wrap">
+                                <input type="checkbox" />
+                                <label for='input_1' tabindex="-1">
+                                    <span class="check"></span> Vegana
+                                </label>
+                            </div>
+
+                            <div class="field-wrap">
+                                <input type="checkbox" />
+                                <label for='input_1' tabindex="-1">
+                                    <span class="check"></span> Baja en grasas
+                                </label>
+                            </div>
+
+
+                            <div class="field-wrap">
+                                <input type="checkbox" />
+                                <label for='input_1' tabindex="-1">
+                                    <span class="check"></span> Para diabeticos
+                                </label>
+                            </div>
+
+                            <div class="field-wrap">
+                                <input type="checkbox" />
+                                <label for='input_1' tabindex="-1">
+                                    <span class="check"></span> Picante
+                                </label>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
 
 
         </div>
 
-
-        <div id="categorias" role="main">
-            <div class="row">
-                <div class="col-md-5 col-md-offset-2">
-
-                    </br>
-                    <div class="inputlabel">
-                        <label id="labelreceta">Tiempo medio de preparación:</label>
-                        <input id="inputtiempo" type="text" name="name" class="form-control" ng-model="user.name" required>
-                    </div>
-                    <br>
-                    <div class="inputlabel">
-                        <label id="labelreceta">Tipo de plato:</label>
-
-                        <select name="tipoplato" id="tipoplato" type="option" value="" class="valid">
-                            <option value="1">Entrantes</option>
-                            <option value="8">Aliños y salsas</option>
-                            <option value="11">Ensaladas</option>
-                            <option value="2">Plato Principal</option>
-                            <option value="3">Postres</option>
-                            <option value="9">Reposteria</option>
-                            <option value="7">Otros</option>
-                        </select>
-                    </div>
-                    </br>
-                    <div class="inputlabel">
-                        <label id="labelreceta">Enlace del video de la receta:</label>
-                        <input id="inputtiempo" type="text" name="name" class="form-control" ng-model="user.name" required>
-                    </div>
-                    </br>
-
-
-
-
-
-                </div>
-                </br>
-                <div class="col-md-5">
-                    <div class="inputlabel">
-                        </br>
-                        </br>
-                        <div class="field-wrap">
-                            <input type="checkbox" />
-                            <label for='input_1' tabindex="-1">
-                                <span class="check"></span> Vegana
-                            </label>
-                        </div>
-
-                        <div class="field-wrap">
-                            <input type="checkbox" />
-                            <label for='input_1' tabindex="-1">
-                                <span class="check"></span> Baja en grasas
-                            </label>
-                        </div>
-
-
-                        <div class="field-wrap">
-                            <input type="checkbox" />
-                            <label for='input_1' tabindex="-1">
-                                <span class="check"></span> Para diabeticos
-                            </label>
-                        </div>
-
-                        <div class="field-wrap">
-                            <input type="checkbox" />
-                            <label for='input_1' tabindex="-1">
-                                <span class="check"></span> Picante
-                            </label>
-                        </div>
-
-
-
-                    </div>
-                </div>
-
-
-            </div>
+        <br>
+        <div class="creareceta" style="text-align:center;">
+            <input id="recetabutton" type="submit" value="Crear receta">
         </div>
-
-
-    </div>
-
-    <br>
-    <div class="creareceta" style="text-align:center;">
-        <input id="recetabutton" type="submit" value="Crear receta">
-    </div>
-    <br>
-    <br>
+        <br>
+        <br>
 
 
 
 
 
 </body>
+
+</html>
