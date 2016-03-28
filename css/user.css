@@ -1,8 +1,5 @@
 .body{font-family: 'Droid Sans', sans-serif;}
 
-#barradearriba{
-    background-color: #79B6C7;
-}
 .logo{
 
    height: 113px;    
@@ -250,7 +247,6 @@ padding-top: 10px;
     font-size: 14px;
     font-family: 'Droid Sans', sans-serif;
     height: 60px;
-    width: 440px;
     text-align:justify;
     
 }
@@ -336,28 +332,6 @@ background-size: 50px 50px;
   
 
 
-@media (max-width:875px){ 
-    
-    #containerrecetas{
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    
-    
-    .receta_herramienta{
-        height: auto;
-        max-height: 300px;
-        
-    }
-    
-    #dificultadreceta{
-        padding-top:0px;
-    }
-}
- 
-
-
-
 .glyphicon-star{
   	color: rgb(99, 186, 155)
 
@@ -371,3 +345,40 @@ background-size: 50px 50px;
 .glyph {
 }
 
+
+@media (max-width:1920px) { 
+    #textoreceta{
+        width: 300px;}
+
+}
+@media (max-width:1200px) { 
+    #textoreceta{width: 240px;}
+   
+    
+
+}
+
+@media (max-width:800px) { 
+    #textoreceta{ width: auto;}
+    #containerrecetas{margin-left: 20px;margin-right: 20px;}
+    .receta_herramienta{height: auto;max-height: 300px;}
+    #dificultadreceta{padding-top:0px;}
+    #dificultadytiemporeceta{padding-top: 30px;}
+    #infoextrareceta{padding-top: 20px;width: auto;}
+    #containerrecetas{margin-left: 10px;margin-right: 10px; }
+    #compartir{padding-top: 10px;padding-bottom: 10px;}
+    #botonseguir{padding-left: 0px; padding-bottom: 10px;text-align: center;padding-top: 0px;}
+    #imagenicono{ text-align: center;height: 100px;
+    
+
+
+@media (max-width:400px) {  /*Ancho menor a 400*/
+    #textoreceta{width: auto;}
+    #dificultadytiemporeceta{padding-top: 30px;}
+    #infoextrareceta{padding-top: 20px;width: auto;}
+    #containerrecetas{margin-left: 10px;margin-right: 10px; }
+    #compartir{padding-top: 10px;padding-bottom: 10px;}
+    #botonseguir{padding-left: 0px; padding-bottom: 10px;text-align: center;padding-top: 0px;}
+    #imagenicono{ margin-left: 120px;height: 100px;
+   }
+}
