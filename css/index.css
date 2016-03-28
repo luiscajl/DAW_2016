@@ -1,0 +1,24 @@
+.busqueda_avanzada {
+    max-width: 600px;
+    height: 410px;
+    background: #f92672;
+    transition: height 2s;
+    margin: 0 auto;
+    margin-top: -380px;
+}
+
+.busqueda_avanzada:hover{
+    background-color: aqua;
+      margin-top: -20px;
+
+}
+
+.boton_busqueda_av{
+    width: 100px;
+     background-color: green;
+   padding-top: 380px;
+    margin-top: -320px;
+        margin: 0 auto;
+    vertical-align: middle;
+    align-content: center;
+}
