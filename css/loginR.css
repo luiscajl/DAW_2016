@@ -1,7 +1,10 @@
 body{
     padding-top: 70px;
-    background-color:#ededed;
+    background-color:rgb(192, 239, 222);
 
+}
+#barradearriba{
+    background-color: #79B6C7;
 }
 
 .logo {
@@ -41,6 +44,7 @@ body{
 
 }
 #AdvanceSearchtext{
+    color: blue;
     text-align: center;
 
 }
@@ -177,6 +181,18 @@ ul.ui-autocomplete.ui-menu li:hover a{
     color: white;   
 }
 
+/* Randall */
+/*
+.ui-menu .ui-menu-item a{
+    background:red;
+    height:10px;
+    font-size:8px;
+}
+ui-menu-item:hover{
+    background-color: blue;
+}*/
+
+/*Cabecera */
 .recetas {
     height: auto;
     background-color: rgb(192, 239, 222);
@@ -258,6 +274,79 @@ ul.ui-autocomplete.ui-menu li:hover a{
     padding: 9px 12px;
 }
 
+/*Search Button*/
+/* Old Search Button
+fieldset {
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 40px;
+    background: white;
+    border-radius: 5px;
+    vertical-align:middle;
+} 
+
+
+.busqueda input{
+    position: relative;
+    width: 200px;
+    height: 40px;
+    padding: 0;
+    display: inline-block;
+    float: left;
+}
+
+input {
+    color: #666;
+    z-index: 2;
+    border: 0 none;
+}
+
+input:focus {
+    outline: 0 none;
+}
+
+input:focus + button {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+
+
+input:focus + button .fa {
+    -webkit-transform: translate(0px, 0);
+    transform: translate(0px, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    color: black;
+}
+
+button {
+
+    z-index: 1;
+    width: 30px;
+    border: 0 none;
+    background: rgb(192, 239, 222);
+    -webkit-transform: translate(-50px, 0);
+    transform: translate(-50px, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.fa-search {
+    font-size: 1.4rem;
+    color: #BBB;
+    z-index: 3;
+    top: 25%;
+    -webkit-transform: translate(-190px, 0);
+    transform: translate(-190px, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+*/
 .ui-widget-content.success-dialog{
    background: rgb(168,214,227); 
 }
@@ -274,21 +363,20 @@ ul.ui-autocomplete.ui-menu li:hover a{
 .logueo{
     font-size: 20px;
     width: 100%;
-    height: 100%;
-   padding-left:30%;
+    height: 200px;
+    padding-left: 0px;
 }
 
-.modal-header{
-    height: 90px;
+#modal-header{
+    height: 100px;
     color: white;
-     background: rgb(168,214,227);
+    background: #79B6C7;
     text-align: center;
-    border-top-left-radius: 15px;
-     border-top-right-radius: 15px;
+    border-radius: 15px;
 }
 
-.modal-body{
-     height: 200;
+#modal-body{
+    height: 300px;
     border-radius: 15px;
     background-color: rgb(237,237,237);
 }
@@ -297,55 +385,35 @@ ul.ui-autocomplete.ui-menu li:hover a{
     border-radius: 10px;
 }
 
-.modal-content{
+#modal-content{
     border-radius: 15px;
-    background-color: rgb(237,237,237);
+    /*background-color: rgb(237,237,237);*/
+    height: 80px;
 }
 
 .modal-header img{
     width: 80px;
     margin-top: -10px;
 }
+.modal-dialog{
+    height: 400px;}
 
-
-#containerrecetas{
-    margin-left: 100px;
-    margin-right: 100px; 
-    height: auto;
-    margin-top: 30px;
-    width: auto;
-    display: none;
-    background-color: white;
-    border-radius: 30px;
-    
+#formaction{
+    height: 200px;
 }
-#fotoreceta1{
+
+
+#botonlogin{
     align-content: center;
-    background-color: white;
-    height: auto;
-    width: auto;
-}
-#textoreceta1{
-
-    padding-top: 30px;
-
-}
-#idreceta1{
+    text-align: center;
+    margin-left: 30px;
     margin-top: 30px;
+    background-color: #79B6C7;
+    border-color: none;
+    border-bottom-color: none;
 }
-#nombrereceta{
-    font-size: 18px;
-    font-family: 'Droid Sans', sans-serif;
-}
-#textoreceta{
-    font-size: 14px;
-    font-family: 'Droid Sans', sans-serif;
-}
-#dificultadreceta{
-     font-size: 12px;
-    font-family: 'Droid Sans', sans-serif;
-    padding-top: 10px;
-        
+.btn-primary{
+    border-color: none;
 }
 
 
