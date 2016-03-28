@@ -262,18 +262,27 @@ min-height: 150px;
 
 .comentarios{
     background-color: bisque;
-    overflow: scroll;
-    height: 500px;
+    overflow: ;
 }
 
 .USUARIO_RECETA_2{
     text-align: center;
     padding: 5px;
     height: 150px;
-    background-color: rgba(76, 141, 160, 0.5);
+    /*background-color: rgba(76, 141, 160, 0.5);*/
     border-radius: 15px;
 }
 
 .comentarios_cuerpo{
+   
+}
+
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus{
+   background-color:  rgb(146, 217, 192);
+    border-color: rgb(99, 186, 155);
+}
+
+.logo_cocinero_comentarios{
+    height: 80px;
    
 }
