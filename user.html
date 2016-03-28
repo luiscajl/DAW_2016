@@ -3,97 +3,33 @@
         <meta charset="utf-8">
         <title>TastIT</title>
         <meta name="viewport" content="width=device-width">
-        <link rel="icon" type="image/png" href="/img/favicon.png">
-        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Sans" />
-        <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">   
+        <link rel="icon" type="image/png" href="/img/favicon.png"> 
         <link href="css/Jnwvb.css" rel="stylesheet">
         <link href="css/Jnwvb.less.css" rel="stylesheet">
         <link href="/css/user.css" rel="stylesheet"> 
-        <link href="/css/bootrstrap_mod.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <script src="//code.jquery.com/jquery-1.9.1.js"></script>
         <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js'></script>
-        <meta name="viewport" content="width=device-width">
-        <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
         <link href="/css/principal.css" rel="stylesheet">
-        <link href="/css/bootrstrap_mod.css" rel="stylesheet">
-        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">         
         <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/css/principal.css" rel="stylesheet">
-        <link href="/css/bootrstrap_mod.css" rel="stylesheet">
-        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-        <script src="//code.jquery.com/jquery-1.9.1.js"></script>
-        <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <meta charset="utf-8">
-    <title>TastIT</title>
-    <meta name="viewport" content="width=device-width">
-    <link rel="icon" type="image/png" href="/img/favicon.png">
-       <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/principal.css" rel="stylesheet">
-    <link href="/css/navbar.css" rel="stylesheet">
-     <link href="/css/bootrstrap_mod.css" rel="stylesheet">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-        
-    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
-    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+        <link href="/css/navbar.css" rel="stylesheet">
+        <link href="/css/bootrstrap_mod.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+        <script src="js/starrating.js"></script>
 
         
-        
-        
-        
-        
+
+              
         
 
     </head>
     <body>
       
-        
-      
-       <script type="text/javascript">
-$(document).ready(function(){
-
-	$(window).scroll(function(){
-		var barra = $(window).scrollTop();
-		var posicion =  (barra * 0.10);
-        var posicion2 =  (barra * 0.20);
-        var posicion3 =  (barra * 0.30);
-        
-        $('.fondo1').css({
-			'background-position': '0 -' + posicion + 'px'
-		});
-        
-        $('.fondo2').css({
-			'background-position': '0 -' + posicion2 + 'px'
-		});
-        
-        $('.fondo3').css({
-			'background-position': '0 -' + posicion3 + 'px'
-		});
-
-	});
-
-});
-           
-          
-           
-           
-          
-    </script>
-        
- 
-   
-   
-   
-   
    
    
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -142,15 +78,19 @@ $(document).ready(function(){
   
    <div class="container" id="perfil">
              
-        <div class="row" id="rowperfil"><p id="editperfil"><span class="glyphicon glyphicon-pencil"></span></span> Editar Perfil</p></div>
-        <div class="row">
+        <div class="row" id="rowperfil">
+                <p id="editperfil" href="controlpanel.html">
+                        <span class="glyphicon glyphicon-pencil"></span><a href="controlpanel.html" id="editperfil">Editar Perfil</a></p>
+        </div>
+        
+    <div class="row">
             <div class="col-md-1" id=imagenicono>
             <img class="img-circle" id="iconoperfil" src="img/iconos/icon.png" height="100px" width="100px"></img></div>
             <div class="col-md-2" id="nombreusurangoinfo">
                   
                     <h2 id="nombreusuario">Luisca </h2>
                     <h3 id="rangousuario">Aprendiz de cocina(RANGO)</h3>
-                    <h3 id="infousuario"> Me gusta cocinar, pero no me gusta ser cocinado</h3>
+                    <h3 id="infousuario">Me gusta cocinar, pero no me gusta ser cocinado</h3>
                 
             </div>
     <div class="col-md-1" id="botonseguir"> <button type="button" class="btn btn-primary seguir">  Seguir  </button></div>
@@ -162,10 +102,9 @@ $(document).ready(function(){
         
         <div class="row" id=seguidoresrecetas>
             <div class="col-md-2"></div>
-            <div class="col-md-2"></div>
-            <div class="col-md-2">XXX Seguidores</div>
-            <div class="col-md-2">XXX Recetas</div>
-            <div class="col-md-2">XXX Recetarios</div>
+            <div class="col-md-2">176 Seguidores</div>
+            <div class="col-md-4">23 Recetas</div>
+            <div class="col-md-2">4 Recetarios</div>
             <div class="col-md-2"></div>
             
         </div>
@@ -179,25 +118,13 @@ $(document).ready(function(){
      </div> 
     
      <div class="receta_herramienta">
-       <ul class="list-inline">
-      <li><a href="#"><span class="glyphicon glyphicon-list-alt"></span> Recetas</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-cutlery"></span> Recetario</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-comment"></span> Comentar</a></li>
-       </ul>
+           <ul class="list-inline">
+              <li><a href="#"><span class="glyphicon glyphicon-list-alt"></span> Recetas</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-cutlery"></span> Recetario</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-comment"></span> Comentar</a></li>
+           </ul>
     </div>
 
- <!--
-     <div id="menu">
-        <div class="row" id="menuperfil">
-                        
-           <div class="col-md-4"><span class="glyphicon glyphicon-list-alt"></span> Recetas</div>
-             <div class="col-md-4"><span class="glyphicon glyphicon-cutlery"></span> Recetario</div>
-             <div class="col-md-4"><span class="glyphicon glyphicon-comment"></span> Comentar</div>
-      </div>
-        </div>-->
-        
-        
-        
         
         <div class="container" id="containerrecetas">
            <div class="row" id="receta1">
@@ -207,22 +134,38 @@ $(document).ready(function(){
                 <div class="titulo_receta"><h3>Pechuga de pollo rellena</h3><h5>15/3/16</h5></div>
                 </div>
                
-               <!--
-               <div class="col-md-4" id="fotoreceta1"><img id="fotoreceta" src="img/pollorelleno.jpg"  class="img-responsive"></img></div>-->
+             
             
             
             
             
-            
-            
-               <div class="col-md-3" id="textoreceta1">
-                   <!-- <div id="nombrereceta" >Pechuga de pollo rellena
-                    </div>-->
-                   <div></div>
-                    <div id="textoreceta">El pollo asado es un plato que nunca falla y al que siempre se puede recurrir en mi casa. 
+               <div class="col-md-2" id="textoreceta1">
+                    <div id="textoreceta">La receta de Pollo Asado es una receta muy tradicional en nuestra gastronomía, una receta ecónomica y fácil preparación, ideal para varios comensales.
                     </div>
-                    <div id="dificultadytiemporeceta"><span>Dificultad: Fácil&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-time"></span> 30 min </span><br></br>
-                        </div>
+                    <div id="dificultadytiemporeceta">
+                        <span>Dificultad:     Fácil&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-time"></span> 30 min </span><br></br>
+                    </div>
+               </div>
+               <div class="col-md-2" id="infoextrareceta">
+                   <p id="apanio"><span class="glyphicon glyphicon-user"></span> 2 | <a href="#">
+                    <span class="glyphicon glyphicon-film"></span>
+                       </a> | Celiacos
+                   | <span class="glyphicon glyphicon-tags"></span> Primer plato </p>
+               </div>
+                                   
+               
+               <div class="col-md-2" id="estrellas">
+                   <div id="stars" class="starrr"></div>
+                   <!--
+                   <div class="star-rating">
+                      <fieldset>
+                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Outstanding">5 stars</label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Very Good">4 stars</label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Good">3 stars</label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Poor">2 stars</label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Very Poor">1 star</label>
+                      </fieldset>
+                    </div> -->
                    <div id="compartir" >
                        <i class="icon-large icon-twitter-t"></i>
                        <i class="icon-large icon-search"></i>
@@ -234,89 +177,78 @@ $(document).ready(function(){
             
                     </div>
                                    
-               </div>
-               <div class="col-md-2" id="estrellas">
-                        <!--<div class="ec-stars-wrapper" id="votacion">
-                            <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
-                            <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
-                            <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
-                            <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
-                            <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
-                        </div>-->
-                   <div class="star-rating">
-                      <fieldset>
-                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Outstanding">5 stars</label>
-                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Very Good">4 stars</label>
-                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Good">3 stars</label>
-                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Poor">2 stars</label>
-                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Very Poor">1 star</label>
-                      </fieldset>
-                    </div>
-                   <p id="apanio">Numero de comensales | Video | Celiacos | Categoria </p>
-                   
-                   <!--
-                   
-                        <div class="star1">
-                        <div class="star2">
-                        <div class="star3">
-                        <div class="star4">
-                        <div class="star5">
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-                            </div>-->
-                
                    </div>
+            
                <div class="col-md-2" id="idreceta1">
-                   <img class="img-responsive" id="iconoperfil" src="img/iconos/icon.png"></img>
-                    <h2 id="nombreusuarioreceta">Luisca </h2>
+                   <div class="usuario_receta">
+                        <img class="logo_cocinero" src="img/iconos/alberto.png">
+                       <br><p id="nombreusuarioreceta">Alber</p>
+                        <p id="rangonombreusuarioreceta">Experto</p>
+                       <button type="button" class="btn btn-primary seguir" id ="botonseguirnombreusuarioreceta">Seguir</button></div>
+            </div>
+           </div>
+
+
+
+
+
+
+
+
+           <div class="row" id="receta1">
+               
+              <div class="col-md-4 img_receta2">
+                <span class="glyphicon glyphicon-asterisk" style="float:left; padding:5px;"></span>
+                <div class="titulo_receta"><h3>Albóndigas de carne al microondas</h3><h5>1/2/16</h5></div>
+                </div>
+               <div class="col-md-2" id="textoreceta1">
+                    <div id="textoreceta">Realizar las albóndigas al microondas con un poco de pimienta, otro poco de nada. Y poco mas. 
+                    </div>
+                    <div id="dificultadytiemporeceta"><span>Dificultad: Tirao&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-time"></span> 8 min </span><br></br>
+                        </div>
+               </div>
+               <div class="col-md-2" id="infoextrareceta"><p id="apanio">
+                   <span  class="glyphicon glyphicon-user"></span> 1 | <a href="#">
+                   <span class="glyphicon glyphicon-film"></span>
+                   </a> | Celiacos
+                   | <span class="glyphicon glyphicon-tags"></span> Primer plato </p>
+               </div>
+                                   
+               
+               <div class="col-md-2" id="estrellas">
+                   <div id="stars" class="starrr"></div>
+                   <div id="compartir" >
+                       <i class="icon-large icon-twitter-t"></i>
+                       <i class="icon-large icon-search"></i>
+                       
+                       
+                       <a href="#"><img id="compartirfacebook" src="img/iconos/facebook.png" ></img></a>
+                        <a href="#"><img id="compartirtwitter" src="img/iconos/twitter.png"></img></a>
+                        <a href="#"><img id="compartirgoogle" src="img/iconos/g+.png"></img></a>
+            
+                    </div>
+                                
+                   </div>
+
+               <div class="col-md-2" id="idreceta1">
+                   <div class="usuario_receta">
+                        <img class="logo_cocinero" src="img/iconos/alberto.png">
+                       <br><p id="nombreusuarioreceta">Alber</p>
+                        <p id="rangonombreusuarioreceta">Experto</p>
+                       <button type="button" class="btn btn-primary seguir" id ="botonseguirnombreusuarioreceta">Seguir</button></div>
             </div>
            </div>
            
-           
-           
-                  
-           
-           
-           <div class="row" id="receta1">
-               <div class="col-md-4" id="fotoreceta1"><img id="fotoreceta" src="img/albondigas.jpg"  class="img-responsive"></img></div>
-               <div class="col-md-4" id="textoreceta1">
-                   <div id="nombrereceta" >Albóndigas de carne al microondas
-                    </div>
-                    <div id="textoreceta">Realizar las albóndigas al microondas
-                    </div>
-                    <div id="dificultadreceta"> Dificultad: Normal</div>
-               </div>
-               <div class="col-md-4" id="idreceta1">
-                   <img class="img-responsive" id="iconoperfil" src="img/iconos/icon.png" height="100px" width="100px"></img>
-                    <h2 id="nombreusuarioreceta">Luisca </h2>
-               </div>
-           </div>
-           
-           
-           <div class="row" id="receta1">
-               <div class="col-md-4" id="fotoreceta1"><img id="fotoreceta" src="img/albondigas.jpg"  class="img-responsive"></img></div>
-               <div class="col-md-4" id="textoreceta1">
-                   <div id="nombrereceta" >Albóndigas de carne al microondas
-                    </div>
-                    <div id="textoreceta">Realizar las albóndigas al microondas
-                    </div>
-                    <div id="dificultadreceta"> Dificultad: Normal</div>
-               </div>
-               <div class="col-md-4" id="idreceta1">
-                   <img class="img-responsive" id="iconoperfil" src="img/iconos/icon.png" height="100px" width="100px"></img>
-                    <h2 id="nombreusuarioreceta">Luisca </h2>
-               </div>
-           </div>
-           
-           
+
             
         </div>
      <!--
       <nav class="navbar navbar-default navbar-fixed-bottom"> <div class="navbar-inner navbar-content-center">
 <p class="text-center">&copy; Design by U-tad</p> </div>
 </nav>-->
+
+          
+
         <div class="container" id="footer"> 
             <a href="#" class="scrollpoint sp-effect3"></a> 
            
@@ -328,12 +260,6 @@ $(document).ready(function(){
         </div>
 
 
-     
-     
-     
-     
-     
-     
    
     </body>
 </html>

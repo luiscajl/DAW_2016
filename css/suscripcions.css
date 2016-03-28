@@ -100,7 +100,6 @@ body{
     background-color: rgb(76, 141, 160);
     opacity: 0.9;
     font-size: 16px;
-      text-align: center;
 }
 
 
@@ -127,8 +126,10 @@ body{
     background-color: rgb(146, 217, 192);
     color: white;
     border-bottom: solid rgba(99, 186, 155, 1) 5px;
-    text-align: center;
+    padding-left: 25%;
+    padding-right: 25%;
     max-height: 40px;
+    font-size: 16px;
 }
 .list-inline li{
 padding-top: 10px;
@@ -165,6 +166,7 @@ padding-top: 10px;
     background-repeat: repeat;*/
     
     background-color: solid rgba(237,225,184, 0);
+    margin-top: 20px;
     
     
     
@@ -250,7 +252,7 @@ padding-top: 10px;
     font-size: 14px;
     font-family: 'Droid Sans', sans-serif;
     height: 60px;
-    width: 440px;
+    width: 460px;
     text-align:justify;
     
 }
