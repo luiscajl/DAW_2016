@@ -38,7 +38,6 @@ body{
     padding-right: 8px;
     color: white;
     width: auto;
-    text-decoration:none;
     text-decoration-color: white;
     font-family: 'Droid Sans', sans-serif;
 
@@ -99,7 +98,21 @@ body{
     color: white;
     background-color: rgb(76, 141, 160);
     opacity: 0.9;
-    font-size: 16px;
+}
+
+.usuario_receta{
+    text-align: center;
+    padding: 5px;
+    height: 150px;
+    background-color: rgba(76, 141, 160, 0.5);
+    float: right;
+    border-radius: 15px;
+    margin-right: -15px; /* porque el background de la imagen de la receta se excluye del padding, y para obtener el mismo margen en esta clase(margin rompe el responsive) necesito un margen negativo */
+}
+
+.logo_cocinero{
+    height: 100px;
+    
 }
 
 
@@ -129,7 +142,6 @@ body{
     padding-left: 25%;
     padding-right: 25%;
     max-height: 40px;
-    font-size: 16px;
 }
 .list-inline li{
 padding-top: 10px;
@@ -183,23 +195,15 @@ padding-top: 10px;
 
 .img_receta{
     height: 200px;
-    border-radius: 15px;           
-    background-image: url(../img/pollorelleno.jpg);
-    background-size: cover;
-    margin-left: 15px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-.img_receta2{
-    height: 200px;
      border-radius: 15px;           
-    background-image: url(../img/albondigas.jpg);
+    background-image: url(../img/pollorelleno.jpg);
     background-size: cover;
     padding-left: 15px;
     margin-left: 15px;
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
 .titulo_receta {
     text-align: center;
     height: 50px;
@@ -217,14 +221,10 @@ padding-top: 10px;
 
 
 
-#infoextrareceta{
-    width: 15%;
-    padding-top: 190px;
-}
 
-#apanio{
-    font-size: 12px;
-    font-family: 'Droid Sans', sans-serif;}
+
+#apanio{font-size: 12px;
+font-family: 'Droid Sans', sans-serif;}
 
 #fotoreceta{
     padding-top: 15px;
@@ -239,6 +239,44 @@ padding-top: 10px;
     
 }
     
+ec-stars-wrapper {
+	/* Espacio entre los inline-block (los hijos, los `a`) 
+	   http://ksesocss.blogspot.com/2012/03/display-inline-block-y-sus-empeno-en.html */
+	font-size: 0;
+	/* Podríamos quitarlo, 
+		pero de esta manera (siempre que no le demos padding), 
+		sólo aplicará la regla .ec-stars-wrapper:hover a cuando
+		también se esté haciendo hover a alguna estrella */
+	display: inline-block;
+}
+.ec-stars-wrapper a {
+	text-decoration: none;
+	display: inline-block;
+	/* Volver a dar tamaño al texto */
+	font-size: 32px;
+	font-size: 2rem;
+	
+	color: #888;
+}
+
+.ec-stars-wrapper:hover a {
+	color: rgb(39, 130, 228);
+}
+/*
+ * El selector de hijo, es necesario para aumentar la especifidad
+ */
+.ec-stars-wrapper > a:hover ~ a {
+	color: #888;
+}
+#votacion{
+    margin-top: 15px;}
+    
+#fecha{
+    padding-top: 160px;
+    font-size: 12px;
+    font-family: 'Droid Sans', sans-serif;
+    
+}  
 
 #textoreceta1{
     margin-top: 15px;
@@ -246,62 +284,50 @@ padding-top: 10px;
     text-align: left;
 }
 
-
+#nombrereceta{
+    font-size: 20px;
+    font-family: 'Droid Sans', sans-serif;
+}
 #textoreceta{
     font-size: 14px;
     font-family: 'Droid Sans', sans-serif;
-    height: 60px;
-    width: 460px;
-    text-align:justify;
     
 }
 #dificultadytiemporeceta{
     font-size: 12px;
-    padding-top:120px;
+    padding-top: 40px;
     font-family: 'Droid Sans', sans-serif;
 }
 
-#estrellas{
-    font-size: 30px;
-    margin-top: 30px;}
-#compartir{
-    padding-top: 110px;}
 #idreceta1{
-   
-}
-.usuario_receta{
-    text-align: center;
-    padding: 5px;
-    height: 230px;
-    max-height: 320px;
-    /*background-color: rgba(76, 141, 160, 0.5);*/
-    box-shadow:  -10px  0px 5px #e3e8e3;
-    border-radius: 15px;
-    margin-right: -15px; /* porque el background de la imagen de la receta se excluye del padding, y para obtener el mismo margen en esta clase(margin rompe el responsive) necesito un margen negativo */
-}
-
-.logo_cocinero{
-    margin-top: 10px;
-    height: 100px;
-    
+    margin-top: 30px;
 }
 #nombreusuarioreceta{
-    font-size: 20px;
-    font-family: 'Droid Sans', sans-serif;
-    font-weight:bold;}
-
-#rangonombreusuarioreceta{
-    font-size: 14px;
-    font-family: 'Droid Sans',sans-serif;
-    font-weight:bold;
+    
 }
-#botonseguirnombreusuarioreceta{
-    margin-top: 10px;}
 
-
+@media (max-width:875px) { 
+    
+     #containerrecetas {
+    
+    margin-left: 10px;
+    margin-right: 10px;
+    }
+    
+    
+    .receta_herramienta{
+        height: auto;
+        max-height: 300px;
+        
+    }
+    
+#dificultadreceta{padding-top:0px;}
+}
+   
 
 
 #compartirfacebook{
+    /*background-image: url(../img/iconos/facebook.png)*/
     background-size: 50px 50px;
     height: 50px;
     width: 50px;
@@ -326,6 +352,76 @@ background-size: 50px 50px;
 }
 
 
+#estrellas{
+    
+}
+
+
+
+.star1 {
+
+background:url(../images/gray_star.png) no-repeat;
+/*background-size: 40px 40px;*/
+max-height: 40px;
+max-width: 40px;
+margin-top: 60px;
+}
+.star2 {
+
+background:url(../images/gray_star.png) no-repeat;
+background-size: 40px 40px;
+height: 40px;
+margin-left: 45px;
+width: 40px;
+}
+.star3 {
+
+background:url(../images/gray_star.png) no-repeat;
+background-size: 40px 40px;
+margin-left: 45px;
+height: 40px;
+width: 40px;
+}
+.star4 {
+
+background:url(../images/gray_star.png) no-repeat;
+background-size: 40px 40px;
+height: 40px;
+width: 40px;
+margin-left: 45px;
+}
+.star5 {
+
+background:url(../images/gray_star.png) no-repeat;
+background-size: 40px 40px;
+height: 40px;
+width: 40px;
+margin-left: 45px;
+}
+.star1:hover {
+background:url(../images/gold_star.png) no-repeat;
+    background-size: 40px 40px;
+}
+.star2:hover {
+background:url(../images/gold_star.png) no-repeat;
+    background-size: 40px 40px;
+}
+.star3:hover {
+background:url(../images/gold_star.png) no-repeat;
+    background-size: 40px 40px;
+}
+.star4:hover {
+background:url(../images/gold_star.png) no-repeat;
+    background-size: 40px 40px;
+}
+.star5:hover {
+background:url(../images/gold_star.png) no-repeat;
+    background-size: 40px 40px;
+}
+
+
+
+
 
 
     
@@ -334,41 +430,4 @@ background-size: 50px 50px;
     width: auto;
     margin-top: 20px;
 }
-  
-
-
-@media (max-width:875px){ 
     
-    #containerrecetas{
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    
-    
-    .receta_herramienta{
-        height: auto;
-        max-height: 300px;
-        
-    }
-    
-    #dificultadreceta{
-        padding-top:0px;
-    }
-}
- 
-
-
-
-.glyphicon-star{
-  	color: rgb(99, 186, 155)
-
-  	}
-
-.glyphicon-star-empty {
-  	color: #9b9a9a;
-
-}
-
-.glyph {
-}
-
