@@ -280,7 +280,6 @@ padding-left: 8px;
 
 .pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus{
    background-color:  rgb(146, 217, 192);
-       box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.2);
 }
 
 .logo_cocinero_comentarios{
