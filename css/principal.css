@@ -1,9 +1,12 @@
 body{
-    padding-top: 70px;
+    /*padding-top: 70px;*/
     background-color: rgb(237,237,237);
     font-family: 'Droid Sans', sans-serif; 
 }
 
+.contenedor_principal{
+     padding-top: 70px;
+}
 
 .logo {
     height: 113px;

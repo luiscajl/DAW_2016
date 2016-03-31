@@ -13,7 +13,9 @@ $br: 4px;
 .logo {
     height: 113px;
 }
-
+.contenedor_principal{
+     padding-top: 70px;
+}
 .recetas {
     height: auto;
     background-color: rgb(192, 239, 222);

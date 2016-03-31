@@ -3,10 +3,7 @@ html {
 }
 
 body {
-    position: absolute;
-    min-width: 100%;
-    min-height: 100%;
-    margin 0;
+    
     background: #E9EEF4;
     font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #fff;
