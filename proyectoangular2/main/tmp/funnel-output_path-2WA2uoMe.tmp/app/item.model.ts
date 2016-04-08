@@ -1,0 +1,1 @@
+/Users/luisca/Documents/Angular 2/main/tmp/funnel-input_base_path-XekNnvrB.tmp/0/app/item.model.ts

@@ -1,0 +1,1 @@
+/Users/luisca/main/tmp/funnel-input_base_path-qARuGqDW.tmp/0/angular2/bundles/angular2.dev.js
