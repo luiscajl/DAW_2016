@@ -1,0 +1,225 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>TastIT</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <link rel=”stylesheet” type=”text/css” href=”https://fonts.googleapis.com/css?family="Droid+Sans:700,400">
+    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/principal.css" rel="stylesheet">
+    <link href="/css/navbar.css" rel="stylesheet">
+    <link href="/css/bootrstrap_mod.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/creacionreceta.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+
+
+</head>
+
+
+<script type="text/javascript">
+</script>
+
+
+
+
+
+
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+      <div class="contenedor_principal">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Desplegar navegación</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav ">
+                    <li class=""><a href="index.html">Inicio</a></li>
+                    <li><a href="suscripcions.html">Suscripciones</a></li>
+                </ul>
+
+
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <form class="navbar-form nav navbar-nav " role="search">
+                            <fieldset class="busqueda">
+                                <input class="busqueda" type="search" />
+                                <button class="busqueda" type="submit"><i class="fa fa-search"></i></button>
+                            </fieldset>
+                        </form>
+                    </li>
+
+
+
+                    <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a id="log" data-toggle="modal" data-target="#myModal" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+    </nav>
+
+    <div class="contenido">
+
+        <div id="cuerporeceta" class='col-md-8 col-center'>
+            </br>
+            <div class="inputlabel">
+                <label id="labelreceta">Nombre de la receta</label>
+                <input id="pasosinput" type="text" class="form-control" required>
+            </div>
+            <br>
+
+            <div class="inputlabel">
+                <label id="labelreceta">Breve descripcion de la receta</label>
+                <input id="recetainput" type="text" class="form-control" required>
+            </div>
+            <br>
+
+
+            <div class="inputlabel">
+                <div class="input-append">
+                    <label id="labelreceta">Ingredientes</label>
+                    <br>
+                    <input name="ingredientes" id="ingredientesinput" />
+
+
+
+                    <input type="submit" value="Añadir">
+                </div>
+            </div>
+            <br>
+
+
+
+            <div class="pasos">
+
+
+                <ol>
+                    <li>Lo primero que haremos será ocuparnos de las galletas. En esta receta usaremos las galletas más tradicionales y clásicas que son las maría, pero podéis usar las que más os gusten a vosotros. Tenemos que machacar lo equivalente a un paquete hasta convertirlas en polvo. Podemos colocarlas en un cuenco y con el mortero irlas aplastando o triturarlas directamente en la batidora.</li>
+                    <li>Aprovechad ahora para poner en un vaso de agua las láminas de gelatina para que se vayan hidratando.</li>
+                    <li>
+                        <textarea id="pasosinput" rows="10" type="text" name="name" class="form-control" ng-model="user.name" required></textarea>
+                    </li>
+                    <br>
+                    <div class="añadirpaso" style="text-align:center;">
+                        <input id="recetabutton" type="submit" value="Añadir paso" </div>
+                </ol>
+
+
+                </div>
+                <br>
+
+
+
+
+            </div>
+
+
+            <div id="categorias" role="main">
+                <div class="row">
+                    <div class="col-md-5 col-md-offset-2">
+
+                        </br>
+                        <div class="inputlabel">
+                            <label id="labelreceta">Tiempo medio de preparación:</label>
+                            <input id="tiempoinput" type="text" class="form-control" required>
+                        </div>
+                        <br>
+                        <div class="inputlabel">
+                            <label id="labelreceta">Tipo de plato:</label>
+
+                            <select name="tipoplato" id="tipoplato" type="option" value="" class="valid">
+                                <option value="1">Entrantes</option>
+                                <option value="8">Aliños y salsas</option>
+                                <option value="11">Ensaladas</option>
+                                <option value="2">Plato Principal</option>
+                                <option value="3">Postres</option>
+                                <option value="9">Reposteria</option>
+                                <option value="7">Otros</option>
+                            </select>
+                        </div>
+                        </br>
+                        <div class="inputlabel">
+                            <label id="labelreceta">Enlace del video de la receta:</label>
+                            <input id="pasosinput" type="text" class="form-control" required>
+                        </div>
+                        </br>
+
+
+
+
+
+                    </div>
+                    </br>
+                    <div class="col-md-5">
+                        <div class="inputlabel">
+                            </br>
+                            </br>
+                            <div class="field-wrap">
+                                <input type="checkbox" />
+                                <label for='input_1' tabindex="-1">
+                                    <span class="check"></span> Vegana
+                                </label>
+                            </div>
+
+                            <div class="field-wrap">
+                                <input type="checkbox" />
+                                <label for='input_1' tabindex="-1">
+                                    <span class="check"></span> Baja en grasas
+                                </label>
+                            </div>
+
+
+                            <div class="field-wrap">
+                                <input type="checkbox" />
+                                <label for='input_1' tabindex="-1">
+                                    <span class="check"></span> Para diabeticos
+                                </label>
+                            </div>
+
+                            <div class="field-wrap">
+                                <input type="checkbox" />
+                                <label for='input_1' tabindex="-1">
+                                    <span class="check"></span> Picante
+                                </label>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <br>
+        <div class="creareceta" style="text-align:center;">
+            <input id="recetabutton" type="submit" value="Crear receta">
+        </div>
+        <br>
+        <br>
+
+
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+CACHE MANIFEST
+# sw.bundle: ng-cli
+# sw.version: 8bf1eba98b3cb9c44bed80df24dda0755327017b
+# sw.file.hash: f835f88fd057da050f8d5f6d8e3c66a013113323
+/app.js
+# sw.file.hash: d00f35d3bd3e4c5f88835e0c5115442834d7e891
+/app.js.map
+# sw.file.hash: 2a9afb5b5dda4ddbc46a32004725fd9ab0dfd1e6
+/app.ts
+# sw.file.hash: 78c78d06f4cd29ee5268a2038df36a8c205c2201
+/app/main.html
+# sw.file.hash: dc571d895f420693e6f489e4b9261814867ec81d
+/app/main.js
+# sw.file.hash: e04c8721af22ec745b6829a9ff4e0eabb2bc52a4
+/app/main.js.map
+# sw.file.hash: ed15961a3da211c4682f9f32285e9fe57ff4cf27
+/app/main.spec.js
+# sw.file.hash: 306659bac057bc4499cc444f639ffa6698a0aa78
+/app/main.spec.js.map
+# sw.file.hash: 96fb372240c65dc614e8e4028473ae4a4591b4cc
+/app/main.spec.ts
+# sw.file.hash: 9292406513eb556e8b27d3efbb0d72e8a4d01ff2
+/app/main.ts
+# sw.file.hash: 84161b857f5c547e3699ddfbffc6d8d737542e01
+/favicon.ico
+# sw.file.hash: 8b981899896a5b2ede8751387714621121bd3ce7
+/index.html
+# sw.file.hash: da39a3ee5e6b4b0d3255bfef95601890afd80709
+/thirdparty/libs.js
+# sw.file.hash: 8aea28d53164e751dc6f94c0ddd42e2cff49b33e
+/tsconfig.json
+# sw.file.hash: a171ca1d6af67138a27f802ddad984e3c89fed1b
+/typings.d.ts
+# sw.file.hash: f72705562b9b90f9c1cc7d24d1558f4310824ed8
+/vendor/angular2/bundles/angular2-polyfills.js
+# sw.file.hash: 1ff5ae25b83b613a9f2e18bceb6339dfdf547a17
+/vendor/angular2/bundles/angular2.dev.js
+# sw.file.hash: e161d053cf096f7e43daa9aafc58026972429e6c
+/vendor/angular2/bundles/http.dev.js
+# sw.file.hash: edb629c3fec077046d1455e3e1817669fc6ee888
+/vendor/angular2/bundles/router.dev.js
+# sw.file.hash: 942eb74b23c16f85fb23ccbce6dfa136af7afec4
+/vendor/angular2/bundles/upgrade.dev.js
+# sw.file.hash: 55b3f2ce7b61115d27e50ddab924ab49b04c3209
+/vendor/es6-shim/es6-shim.js
+# sw.file.hash: 736fe8675af5630486329adf5efe12ec7be449b1
+/vendor/rxjs/bundles/Rx.js
+# sw.file.hash: 064ab212cfd9e125474ae3bbb600c366b31e79cb
+/vendor/systemjs/dist/system-polyfills.js
+# sw.file.hash: 83128f4a4209eb7b16ad0bb729fda6939bc450fc
+/vendor/systemjs/dist/system.src.js
