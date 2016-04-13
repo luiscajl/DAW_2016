@@ -1,0 +1,417 @@
+CACHE MANIFEST
+# sw.bundle: ng-cli
+# sw.version: bb99650a87490ded53f01d77224f3dabb4b14420
+# sw.file.hash: f835f88fd057da050f8d5f6d8e3c66a013113323
+/app.js
+# sw.file.hash: 2808841c2584ebe0efe3ea459be9ddd0760f3e85
+/app.js.map
+# sw.file.hash: 0d183c53e166f79139b8f2a82189b25fe18267e6
+/app.ts
+# sw.file.hash: 560e4bcafdebaf29645fbf92633a2ae0d2f9801f
+/app/Guia de estilos/DroidSans-Bold.ttf
+# sw.file.hash: 62f2841f61e4be66a0303cd1567ed2d300b4e31c
+/app/Guia de estilos/DroidSans.ttf
+# sw.file.hash: 9144366b38ef5a75417fc8a25f0ecbfc375217cd
+/app/Guia de estilos/web-inicio_medidas.png
+# sw.file.hash: f81ef19871381fa6e8a13e845591f0dede7cb05f
+/app/Guia de estilos/web-receta_medidas.png
+# sw.file.hash: 8123d0e7f9705d7a91db080434a4a6d737283fda
+/app/Guia de estilos/web_inicio.jpg
+# sw.file.hash: 134c0340ef789593e9af9036085a990ad0bfa7a8
+/app/Guia de estilos/web_perfil.jpg
+# sw.file.hash: 8a167c5d729be392c1eac4a17eb39ed042b8d60c
+/app/Guia de estilos/web_receta.jpg
+# sw.file.hash: 226163bbd78dead327bbaad58e405280453146be
+/app/README.md
+# sw.file.hash: 227123a4f14e88da3fee44449499d9449d56655b
+/app/Template_/404.html
+# sw.file.hash: a67132246936929f46e795c6d36c5a26d9f49394
+/app/Template_/License.txt
+# sw.file.hash: c7868a6b2a9db95275c1409283c4c6695fd3d740
+/app/Template_/about.html
+# sw.file.hash: b0c02144b543c77074f72543a7c262e3ea499ce0
+/app/Template_/blog-fullwidth.html
+# sw.file.hash: 0e121081317b8d9bd9db848c8377ee754893d989
+/app/Template_/blog-left-sidebar.html
+# sw.file.hash: 80cc68b76dcaf8235c9f1cd2aff2e2265b95db8f
+/app/Template_/blog-right-sidebar.html
+# sw.file.hash: f1a44d6998037450d704e696751e8afc874af42e
+/app/Template_/contact.html
+# sw.file.hash: 2e70ccc82e0ed3de2fd87409e6ca66e7b1a2d285
+/app/Template_/css/animate.css
+# sw.file.hash: ed29315e0ffb3f14382431f2724235bf67f44eb3
+/app/Template_/css/bootstrap.min.css
+# sw.file.hash: f0459300e39155df7aa5e94b3bdb8c8594f49a60
+/app/Template_/css/ionicons.min.css
+# sw.file.hash: 0c222683671be478a7e94c7c8dadee4581c7a516
+/app/Template_/css/jquery.fancybox.css
+# sw.file.hash: 6d43f7407caf744b268fcf9c45e37d9bda10c266
+/app/Template_/css/main.css
+# sw.file.hash: 07ad383de4cd0e21c289e3c6695b4822d1a7ad1d
+/app/Template_/css/owl.carousel.css
+# sw.file.hash: 98c420dadba613ae097236b8a54138d0a5fa94cf
+/app/Template_/css/owl.theme.css
+# sw.file.hash: b9d7a5126469d82e5bf1415c658a2f13dc191226
+/app/Template_/css/responsive.css
+# sw.file.hash: f630e0670af6b28e96c57c508e917304abd05766
+/app/Template_/css/slider.css
+# sw.file.hash: 63e4879d10467b4bc481a208c3a64649242a1420
+/app/Template_/favicon.ico
+# sw.file.hash: 61532e89e212f8dd16ba31f3ebcf35c0a7334035
+/app/Template_/fonts/ionicons.eot
+# sw.file.hash: 3f1ca28fcb042d2bcc6ee6a4e3dd817e5132eeea
+/app/Template_/fonts/ionicons.svg
+# sw.file.hash: 1b0a0de084905946a20300ca8c354865dec46764
+/app/Template_/fonts/ionicons.ttf
+# sw.file.hash: e46819e863a46751d622c1190c4e8a83ebc20612
+/app/Template_/fonts/ionicons.woff
+# sw.file.hash: 7523a31cfb78d15c4dbaef705ec1c7eb90fd2498
+/app/Template_/gallery.html
+# sw.file.hash: 69503820b359876899f9cbfc48e218b702589388
+/app/Template_/images/about/about-company.jpg
+# sw.file.hash: 49f45cec6a6606e6a476332f19bdd58e39a8700c
+/app/Template_/images/about/about.jpg
+# sw.file.hash: 6f04732f227828f8f00301c429e8893d330ae20b
+/app/Template_/images/author/about.jpg
+# sw.file.hash: ff7cd71ef1009a825eba9b1858da23def1546f5b
+/app/Template_/images/author/author-bg.jpg
+# sw.file.hash: a64b39f034984a3b795e5990d6f29721bf90e17f
+/app/Template_/images/author/author.jpg
+# sw.file.hash: 40c58c108eab1413eced3d5663de882052e495ba
+/app/Template_/images/avater-1.jpg
+# sw.file.hash: dbf6d8ae01d97c5f3de020fce411c9cd87c98521
+/app/Template_/images/avater-2.jpg
+# sw.file.hash: 1fb443a8b589b9833792c0f03178074422ce4e47
+/app/Template_/images/avater.jpg
+# sw.file.hash: 944a657a180a504b25a8a0f31324349cf4a14bc0
+/app/Template_/images/blog/post-1.jpg
+# sw.file.hash: 82906d2bd5b8d4fa4db772f6ba28fec782bb99ac
+/app/Template_/images/blog/post-2.jpg
+# sw.file.hash: 1a272e5698956759c436bc8bc317e9717e137952
+/app/Template_/images/blog/post-3.jpg
+# sw.file.hash: d67714a3dcd840c77d42a01ab693f6b291151542
+/app/Template_/images/clients/logo-1.jpg
+# sw.file.hash: 7434b4d6acf4ffc7289f0010eddb9a3ce1d6c82a
+/app/Template_/images/clients/logo-2.jpg
+# sw.file.hash: 8842c61792e5bef6e53fe62f52c4c0ba96c79f07
+/app/Template_/images/clients/logo-3.jpg
+# sw.file.hash: 0d968391ef36703d4923d9a4db9cc88a28efc8d3
+/app/Template_/images/clients/logo-4.jpg
+# sw.file.hash: b9e549cc72a62ddb0a522a50c6e95d353a80a72c
+/app/Template_/images/clients/logo-5.jpg
+# sw.file.hash: 0758fdee72622e92f3fa14ebf6bbf22687197985
+/app/Template_/images/icons/close.png
+# sw.file.hash: ba0dbd208781c72f975f8ff3c799fcc37a97cbd5
+/app/Template_/images/icons/i_next.png
+# sw.file.hash: d73a6c795682de5ee537c4fe730b970114536047
+/app/Template_/images/icons/i_prev.png
+# sw.file.hash: 08e4bc24d7db0443a96084afeb5ce8f414c0def9
+/app/Template_/images/icons/left.png
+# sw.file.hash: 93f7e87887604750ee0c032808c0169d57671bba
+/app/Template_/images/icons/map-marker.png
+# sw.file.hash: 680b7ec8a02d468e694e9d12baf48ebdc11a9e07
+/app/Template_/images/icons/next.png
+# sw.file.hash: 9abcd3b6b52ccb05d79b399648c2acfa8ef0dcdc
+/app/Template_/images/icons/prev.png
+# sw.file.hash: f798e0cd957171d3c901661c56f3296eb0a055ab
+/app/Template_/images/icons/quotes.png
+# sw.file.hash: b7ca4d432be0c3793bd34fd98bda74210230b0eb
+/app/Template_/images/icons/right.png
+# sw.file.hash: 6002efb17efd5689bef016e74bd19093cc75fb69
+/app/Template_/images/logo.png
+# sw.file.hash: 9969a2c4aeae1cf5d370b6066709e0057a44b19f
+/app/Template_/images/portfolio/item-1.jpg
+# sw.file.hash: 8066c9bf00671c8630ac8255f4ed5ca221a5bba3
+/app/Template_/images/portfolio/item-2.jpg
+# sw.file.hash: c13ecd346478ec5a2d74569ba1203f284f44c27e
+/app/Template_/images/portfolio/item-3.jpg
+# sw.file.hash: 99d6b3e332e58426703f9b18a86685c1966fe421
+/app/Template_/images/portfolio/item-4.jpg
+# sw.file.hash: 7fb09e791fca51480467d07a30a392bdca022bfb
+/app/Template_/images/portfolio/item-5.jpg
+# sw.file.hash: 75331fcdb6fe80d40aec0bfc0087e4e620497e82
+/app/Template_/images/portfolio/item-6.jpg
+# sw.file.hash: 9969a2c4aeae1cf5d370b6066709e0057a44b19f
+/app/Template_/images/portfolio/post-1.jpg
+# sw.file.hash: 146de6d520bcb832fe14060403e00ebe216b195c
+/app/Template_/images/slider.jpg
+# sw.file.hash: aa671a156689b38e63e679ba700cd4942a81f982
+/app/Template_/images/team.jpg
+# sw.file.hash: a64b39f034984a3b795e5990d6f29721bf90e17f
+/app/Template_/images/team/team-1.jpg
+# sw.file.hash: 8d1a3d712a8588eae97b009debe8eec6b6fbeacc
+/app/Template_/images/team/team-2.jpg
+# sw.file.hash: 81b264c1ec9a65f20c9f6aec2c9976af9a61c733
+/app/Template_/images/team/team-3.jpg
+# sw.file.hash: eef415f1935b6b87bf7a7ca9538610cf588cf734
+/app/Template_/images/team/team-4.jpg
+# sw.file.hash: dfabe693a26aae277d29c1cc9f612371e677145e
+/app/Template_/index.html
+# sw.file.hash: 6c264e0e0026ab5ece49350c6a8812398e696cbb
+/app/Template_/js/bootstrap.min.js
+# sw.file.hash: 1cf3d47b5ccb7cb6e9019c64f2a88d03a64853e4
+/app/Template_/js/jquery.fancybox.js
+# sw.file.hash: 8130544c215fe5d1ec081d83461bf4a711e74882
+/app/Template_/js/jquery.min.js
+# sw.file.hash: dc116bfcb46263a7a2c5abd5af058ebd51708278
+/app/Template_/js/main.js
+# sw.file.hash: f947512e51f8ef4b15bba3f701de64e53a7f7f9b
+/app/Template_/js/owl.carousel.min.js
+# sw.file.hash: 77855aa2dfb40817b07d80d2f3e121afcdc8f427
+/app/Template_/js/slider.js
+# sw.file.hash: 666dc176fcab1d0f08603a3a20f7398fb6985e56
+/app/Template_/js/vendor/modernizr-2.6.2.min.js
+# sw.file.hash: aedc0fec43f9fba5fa65896c54f0562e7a696b3b
+/app/Template_/js/wow.min.js
+# sw.file.hash: d7f292e3ca971a990765b0e99a8f0d6996c2fe34
+/app/Template_/less/main.less
+# sw.file.hash: 59dbeb4fb631124c6073ddb45034e5a4329ae196
+/app/Template_/less/responsive.less
+# sw.file.hash: 6a5e5f69350f747c46df749af0cbc64ab6cda4d0
+/app/Template_/service.html
+# sw.file.hash: 3a1ea69ff557be712ed7fc5116543eba19faa509
+/app/Template_/single-portfolio.html
+# sw.file.hash: 3eb18289d6d6adab56e343ea2ef466a4e6f00e8c
+/app/Template_/single-post.html
+# sw.file.hash: c7d7a877c5d35233784effc56d5c8351762b5688
+/app/controlpanel.html
+# sw.file.hash: 192981d281c2dc73fed1ed6f84bd564615a7050d
+/app/controlpanel/admrecetarios.html
+# sw.file.hash: 83b0bc42103950fadb152d73991d1c2d4e648dee
+/app/controlpanel/admrecetas.html
+# sw.file.hash: 6a3263955dd642ce4437dde0813c74b901fe2b87
+/app/controlpanel/ajustes.html
+# sw.file.hash: bde212423dbb0f25c7cfd6b0f55347886170a4b7
+/app/controlpanel/contraseña.html
+# sw.file.hash: 8debc1d7b8d0e37f0bf3b3f4ca26e62df21d3bd2
+/app/controlpanel/editaperfil.html
+# sw.file.hash: 0200e2ab7ada295dfd42e4c1d7ade2e7e13eb5cf
+/app/controlpanel/notificaciones.html
+# sw.file.hash: c76364cf30b3e320124f86c91ec4cf3a77865ec9
+/app/creacionreceta.html
+# sw.file.hash: 276919e6c9093d4abd8d9120d4563d5f22a3ab1d
+/app/css/bootrstrap_mod.css
+# sw.file.hash: af997f2125f36b0c9c42882d9f424778bb096c74
+/app/css/bootstrap/config.json
+# sw.file.hash: 505ca11026cda44f09299327f6147e8a7dd82c4b
+/app/css/bootstrap/css/bootstrap-theme.css
+# sw.file.hash: 9afe5930e5bab18017c985115118ee8154dc21cb
+/app/css/bootstrap/css/bootstrap-theme.min.css
+# sw.file.hash: 427b6c01b8e3c6f1f79a104963c08d14f3b61431
+/app/css/bootstrap/css/bootstrap.css
+# sw.file.hash: d2370c5298ed0908677df4b41e3887ca0ab73fea
+/app/css/bootstrap/css/bootstrap.min.css
+# sw.file.hash: 86b6f62b7853e67d3e635f6512a5a5efc58ea3c3
+/app/css/bootstrap/fonts/glyphicons-halflings-regular.eot
+# sw.file.hash: de51a8494180a6db074af2dee2383f0a363c5b08
+/app/css/bootstrap/fonts/glyphicons-halflings-regular.svg
+# sw.file.hash: 44bc1850f570972267b169ae18f1cb06b611ffa2
+/app/css/bootstrap/fonts/glyphicons-halflings-regular.ttf
+# sw.file.hash: 278e49a86e634da6f2a02f3b47dd9d2a8f26210f
+/app/css/bootstrap/fonts/glyphicons-halflings-regular.woff
+# sw.file.hash: ca35b697d99cae4d1b60f2d60fcd37771987eb07
+/app/css/bootstrap/fonts/glyphicons-halflings-regular.woff2
+# sw.file.hash: 6085ceebbbc629c0a79d582649cd9fa61bdc6b0e
+/app/css/bootstrap/js/bootstrap.js
+# sw.file.hash: 14171d387090edf1eb6229d0334612f4285b6898
+/app/css/bootstrap/js/bootstrap.min.js
+# sw.file.hash: 000e8e1a66e28e5698fe968bd044a64836295e5e
+/app/css/controlpanel.css
+# sw.file.hash: 67104e99efdfba2e8ae24c98fb97499fb0fe2da0
+/app/css/creacionreceta.css
+# sw.file.hash: 31aa696a6abefbd5f7e1366ad66f612ba5242065
+/app/css/dialog.css
+# sw.file.hash: d09dfba7a609e6924e2a6f776e4c141718357a52
+/app/css/index.css
+# sw.file.hash: 1610cc3669e890157da68ffaf0cb67f3c46e6e31
+/app/css/principal.css
+# sw.file.hash: a9fd078eacc18c008e7c8acb1c28519ea647cf20
+/app/css/recetas.css
+# sw.file.hash: 6c3e138492be21395cbe3b8fb7914cb0d8808adf
+/app/css/register.css
+# sw.file.hash: ebf0bcb9269d20d0536b869ba227e55bb011350c
+/app/css/suscripcions.css
+# sw.file.hash: e9dc7bcfac24f395058d138be3e691190911d10c
+/app/css/user.css
+# sw.file.hash: 211f838b9c76a0faff322babfccb276bfe4e8064
+/app/images/gold_star.png
+# sw.file.hash: 4872f5367066dcd016686277536cf9afc4b019e7
+/app/images/gray_star.png
+# sw.file.hash: 759a358ec007834d99e08549197fa57455041d17
+/app/img/Tenedor.png
+# sw.file.hash: 1f8c661adf6b41619a5b2f9a4ccb087ec04aa410
+/app/img/albondigas.jpg
+# sw.file.hash: 440748c61bf57d714ca6b195c364e588c3db051e
+/app/img/apple_256.png
+# sw.file.hash: 2df7a7de09f7c4eb1ce4a672c91855c375ba44de
+/app/img/banner_transparente.png
+# sw.file.hash: b69d328726442245e3540f35f663404bd7795c75
+/app/img/banner_transparente_2 copia.png
+# sw.file.hash: 3bfb449dd970ac650e77d4a173dfb52732ba5ff1
+/app/img/banner_transparente_2.png
+# sw.file.hash: afaacfca2f7cb3adf203828e74b4324ba26656be
+/app/img/bg.jpg
+# sw.file.hash: 9594d246ea40e982acd8b2c4d006f04da861bc83
+/app/img/car.jpg
+# sw.file.hash: de25f053d57e7f2e640c3624efb363904a602540
+/app/img/comentario.png
+# sw.file.hash: b8aaf952f5bb13ec4c4e3258a1795c4c55fa5bb7
+/app/img/diabet.png
+# sw.file.hash: f01c46d854392942947bc2505269ef6dce61891d
+/app/img/fase2/controlpanel.png
+# sw.file.hash: 2f6e6951ad90090305564f4d586cb310de1d6ee7
+/app/img/fase2/diagrama.png
+# sw.file.hash: 7f880d2559e5a623b8433034e01818d3e8b9b723
+/app/img/fase2/index.png
+# sw.file.hash: 9eb572af1490cf79ffc352f8ecbde47d0db71d3c
+/app/img/fase2/login.png
+# sw.file.hash: de030f88b3f5f8a248c2d34d266f8d4b4265c142
+/app/img/fase2/receta.png
+# sw.file.hash: af7e806083145a15a0017d4216af3327fd740fff
+/app/img/fase2/register.png
+# sw.file.hash: f25fa4a5b754eb5a157b9deecb0c14da757b24bb
+/app/img/fase2/suscripcions.png
+# sw.file.hash: 91180c5ca55fea6c4829030851ee87e413498bea
+/app/img/fase2/user.png
+# sw.file.hash: 1c348093528ab1303787f7ba9b5797b3fc9de1cf
+/app/img/favicon.png
+# sw.file.hash: 69b3f0167569066c9d984d9374354a37f0ecc823
+/app/img/flan.jpg
+# sw.file.hash: 8debfb0a942162735b534a5e2b1303f63773f89e
+/app/img/food.jpg
+# sw.file.hash: 845dea05a18e32c106d6608f3a06825797166fc1
+/app/img/iconos/alberto.jpg
+# sw.file.hash: c96ddbc12570642f4101a22328640854dd48d926
+/app/img/iconos/alberto.png
+# sw.file.hash: 7ea1eaeee6ba24020dea5f617aeaac1a3d91d2dc
+/app/img/iconos/clock.png
+# sw.file.hash: c72a56f064e8d659a65407724c653b7717e3ee2a
+/app/img/iconos/comment.png
+# sw.file.hash: b54fb713296832c2feded242cc6eea578e367c48
+/app/img/iconos/cook.png
+# sw.file.hash: 1bb9fa3355b6b87935287822c2957e538734b3d2
+/app/img/iconos/facebook.png
+# sw.file.hash: 59a52393fcff217fd601c368ad4404d75d240601
+/app/img/iconos/g+.png
+# sw.file.hash: 75d35045b8470ba21d4a919d2a8f9aa78c6a7be1
+/app/img/iconos/horno.png
+# sw.file.hash: aaa44b58adcd5d81e3f72691c32e9cd3535e2136
+/app/img/iconos/icon.png
+# sw.file.hash: 232d8830d6b62744fa3b391de3e089daa40fac91
+/app/img/iconos/list.png
+# sw.file.hash: a0f1ac233db833a198e2d13160b65c877f7a29e6
+/app/img/iconos/notas.png
+# sw.file.hash: 4505c330aa589cca9c2d99bec4b44a15e616fc9e
+/app/img/iconos/notas2.png
+# sw.file.hash: 224106261202daff9eea4caf907d19a0c322b348
+/app/img/iconos/pencil.png
+# sw.file.hash: 1edd816cced72d4b95b9a37a4c9564e31c851f26
+/app/img/iconos/share.png
+# sw.file.hash: f167ebe578409efbf223a690130e8b7f9198a8d1
+/app/img/iconos/star.png
+# sw.file.hash: a50ea9c227dbf7157176f492f3e7dda5dec62769
+/app/img/iconos/twitter.png
+# sw.file.hash: 1d149d0d2ae4b52d816b36fdd9c1087f9abcd86b
+/app/img/logo.psd
+# sw.file.hash: 7a545a26d0f45ffea3be1fc1ff3ae68ddfac9295
+/app/img/logo_transparent_2.png
+# sw.file.hash: 1157209cee329149be7954f7c70c83daa30d4c3d
+/app/img/logo_transparente.png
+# sw.file.hash: 3acbd99997b04200323f37855406d4bdab1fec4f
+/app/img/muffin.png
+# sw.file.hash: a1fd165fdbde159d903377424dd68ac5a4568c20
+/app/img/patternbg.jpg
+# sw.file.hash: 3b8e99785547dc1bd015dc7a239bf61c8c3f0b44
+/app/img/pes.jpg
+# sw.file.hash: 2233c8f4663990f9188c542390a2ae916d8c24d2
+/app/img/pollorelleno.jpg
+# sw.file.hash: 55b42fbc0b7160392f17c3d1974163610bf420d5
+/app/img/pos.jpg
+# sw.file.hash: 0777073f2d78684ca1eaac7e006a137a572d6544
+/app/img/strawberry-splash-milk-food.jpg
+# sw.file.hash: c72cfaf9f44d4e91db12defa064fede27e437a5a
+/app/img/tarta.jpg
+# sw.file.hash: 08d52e8f0fa4ce5221ecb4404e5da72d8c077806
+/app/img/ver.jpg
+# sw.file.hash: 5926a9b4641479fc67164f97045959b02ec20d61
+/app/index.html
+# sw.file.hash: 6f0705901be06a8d4da80732ef664089bef28d4f
+/app/js/starrating.js
+# sw.file.hash: d5e2a6898766c969cbe1ed343b6167c01e371f8e
+/app/login.html
+# sw.file.hash: fd776b29a15ffbc21686e80a851b184cd21b191c
+/app/main.html
+# sw.file.hash: 93ced0033e58eee1f8c04191b44dfc22ad39082c
+/app/main.js
+# sw.file.hash: 97aca872bc39f8aee5b7768a60b4a026bf0e5304
+/app/main.js.map
+# sw.file.hash: ed15961a3da211c4682f9f32285e9fe57ff4cf27
+/app/main.spec.js
+# sw.file.hash: 306659bac057bc4499cc444f639ffa6698a0aa78
+/app/main.spec.js.map
+# sw.file.hash: 96fb372240c65dc614e8e4028473ae4a4591b4cc
+/app/main.spec.ts
+# sw.file.hash: 30259f262fb7fee0b8b6211b9a91c3d54d307ac8
+/app/main.ts
+# sw.file.hash: f12df3149d0412e9f43c90c6f1a96cc1d100ca17
+/app/receta.component.js
+# sw.file.hash: 50b64caf1e9561f2687d9ebe04641ce3dcd2a8eb
+/app/receta.component.js.map
+# sw.file.hash: c70cf9ea143814dc5d23d56fb7846488633905bc
+/app/receta.component.ts
+# sw.file.hash: a8bb53cd565936e4988c063285fff4828af90db0
+/app/receta.html
+# sw.file.hash: 13459bf13914ccc8232b759b12a64482f623b15b
+/app/receta.js
+# sw.file.hash: dcdd131c068dc0bb282c12eae5880b4e8b3c6a22
+/app/receta.js.map
+# sw.file.hash: da39a3ee5e6b4b0d3255bfef95601890afd80709
+/app/receta.ts
+# sw.file.hash: a7ab1f332bd35921e0088a38ec6922f6a0b65677
+/app/register.html
+# sw.file.hash: 58156c61d93d63c660b9f7d60a99f7c3ea67cb9b
+/app/suscripcions.component.js
+# sw.file.hash: 6c7f23173330dda5f88bef64df6e7dea40b04224
+/app/suscripcions.component.js.map
+# sw.file.hash: 7955a0253d27789a52e1d52235020c8c59aab3c6
+/app/suscripcions.component.ts
+# sw.file.hash: 92279aa1f1f5c32ca30f3910262077d398cfd6fd
+/app/suscripcions.html
+# sw.file.hash: fc91b6a0d0c32f1d5b7bf82a13d091d4aa27d051
+/app/user.component.js
+# sw.file.hash: 171e855c59e08fdda5ea19ceb72506d684ac09f5
+/app/user.component.js.map
+# sw.file.hash: f5eb449d4fa7877912bf2cc1549b44617ddc283c
+/app/user.component.ts
+# sw.file.hash: b1c5501d60abd17e481a5c660816de3d10522ae7
+/app/user.html
+# sw.file.hash: 8123d0e7f9705d7a91db080434a4a6d737283fda
+/app/web.jpg
+# sw.file.hash: 84161b857f5c547e3699ddfbffc6d8d737542e01
+/favicon.ico
+# sw.file.hash: 13bb8e61aa5923dc8cc113e7639493382f7828f9
+/index.html
+# sw.file.hash: da39a3ee5e6b4b0d3255bfef95601890afd80709
+/thirdparty/libs.js
+# sw.file.hash: 83adfc7a7e467bc52a7d03c35889f7ce353b0cbc
+/tsconfig.json
+# sw.file.hash: a171ca1d6af67138a27f802ddad984e3c89fed1b
+/typings.d.ts
+# sw.file.hash: f72705562b9b90f9c1cc7d24d1558f4310824ed8
+/vendor/angular2/bundles/angular2-polyfills.js
+# sw.file.hash: 1ff5ae25b83b613a9f2e18bceb6339dfdf547a17
+/vendor/angular2/bundles/angular2.dev.js
+# sw.file.hash: e161d053cf096f7e43daa9aafc58026972429e6c
+/vendor/angular2/bundles/http.dev.js
+# sw.file.hash: edb629c3fec077046d1455e3e1817669fc6ee888
+/vendor/angular2/bundles/router.dev.js
+# sw.file.hash: 942eb74b23c16f85fb23ccbce6dfa136af7afec4
+/vendor/angular2/bundles/upgrade.dev.js
+# sw.file.hash: 55b3f2ce7b61115d27e50ddab924ab49b04c3209
+/vendor/es6-shim/es6-shim.js
+# sw.file.hash: 736fe8675af5630486329adf5efe12ec7be449b1
+/vendor/rxjs/bundles/Rx.js
+# sw.file.hash: 064ab212cfd9e125474ae3bbb600c366b31e79cb
+/vendor/systemjs/dist/system-polyfills.js
+# sw.file.hash: 83128f4a4209eb7b16ad0bb729fda6939bc450fc
+/vendor/systemjs/dist/system.src.js
