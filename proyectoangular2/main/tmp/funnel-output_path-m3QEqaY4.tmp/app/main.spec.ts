@@ -1,1 +1,0 @@
-/Users/luisca/Documents/Angular 2/main/tmp/funnel-input_base_path-ZMnYTOyn.tmp/0/app/main.spec.ts
