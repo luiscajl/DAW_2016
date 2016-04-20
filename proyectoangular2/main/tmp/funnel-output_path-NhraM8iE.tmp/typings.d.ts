@@ -1,1 +1,0 @@
-/Users/luisca/Documents/Angular 2/main/tmp/funnel-input_base_path-ctM5avzo.tmp/0/typings.d.ts
