@@ -1,72 +1,47 @@
-import { Component }       from 'angular2/core';
-import { HeroesComponent } from './heroes.component';
-import {DashboardComponent} from './dashboard.component';
+import {Component} from 'angular2/core';
+import {CabeceraComponent} from './cabecera.component.ts';
+import {FooterComponent} from './footer.component.ts';
+import {RouteConfig,ROUTER_DIRECTIVES} from 'angular2/router';
+import {ControlPanelComponent} from'./controlpanel/controlpanel.component.ts';
+import {CreacionRecetaComponent} from './creacionreceta/creacionreceta.component.ts';
+import {RecetaComponent} from './receta/receta.component.ts';
+import {RegisterComponent} from './register/register.component.ts';
+import {SuscripcionsComponent} from './suscripcions/suscripcions.component.ts';
+import {UserComponent} from './user/user.component.ts';
+import {PrincipalComponent} from './principal/principal.component.ts';
 
-import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';
-
-
+interface Item {
+	description:string;
+	checked:boolean;
+}
 
 @Component({
-  selector: 'navegador',
-  template: `
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Desplegar navegación</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html"></a>
-        </div>
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav ">
-            <a [routerLink]="['Inicio']">Inicio</a>
-            <a [routerLink]="['Suscripciones']">Suscripciones</a>
-            <router-outlet></router-outlet>
-            </ul>
-
-
-
-            <ul class="nav navbar-nav navbar-right">
-                <li><form class="navbar-form nav navbar-nav " role="search">
-                    <fieldset class="busqueda">
-                        <input class="busqueda" type="search" />
-                        <button class="busqueda" type="submit"><i class="fa fa-search"></i></button>
-                    </fieldset>
-                </form>
-                    </li>
-
-
-
-                <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li><a id="log" data-toggle="modal" data-target="#myModal" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            </ul>
-        </div></div>
-</nav>
-
-
-
-
-  `,
-  directives: [ROUTER_DIRECTIVES],
-  providers: [ROUTER_PROVIDERS]
+	selector: 'app',
+	templateUrl: 'app/app.component.html',
+	directives:[CabeceraComponent,FooterComponent,ControlPanelComponent,CreacionRecetaComponent,RecetaComponent,RegisterComponent,SuscripcionsComponent,UserComponent,PrincipalComponent,ROUTER_DIRECTIVES],
 })
 @RouteConfig([
-  {
-    path: '/heroes',
-    name: 'Inicio',
-    component: HeroesComponent
-  },
-  {
-    path: '/dashboard',
-    name: 'Suscripciones',
-    component: DashboardComponent,
-
-  },
+	{path:'/principal',name:'Principal', component: PrincipalComponent,useAsDefault:true },
+	{path:'/user', name :'User', component:UserComponent},
+	{path:'/suscripcions', name :'Suscripcions',component:SuscripcionsComponent},
+	{path:'/register',name:'Register',component:RegisterComponent},
+	{path:'/receta',name:'Receta',component:RecetaComponent},
+	{path:'/controlpanel',name:'ControlPanel',component:ControlPanelComponent},
+	{path:'/creacionreceta',name:'CreacionReceta',component:CreacionRecetaComponent},
 
 ])
-
 export class AppComponent {
+
+	private items: Item[] = [];
+
+	addItem(description: string){
+		this.items.push({description, checked: false});
+	}
+
+	removeItem(item: Item){
+		let index = this.items.indexOf(item);
+		if(index > -1){
+			this.items.splice(index,1);
+		}
+	}
 }
