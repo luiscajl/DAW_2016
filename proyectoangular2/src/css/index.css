@@ -1,3 +1,28 @@
+.mas_visitadas{
+  background-color: white;
+  margin-top: -30px;
+  padding-left: 100px;
+  color: white;
+  background-image:url(../img/fondo_pat.jpg);
+}
+
+.mas_visitadas h2{
+  color: black;
+}
+
+.mas_visitadas .img_receta{
+  background-image: url(../img/pos.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.recetas{
+    padding-left: 100px;
+}
+
+
+
+
 .busqueda_avanzada {
     max-width: 600px;
     height: 410px;
@@ -35,7 +60,7 @@
     margin-left: 35%;
 }
 
-@media (max-width:735px) { 
+@media (max-width:735px) {
     .boton_busqueda_av{
     width: 150px;
     padding-top: 8px;
@@ -49,7 +74,7 @@
 }
 }
 
-@media (max-width:429px) { 
+@media (max-width:429px) {
     .boton_busqueda_av{
     width: 150px;
     padding-top: 8px;
@@ -72,3 +97,6 @@
     margin-left: 15px;
 }
 
+.container{
+  margin-top: 30px;
+}

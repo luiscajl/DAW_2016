@@ -1,11 +1,11 @@
 body{
     /*padding-top: 70px;*/
     background-color: rgb(237,237,237);
-    font-family: 'Droid Sans', sans-serif; 
+    font-family: 'Droid Sans', sans-serif;
 }
 
 .contenedor_principal{
-     padding-top: 70px;
+     padding-top: 60px;
 }
 
 .logo {
@@ -41,29 +41,47 @@ body{
 }
 
 .overlay {
+    color: white;
     padding-top: 50px;
     text-align: center;
     width: 250px;
     height: 100%;
     margin-top: 0px;
     margin-left: -15px;
-    background-color: aquamarine;
-    display: none;
 }
 
 .overlay2 {
+    color: white;
     padding-top: 50px;
     text-align: center;
     width: 250px;
     height: 100%;
     margin-top: 0px;
     margin-left: -15px;
-    background-color: aquamarine;
 }
 
+.overlay3 {
+    color: white;
+    padding-top: 50px;
+    text-align: center;
+    width: 250px;
+    height: 100%;
+    margin-top: 0px;
+    margin-left: -15px;
+}
+
+.overlay4 {
+  color: white;
+    padding-top: 50px;
+    text-align: center;
+    width: 250px;
+    height: 100%;
+    margin-top: 0px;
+    margin-left: -15px;
+}
 
 .ui-widget-content.success-dialog{
-   background: rgb(168,214,227); 
+   background: rgb(168,214,227);
 }
 
 .ui-dialog.success-dialog {
@@ -82,7 +100,7 @@ body{
    padding-left:30%;
 }
 
-.modal-header{
+.modal-heade{
     height: 90px;
     color: white;
      background: rgb(168,214,227);
@@ -91,22 +109,22 @@ body{
      border-top-right-radius: 15px;
 }
 
-.modal-body{
+.modal-bod{
      height: 200;
     border-radius: 15px;
     background-color: rgb(237,237,237);
 }
 
-.modal-body input{
+.modal-bod input{
     border-radius: 10px;
 }
 
-.modal-content{
+.modal-conten{
     border-radius: 15px;
     background-color: rgb(237,237,237);
 }
 
-.modal-header img{
+.modal-heade img{
     width: 80px;
     margin-top: -10px;
 }
@@ -177,12 +195,3 @@ body{
     -webkit-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
 }
-
-
-
-
-
-
-
-
-

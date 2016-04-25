@@ -8,12 +8,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"></a>
+                <a class="navbar-brand" (click)="gotoinicio()"></a>
             </div>
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav ">
-                    <li class=""><a href="index.html">Inicio</a></li>
-                    <li><a href="suscripcions.html">Suscripciones</a></li>
+                    <li class=""><a (click)="gotoinicio()">Inicio</a></li>
+                    <li><a (click)="gotosuscrip()">Suscripciones</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                      <li><form class="navbar-form nav navbar-nav " role="search">
@@ -25,10 +25,49 @@
                         </li>
 
 
-
-                    <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a class="receta_crear" (click)="gotoCrReceta()">Crear receta</a></li>
+                    <li><a (click)="gotoregister()"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                     <li><a id="log" data-toggle="modal" data-target="#myModal" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                 </ul>
             </div>
         </div>
+
     </nav>
+    <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-conten">
+                <div class="modal-heade">
+                  <img src="img/logo_transparent_2.png">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-bod">
+
+
+
+
+                <form action="/" method="">
+                  <div class="logueo">
+                <div class="user">
+                      <label>
+                       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Usuario
+                      </label>
+                      <br>
+                      <input type="text">
+                </div>
+                <div class="pass">
+                      <label>
+                       &nbsp; &nbsp; &nbsp; &nbsp; Contraseña
+                      </label>
+                      <br>
+                      <input align="center" type="password"required autocomplete="off"/>
+                </div>
+                   <a href="user.html">Entrar</a>
+                    </div>
+                </form>
+                </div>
+              </div>
+            </div>
+        </div>
