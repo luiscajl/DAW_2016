@@ -14,7 +14,7 @@ $br: 4px;
     height: 113px;
 }
 .contenedor_principal{
-     padding-top: 70px;
+
 }
 .recetas {
     height: auto;
@@ -33,10 +33,10 @@ html {
     overflow-y: scroll;
 }
 
-body {
+#cssregister{
     background: $body-bg;
     font-family: 'Titillium Web', sans-serif;
-       background-image: url(../img/bg.jpg);
+    background-image: url(../img/bg.jpg);
 }
 
 .form a {
@@ -99,9 +99,9 @@ h1 {
 
 
 label {
- 
-   
-   
+
+
+
     color: black;
     transition: all 0.25s ease;
     -webkit-backface-visibility: hidden;
@@ -303,5 +303,3 @@ input[type="submit"]:hover {
 #formaction{
     height: 200px;
 }
-
-

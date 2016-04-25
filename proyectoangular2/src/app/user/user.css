@@ -1,6 +1,5 @@
 .body{font-family: 'Droid Sans', sans-serif;}
 
-
 .logo{
 
    height: 113px;    
@@ -11,9 +10,6 @@ body{
 .contenedor_principal{
      padding-top: 70px;
 }
-
-
-
 #recetas{
     height: auto;
     background-color: rgb(192,239,222);
@@ -68,11 +64,7 @@ body{
     
 }
 #infousuario{
-   
-
-
     font-size: 12px;
-    
     color: white;
     font-family: 'Droid Sans', sans-serif;
     
@@ -100,6 +92,7 @@ body{
     background-color: rgb(76, 141, 160);
     opacity: 0.9;
     font-size: 16px;
+      text-align: center;
 }
 
 
@@ -122,14 +115,15 @@ body{
 
 
 
+
+
+
 .receta_herramienta{
     background-color: rgb(146, 217, 192);
     color: white;
     border-bottom: solid rgba(99, 186, 155, 1) 5px;
-    padding-left: 25%;
-    padding-right: 25%;
+    text-align: center;
     max-height: 40px;
-    font-size: 16px;
 }
 .list-inline li{
 padding-top: 10px;
@@ -157,26 +151,21 @@ padding-top: 10px;
 
 
 #containerrecetas{
-  background-color: white;
     height: auto;
     width: auto;
-    margin-left: 100px;
-    margin-right:100px;
-    /*background-image: url(../img/iconos/notas2.png);
-    background-repeat: repeat;*/
-    
-    background-color: solid rgba(237,225,184, 0);
-    margin-top: 20px;
+    margin-left: 80px;
+    margin-right:80px;    
     
     
     
 }
 #receta1{
-    /*box-shadow: 5px 5px 5px #888888;*/
-    border-bottom: solid rgba(173, 173, 173, 1)
+    box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.2);    
+    border-bottom: solid rgba(173, 173, 173, 1);
+    background-color: white;
+    margin-top: 15px;
 
 }
-
 
 
 
@@ -187,25 +176,37 @@ padding-top: 10px;
     border-radius: 15px;           
     background-image: url(../img/pollorelleno.jpg);
     background-size: cover;
-    margin-left: 15px;
-    margin-top: 15px;
+    
     margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 .img_receta2{
     height: 200px;
-     border-radius: 15px;           
+    border-radius: 15px;           
     background-image: url(../img/albondigas.jpg);
     background-size: cover;
-    padding-left: 15px;
-    margin-left: 15px;
-    margin-top: 15px;
     margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.img_receta3{
+    height: 200px;
+    border-radius: 15px;           
+    background-image: url(../img/flan.jpg);
+    background-size: cover;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 .titulo_receta {
     text-align: center;
     height: 50px;
-    background-color: black;
-    opacity: 0.5;
+    background-color: rgba(0,0,0,0.4);
+    /*opacity: 0.5;*/
     position: absolute;
     height: 80px;
     color:white;
@@ -217,73 +218,37 @@ padding-top: 10px;
 }
 
 
-
-#infoextrareceta{
-    width: 15%;
-    padding-top: 190px;
-}
-
-#apanio{
-    font-size: 12px;
-    font-family: 'Droid Sans', sans-serif;}
-
-#fotoreceta{
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-bottom: 15px;
-    width: 100%;
-    max-height: 240px;
-    max-width: 400px;
-
-
-    
-    
-}
-    
-
-#textoreceta1{
-    margin-top: 15px;
-    background-color: white;
-    text-align: left;
-}
-
-
-#textoreceta{
-    font-size: 14px;
+#descripcionreceta{
     font-family: 'Droid Sans', sans-serif;
-    height: 60px;
-    width: 460px;
-    text-align:justify;
-    
+    font-size: 15px;
 }
-#dificultadytiemporeceta{
-    font-size: 12px;
-    padding-top:120px;
-    font-family: 'Droid Sans', sans-serif;
+    
+#infoextra{
+        font-family: 'Droid Sans', sans-serif;
+        font-size: 13px; 
 }
 
-#estrellas{
-    font-size: 30px;
-    margin-top: 30px;}
-#compartir{
-    padding-top: 110px;}
-#idreceta1{
-   
+
+
+#stars{
+    font-size: 35px;
+    bottom: 0;
+    margin-top: 60px;    
 }
 .usuario_receta{
     text-align: center;
-    padding: 5px;
+    /*padding: 5px;*/
     height: 230px;
     max-height: 320px;
     /*background-color: rgba(76, 141, 160, 0.5);*/
     box-shadow:  -10px  0px 5px #e3e8e3;
     border-radius: 15px;
-    margin-right: -15px; /* porque el background de la imagen de la receta se excluye del padding, y para obtener el mismo margen en esta clase(margin rompe el responsive) necesito un margen negativo */
+    /*margin-right: -15px;  porque el background de la imagen de la receta se excluye del padding, y para obtener el mismo margen en esta clase(margin rompe el responsive) necesito un margen negativo */
 }
 
 .logo_cocinero{
-    margin-top: 10px;
     height: 100px;
+    margin-top: 10px;
     
 }
 #nombreusuarioreceta{
@@ -325,8 +290,12 @@ background-size: 50px 50px;
     max-width: 100px;
     
 }
-
-
+#colummnacentralreceta{
+    margin-top: 20px;
+    padding-left: 30px;
+    
+    
+}
 
 
     
@@ -341,7 +310,6 @@ background-size: 50px 50px;
     
 }
 
-
 .glyphicon-star{
   	color: rgb(99, 186, 155)
 
@@ -354,3 +322,42 @@ background-size: 50px 50px;
 
 .glyph {
 }
+
+/*
+@media (max-width:1920px) { 
+    #textoreceta{
+        width: 300px;}
+
+}
+@media (max-width:1200px) { 
+    #textoreceta{width: 240px;}
+   
+    
+
+}
+
+@media (max-width:800px) { 
+    #textoreceta{ width: auto;}
+    #containerrecetas{margin-left: 20px;margin-right: 20px;}
+    .receta_herramienta{height: auto;max-height: 300px;}
+    #dificultadreceta{padding-top:0px;}
+    #dificultadytiemporeceta{padding-top: 30px;}
+    #infoextrareceta{padding-top: 20px;width: auto;}
+    #containerrecetas{margin-left: 10px;margin-right: 10px; }
+    #compartir{padding-top: 10px;padding-bottom: 10px;}
+    #botonseguir{padding-left: 0px; padding-bottom: 10px;text-align: center;padding-top: 0px;}
+    #imagenicono{ text-align: center;height: 100px;
+    
+
+
+@media (max-width:400px) {  /*Ancho menor a 400
+    #textoreceta{width: auto;}
+    #dificultadytiemporeceta{padding-top: 30px;}
+    #infoextrareceta{padding-top: 20px;width: auto;}
+    #containerrecetas{margin-left: 10px;margin-right: 10px; }
+    #compartir{padding-top: 10px;padding-bottom: 10px;}
+    #botonseguir{padding-left: 0px; padding-bottom: 10px;text-align: center;padding-top: 0px;}
+    #imagenicono{ margin-left: 120px;height: 100px;
+   }
+}
+*/

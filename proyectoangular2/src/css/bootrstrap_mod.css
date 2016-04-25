@@ -3,9 +3,17 @@ hr{
     border-top: 1px solid black;
 }
 
+.navbar .receta_crear{
+background-color: rgb(146, 217, 192);
+padding-top: 1px;
+padding-bottom: 1px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
 
 .col-md-3{
-    width: 250px;    
+    width: 250px;
     background-color: azure;
     margin: 20px;
     height: 130px;
@@ -26,7 +34,7 @@ hr{
 
 .navbar{
     background-color: rgb(168,214,227);
-    color: black;       
+    color: black;
 }
 
 .navbar a{
@@ -59,11 +67,11 @@ hr{
 
 
 
-@media (max-width:1187px) { 
+@media (max-width:1187px) {
 .logo{
     width: 10% \9; /*Force IE10 and below to size SVG images correctly*/
     max-width: 20% !important;
-    
+
 }
     .navbar-brand {
     width: 40px;
@@ -78,7 +86,7 @@ hr{
 
 }
 
-@media (max-width:832px) { 
+@media (max-width:832px) {
      .navbar-brand {
     display: none;
     margin-top: 10;
@@ -86,27 +94,27 @@ hr{
 }
 
 
-@media (max-width:400px) { 
+@media (max-width:400px) {
 
 }
 
-@media (max-width:385px) { 
+@media (max-width:385px) {
 
 }
 
-@media (max-width:345px) { 
+@media (max-width:345px) {
 
 }
 
-@media (max-width:335px) { 
+@media (max-width:335px) {
 
 }
 
-@media (max-width:325px) { 
+@media (max-width:325px) {
 
 }
 
-@media (max-width:315px) { 
+@media (max-width:315px) {
 
 }
 
