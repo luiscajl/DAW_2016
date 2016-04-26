@@ -12,6 +12,7 @@ import {AdminComponent} from './admin/admin.component';
 import {RegisterService} from './register/register.service';
 import {CreacionRecetaComponent} from './creacionreceta/creacionreceta.component';
 
+
 @Component({
 
   selector: 'main-app',
