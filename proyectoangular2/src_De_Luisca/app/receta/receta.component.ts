@@ -6,6 +6,7 @@ import {RouteConfig, ROUTER_DIRECTIVES, RouteParams, Router} from 'angular2/rout
   selector: 'receta',
   templateUrl: 'app/receta/receta.component.html',
   directives: [ROUTER_DIRECTIVES],
+  styleUrls: ['recetas.css']
 })
 
 export class RecetaComponent {
