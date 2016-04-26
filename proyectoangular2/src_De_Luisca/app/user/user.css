@@ -1,18 +1,20 @@
 .body{font-family: 'Droid Sans', sans-serif;}
 
-
 .logo{
 
-   height: 113px;
+   height: 113px;    
 }
-
-#containerrecetassuscripcions{
-     padding-top: 50px;
+body{
+    background-color: #ededed;
 }
-
-
-
-
+.contenedor_principal{
+     padding-top: 70px;
+}
+#recetas{
+    height: auto;
+    background-color: rgb(192,239,222);
+    
+}
 
 
 #perfil {
@@ -25,7 +27,7 @@
     width: auto;
 }
 #editperfil
-{
+{    
     text-align: right;
     font-size: 20px;
     margin-top: 18px;
@@ -38,7 +40,7 @@
 
 }
 
-#imagenicono{
+#imagenicono{ 
     margin-left: 20px;
     height: 100px;
     align-content: center;
@@ -49,30 +51,26 @@
     /*background-color: rgba(0,0,0,0.5);*/
     text-align: left;
     color: white;
-
+    
     font-family: 'Droid Sans', sans-serif;
 }
 #rangousuario{
-
-
+   
+   
     font-size: 17px;
-
+   
     color: white;
     font-family: 'Droid Sans', sans-serif;
-
+    
 }
 #infousuario{
-
-
-
     font-size: 12px;
-
     color: white;
     font-family: 'Droid Sans', sans-serif;
-
+    
 }
 #nombreusurangoinfo{
-
+    
     margin-left: 40px;
     margin-right: 40px;
     background-color: rgba(76, 141, 160, 0.5);
@@ -80,245 +78,6 @@
     margin-bottom: 10px;
     border-radius: 15px;
 }
-
-#botonseguir{
-    text-align: right;
-    padding-top: 70px;
-}
-
-#seguidoresrecetas{
-    height: auto;
-    width: auto;
-    font-family: 'Droid Sans', sans-serif;
-    color: white;
-    background-color: rgb(76, 141, 160);
-    opacity: 0.9;
-    font-size: 16px;
-}
-
-
-
-
-#menu{
-    background-color:#92D9C0;
-    height: auto;
-    width: auto;
-    border-bottom: solid rgba(99, 186, 155, 1);
-
-}
-#menuperfil{
-    text-align: center;
-    color: white;
-    font-size: 24px;
-    margin-top: 4px;
-    font-family: 'Droid Sans', sans-serif;
-}
-
-
-
-.receta_herramienta{
-    background-color: rgb(146, 217, 192);
-    color: white;
-    border-bottom: solid rgba(99, 186, 155, 1) 5px;
-    padding-left: 25%;
-    padding-right: 25%;
-    max-height: 40px;
-    font-size: 16px;
-}
-.list-inline li{
-padding-top: 10px;
-   height: 40px;
-
-}
-
-.list-inline li a:hover{
-    background-color: rgb(99, 186, 155);
-}
-
-.list-inline li a {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-right: 20px;
-    padding-left: 20px;
-    color: white;
-    text-decoration: none;
-
-}
-
-
-
-
-
-
-#containerrecetassuscripcions{
-  background-color: white;
-    height: auto;
-    width: auto;
-    margin-left: 100px;
-    margin-right:100px;
-    /*background-image: url(../img/iconos/notas2.png);
-    background-repeat: repeat;*/
-
-    background-color: solid rgba(237,225,184, 0);
-    margin-top: -40px;
-
-
-
-}
-
-
-
-
-
-
-.img_receta{
-    height: 200px;
-    border-radius: 15px;
-    background-image: url(../img/pollorelleno.jpg);
-    background-size: cover;
-    margin-left: 15px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-.img_receta2{
-    height: 200px;
-     border-radius: 15px;
-    background-image: url(../img/albondigas.jpg);
-    background-size: cover;
-    padding-left: 15px;
-    margin-left: 15px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-.titulo_receta {
-    text-align: center;
-    height: 50px;
-    background-color: black;
-    opacity: 0.5;
-    position: absolute;
-    height: 80px;
-    color:white;
-    bottom: 0;
-    width: 100%;
-    margin-left: -15px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-
-
-
-#infoextrareceta{
-    width: 15%;
-    padding-top: 190px;
-}
-
-#apanio{
-    font-size: 12px;
-    font-family: 'Droid Sans', sans-serif;}
-
-#fotoreceta{
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-bottom: 15px;
-    width: 100%;
-    max-height: 240px;
-    max-width: 400px;
-
-
-
-
-}
-
-
-#textoreceta1{
-    margin-top: 15px;
-    background-color: white;
-    text-align: left;
-}
-
-
-#textoreceta{
-    font-size: 14px;
-    font-family: 'Droid Sans', sans-serif;
-    height: 60px;
-    width: 460px;
-    text-align:justify;
-
-}
-#dificultadytiemporeceta{
-    font-size: 12px;
-    padding-top:120px;
-    font-family: 'Droid Sans', sans-serif;
-}
-
-#estrellas{
-    font-size: 30px;
-    margin-top: 30px;}
-#compartir{
-    padding-top: 110px;}
-
-
-
-.logo_cocinero{
-    margin-top: 10px;
-    height: 100px;
-
-}
-#nombreusuarioreceta{
-    font-size: 20px;
-    font-family: 'Droid Sans', sans-serif;
-    font-weight:bold;}
-
-#rangonombreusuarioreceta{
-    font-size: 14px;
-    font-family: 'Droid Sans',sans-serif;
-    font-weight:bold;
-}
-#botonseguirnombreusuarioreceta{
-    margin-top: 10px;}
-
-
-
-
-#compartirfacebook{
-    background-size: 50px 50px;
-    height: 50px;
-    width: 50px;
-
-}
-#compartirtwitter{
-    background-size: 50px 50px;
-    height: 50px;
-    width: 50px;
-}
-#compartirgoogle{
-background-size: 50px 50px;
-    height: 50px;
-    width: 50px;
-}
-
-
-#iconoperfil{
-    max-height: 100px;
-    max-width: 100px;
-
-}
-
-
-
-
-
-#recetas{
-    height: auto;
-    background-color: rgb(192,239,222);
-
-}
-
-
-
-
-
-
 
 #botonseguir{
     text-align: right;
@@ -344,7 +103,7 @@ background-size: 50px 50px;
     height: auto;
     width: auto;
     border-bottom: solid rgba(99, 186, 155, 1);
-
+    
 }
 #menuperfil{
     text-align: center;
@@ -366,6 +125,28 @@ background-size: 50px 50px;
     text-align: center;
     max-height: 40px;
 }
+.list-inline li{
+padding-top: 10px;
+   height: 40px;
+    
+}
+
+.list-inline li a:hover{
+    background-color: rgb(99, 186, 155);
+}
+
+.list-inline li a { 
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: white;
+    text-decoration: none;
+
+}
+
+
+
 
 
 
@@ -373,13 +154,13 @@ background-size: 50px 50px;
     height: auto;
     width: auto;
     margin-left: 80px;
-    margin-right:80px;
-
-
-
+    margin-right:80px;    
+    
+    
+    
 }
 #receta1{
-    box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.2);    
     border-bottom: solid rgba(173, 173, 173, 1);
     background-color: white;
     margin-top: 15px;
@@ -392,10 +173,10 @@ background-size: 50px 50px;
 
 .img_receta{
     height: 200px;
-    border-radius: 15px;
+    border-radius: 15px;           
     background-image: url(../img/pollorelleno.jpg);
     background-size: cover;
-
+    
     margin-bottom: 15px;
     margin-top: 15px;
     margin-left: 15px;
@@ -403,7 +184,7 @@ background-size: 50px 50px;
 }
 .img_receta2{
     height: 200px;
-    border-radius: 15px;
+    border-radius: 15px;           
     background-image: url(../img/albondigas.jpg);
     background-size: cover;
     margin-bottom: 15px;
@@ -413,7 +194,7 @@ background-size: 50px 50px;
 }
 .img_receta3{
     height: 200px;
-    border-radius: 15px;
+    border-radius: 15px;           
     background-image: url(../img/flan.jpg);
     background-size: cover;
     margin-bottom: 15px;
@@ -441,10 +222,10 @@ background-size: 50px 50px;
     font-family: 'Droid Sans', sans-serif;
     font-size: 15px;
 }
-
+    
 #infoextra{
         font-family: 'Droid Sans', sans-serif;
-        font-size: 13px;
+        font-size: 13px; 
 }
 
 
@@ -452,9 +233,9 @@ background-size: 50px 50px;
 #stars{
     font-size: 35px;
     bottom: 0;
-    margin-top: 60px;
+    margin-top: 60px;    
 }
-#usuariorecetajimlu{
+.usuario_receta{
     text-align: center;
     /*padding: 5px;*/
     height: 230px;
@@ -468,7 +249,7 @@ background-size: 50px 50px;
 .logo_cocinero{
     height: 100px;
     margin-top: 10px;
-
+    
 }
 #nombreusuarioreceta{
     font-size: 20px;
@@ -490,7 +271,7 @@ background-size: 50px 50px;
     background-size: 50px 50px;
     height: 50px;
     width: 50px;
-
+    
 }
 #compartirtwitter{
     background-size: 50px 50px;
@@ -507,18 +288,27 @@ background-size: 50px 50px;
 #iconoperfil{
     max-height: 100px;
     max-width: 100px;
-
+    
 }
 #colummnacentralreceta{
     margin-top: 20px;
     padding-left: 30px;
-
-
+    
+    
 }
 
 
-
-
+    
+#footer{
+    background-color: rgb(172, 237, 214);
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    
+}
 
 .glyphicon-star{
   	color: rgb(99, 186, 155)
@@ -532,3 +322,42 @@ background-size: 50px 50px;
 
 .glyph {
 }
+
+/*
+@media (max-width:1920px) { 
+    #textoreceta{
+        width: 300px;}
+
+}
+@media (max-width:1200px) { 
+    #textoreceta{width: 240px;}
+   
+    
+
+}
+
+@media (max-width:800px) { 
+    #textoreceta{ width: auto;}
+    #containerrecetas{margin-left: 20px;margin-right: 20px;}
+    .receta_herramienta{height: auto;max-height: 300px;}
+    #dificultadreceta{padding-top:0px;}
+    #dificultadytiemporeceta{padding-top: 30px;}
+    #infoextrareceta{padding-top: 20px;width: auto;}
+    #containerrecetas{margin-left: 10px;margin-right: 10px; }
+    #compartir{padding-top: 10px;padding-bottom: 10px;}
+    #botonseguir{padding-left: 0px; padding-bottom: 10px;text-align: center;padding-top: 0px;}
+    #imagenicono{ text-align: center;height: 100px;
+    
+
+
+@media (max-width:400px) {  /*Ancho menor a 400
+    #textoreceta{width: auto;}
+    #dificultadytiemporeceta{padding-top: 30px;}
+    #infoextrareceta{padding-top: 20px;width: auto;}
+    #containerrecetas{margin-left: 10px;margin-right: 10px; }
+    #compartir{padding-top: 10px;padding-bottom: 10px;}
+    #botonseguir{padding-left: 0px; padding-bottom: 10px;text-align: center;padding-top: 0px;}
+    #imagenicono{ margin-left: 120px;height: 100px;
+   }
+}
+*/

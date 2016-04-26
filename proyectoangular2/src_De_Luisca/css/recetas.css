@@ -39,7 +39,7 @@
     width: 40px;
 
 }
-.cabecera_receta .img_receta_de_recetas{
+.cabecera_receta .img_receta{
     height: 200px;
      border-radius: 15px;
     background-image: url(../img/pos.jpg);
@@ -164,7 +164,7 @@ ul,ol{
     padding-top: 5px;
 }
 .contenedor_principal{
-     padding-top: 70px;
+
 }
 .usuario_receta{
     text-align: center;
@@ -243,6 +243,9 @@ padding-left: 8px;
 }
 
 .col-md-3{
+
+    background: none;
+
 }
 
 .galeria_imagenes img{
