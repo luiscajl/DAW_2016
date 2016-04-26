@@ -1,6 +1,10 @@
 import {Component} from 'angular2/core';
-import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
+import {RouteConfig, ROUTER_DIRECTIVES, RouteParams, Router} from 'angular2/router';
 import {user} from './user.model';
+import {RegisterService} from '../register/register.service';
+import {RegisterComponent} from '../register/register.component';
+import {register} from '../register/register.model';
+
 
 @Component({
   selector: 'user',
@@ -8,6 +12,13 @@ import {user} from './user.model';
 })
 
 export class UserComponent {
+ usuario: register;
+  constructor(
+    private _router:Router,
+    routeParams:RouteParams,
+    private service: RegisterService) {
+        let nombre = routeParams.get('nombre');
+        this.usuario = service.getUser(nombre);
 
-private userLuisca= new user ("Luisca","./app","Cocinillas de cuidado","./app","El mismo de siempre a estas horas","13","3","1");
+}
 }
