@@ -11,6 +11,19 @@
 - Técnica: Técnicas usadas para la elaboración de la receta.
 - Ingrediente: Nombre, descricion, imagen del ingrediente, recetas en las que se usan.
 
+## Diagrama de navegación entre todas las páginas diseñadas:
+<img src="img/fase2/diagrama.png">
+
+<br>
+
+## Captura de pantalla de las páginas principales:
+<img src="img/fase2/index.png">
+<img src="img/fase2/login.png">
+<img src="img/fase2/controlpanel.png">
+<img src="img/fase2/register.png">
+<img src="img/fase2/receta.png">
+<img src="img/fase2/user.png">
+<img src="img/fase2/suscripcions.png">
 ## Integrantes del equipo de desarrollo: 
 - Diego López: 
 d.lopezgarc@alumnos.urjc.es  https://github.com/Frostqui

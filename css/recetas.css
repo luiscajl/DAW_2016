@@ -64,7 +64,8 @@
 .receta_herramienta{
     background-color: rgb(146, 217, 192);
     color: white;
-     box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.3);
+    border-bottom: solid rgba(99, 186, 155, 1) 5px;
+    text-align: center;
 text-align: center;
 }
 
@@ -95,10 +96,10 @@ text-align: center;
     padding-bottom: 25px;
     background-image: url(../img/iconos/notas2.png);
     background-repeat: repeat;
-     box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.4);
     padding-left: 25%;
     padding-right: 25%;
     text-align: center;
+    border-bottom: solid rgba(202, 186, 131, 1) 5px;
     
 }
 
@@ -109,7 +110,6 @@ text-align: center;
 .receta_elaboracion{
     padding: 40px;
      background-color: rgba(237,237,237,1);
-    box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.2);
 }
 
 ul,ol{
@@ -141,8 +141,7 @@ ul,ol{
 .titulo_receta{
     text-align: center;
     height: 50px;
-    background-color: black;
-    opacity: 0.7;
+    background-color: rgba(0,0,0,0.4);
     position: absolute; /* con esta linea estoy consiguiendo el centrado de texto en un div */
     height: 80px;  
     bottom: 0; 
@@ -164,7 +163,9 @@ ul,ol{
 .datos_receta{
     padding-top: 5px;
 }
-
+.contenedor_principal{
+     padding-top: 70px;
+}
 .usuario_receta{
     text-align: center;
     padding: 5px;
@@ -215,7 +216,6 @@ padding-left: 8px;
 
 .galeria{
  background-color: rgb(168,214,227);
-      box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.2);
     padding: 15px;
   
 }
@@ -279,7 +279,6 @@ padding-left: 8px;
 
 .pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus{
    background-color:  rgb(146, 217, 192);
-       box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.2);
 }
 
 .logo_cocinero_comentarios{

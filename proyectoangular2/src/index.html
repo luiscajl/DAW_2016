@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TastIT</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image/png" href="./img/favicon.png">
+  <script src="./app/user/js/starrating.js"></script>
+  <link href="./css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/footer.css" rel="stylesheet">
+  <link href="./css/principal.css" rel="stylesheet">
+  <link href="./css/index.css" rel="stylesheet">
+  <link href="./css/creacionreceta.css" rel="stylesheet">
+  <link href="./css/suscripcions.css" rel="stylesheet">
+  <link href="./css/register.css" rel="stylesheet">
+  <link href="./css/recetas.css" rel="stylesheet">
+  <link href="./css/bootrstrap_mod.css" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link rel=”stylesheet” type=”text/css” href=”https://fonts.googleapis.com/css?family="Droid+Sans:700,400">
+  <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!--etiqueta necesaria "base" para ejecucion scripts angular en ruta correcta -->
+  <base href="/">
+
+</head>
+<body>
+
+
+  <script src="vendor/es6-shim/es6-shim.js"></script>
+  <script src="vendor/systemjs/dist/system-polyfills.js"></script>
+  <script src="vendor/angular2/bundles/angular2-polyfills.js"></script>
+  <script src="vendor/systemjs/dist/system.src.js"></script>
+  <script src="vendor/rxjs/bundles/Rx.js"></script>
+
+  <script src="vendor/angular2/bundles/angular2.dev.js"></script>
+  <script src="vendor/angular2/bundles/http.dev.js"></script>
+  <script src="vendor/angular2/bundles/router.dev.js"></script>
+
+  <script src="thirdparty/libs.js"></script>
+  <script>
+    System.config({
+      packages: {
+        app: {
+          format: 'register',
+          defaultExtension: 'js'
+        }
+      }
+    });
+    System.import('app.js').then(null, console.error.bind(console));
+  </script>
+
+  <script type="text/javascript">
+  $(document).ready(function(){
+
+  	$(window).scroll(function(){
+  		var barra = $(window).scrollTop();
+  		var posicion =  (barra * 0.10);
+          var posicion2 =  (barra * 0.20);
+          var posicion3 =  (barra * 0.30);
+          var posicion4 =  (barra * 0.20);
+
+          $('.fondo1').css({
+  			'background-position': '0 -' + posicion + 'px'
+  		});
+
+          $('.fondo2').css({
+  			'background-position': '0 -' + posicion2 + 'px'
+  		});
+
+          $('.fondo3').css({
+  			'background-position': '0 -' + posicion3 + 'px'
+  		});
+
+          $('.cabecera_receta').css({
+  			'background-position': '0 -' + posicion4 + 'px'
+  		});
+
+      $('.mas_visitadas').css({
+    'background-position': '0 -' + posicion4 + 'px'
+      });
+      
+  	});
+
+  });
+      </script>
+  <!-- codigo html de la web -->
+
+
+  <!-- nav-->
+      <main-app></main-app>
+<!-- fin del nav -->
+
+</body>
+</html>
