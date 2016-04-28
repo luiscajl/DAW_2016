@@ -42,59 +42,42 @@ body{
 
 .overlay {
     color: white;
+    padding-top: 50px;
     text-align: center;
     width: 250px;
-    height: 30%;
-    background-color: rgba(0,0,0,0.4);
-    position: absolute;
-    bottom: 0px;
-    height: 40%;
-    //border-bottom-left-radius: 15px;
-    //border-bottom-right-radius: 15px;
+    height: 100%;
+    margin-top: 0px;
     margin-left: -15px;
-
 }
 
 .overlay2 {
-  color: white;
-  text-align: center;
-  width: 250px;
-  height: 30%;
-  background-color: rgba(0,0,0,0.4);
-  position: absolute;
-  bottom: 0px;
-  height: 40%;
-  //border-bottom-left-radius: 15px;
-  //border-bottom-right-radius: 15px;
-  margin-left: -15px;
+    color: white;
+    padding-top: 50px;
+    text-align: center;
+    width: 250px;
+    height: 100%;
+    margin-top: 0px;
+    margin-left: -15px;
 }
 
 .overlay3 {
-  color: white;
-  text-align: center;
-  width: 250px;
-  height: 30%;
-  background-color: rgba(0,0,0,0.4);
-  position: absolute;
-  bottom: 0px;
-  height: 40%;
-  //border-bottom-left-radius: 15px;
-  //border-bottom-right-radius: 15px;
-  margin-left: -15px;
+    color: white;
+    padding-top: 50px;
+    text-align: center;
+    width: 250px;
+    height: 100%;
+    margin-top: 0px;
+    margin-left: -15px;
 }
 
 .overlay4 {
   color: white;
-  text-align: center;
-  width: 250px;
-  height: 30%;
-  background-color: rgba(0,0,0,0.4);
-  position: absolute;
-  bottom: 0px;
-  height: 40%;
-  //border-bottom-left-radius: 15px;
-  //border-bottom-right-radius: 15px;
-  margin-left: -15px;
+    padding-top: 50px;
+    text-align: center;
+    width: 250px;
+    height: 100%;
+    margin-top: 0px;
+    margin-left: -15px;
 }
 
 .ui-widget-content.success-dialog{

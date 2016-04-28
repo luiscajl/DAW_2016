@@ -9,16 +9,24 @@ import {register} from '../register/register.model';
 @Component({
   selector: 'user',
   templateUrl: 'app/user/user.component.html',
+  providers:[RegisterService]
 })
 
 export class UserComponent {
- usuario: register;
-  constructor(
-    private _router:Router,
-    routeParams:RouteParams,
-    private service: RegisterService) {
-        let nombre = routeParams.get('nombre');
-        this.usuario = service.getUser(nombre);
+ register: register;
+ constructor(private RegisterServic : RegisterService,private _routeParams:RouteParams){
+
+
+
+
+}
+
+ngOnInit(){
+  let nombre=this._routeParams.get("nombre");
+  this.RegisterServic.getUser(nombre).subscribe(
+    register => this.register = register,
+    error => console.log(error)
+  )
 
 }
 }
