@@ -30,8 +30,8 @@ export class cabeceraComponent{
     this.router.navigate(link);
   }
   gotoUser(){
-    let link=['User'];
-    this.router.navigate(link);
+
+        this.router.navigate(['User', { nombre: this.nombrelogin }]);
 
   }
   gotoCrReceta(){

@@ -6,30 +6,35 @@ import {RegisterService} from './register.service';
 @Component({
   selector: 'register',
   templateUrl: 'app/register/register.component.html',
-  directives: [ROUTER_DIRECTIVES]
+  directives: [ROUTER_DIRECTIVES],
+  providers:[RegisterService]
 })
 
 export class RegisterComponent {
   newUser: boolean;
   register: register;
 
-  constructor(
-    private _router:Router,
-    routeParams:RouteParams,
-    private service: RegisterService){
+  constructor(private RegisterServic : RegisterService,private _routeParams:RouteParams){
 
-
-        this.register = new register('','','','');
-        this.newUser = true;
-      
   }
+
+
+  ngOnInit(){
+    let nombre=this._routeParams.get("nombre");
+    this.RegisterServic.getUser(nombre).subscribe(
+      register => this.register = register,
+      error => console.log(error)
+    )
+  }
+
+
 
   cancel() {
     window.history.back();
   }
 
   save() {
-    this.service.saveUser(this.register);
+    this.RegisterServic.saveUser(this.register);
     window.history.back();
   }
 }
