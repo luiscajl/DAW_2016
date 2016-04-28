@@ -27,7 +27,8 @@ import {CreacionRecetaComponent} from './creacionreceta/creacionreceta.component
 @RouteConfig([
  {path:'/Inicio',
     name: 'Inic',
-    component: iniciocomponent},
+    component: iniciocomponent,
+    useAsDefault: true},
 
 {path:'/Suscripciones',
     name: 'Susc',
@@ -44,8 +45,7 @@ import {CreacionRecetaComponent} from './creacionreceta/creacionreceta.component
     component: UserComponent},
 {path:'/Register',
     name:'Register',
-    component:RegisterComponent,
-    useAsDefault: true},
+    component:RegisterComponent},
 {path:'/Receta',
     name:'Receta',
     component:RecetaComponent},
