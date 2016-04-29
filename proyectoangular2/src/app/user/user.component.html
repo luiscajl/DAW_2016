@@ -10,14 +10,14 @@
 
     <div class="row">
             <div class="col-md-1" id=imagenicono>
-                <img class="img-circle" id="iconoperfil" src="img/iconos/alberto.png" height="100px" width="100px">
+                <img class="img-circle" id="iconoperfil" src="{{register.fotoperfil}}" height="100px" width="100px">
             </div>
             <div class="col-md-2" id="nombreusurangoinfo">
 
-                    <h2 id="nombreusuario">Alber <button type="button" class="btn btn-primary seguir">  Seguir  </button>                         </h2>
+                    <h2 id="nombreusuario">{{register.nombre}}<button type="button" class="btn btn-primary seguir">  Seguir  </button>                         </h2>
 
-                    <h3 id="rangousuario">Aprendiz de cocina(RANGO)</h3>
-                    <h3 id="infousuario">Me gusta cocinar, pero no me gusta ser cocinado</h3>
+                    <h3 id="rangousuario">{register.rango}</h3>
+                    <h3 id="infousuario">{{register.bio}}</h3>
 
             </div>
 
