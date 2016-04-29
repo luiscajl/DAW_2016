@@ -46,23 +46,23 @@
                     <div class="top-row">
                         <div class="field-wrap">
 
-                            <input type="text" [(ngModel)]="register.nombre" placeholder="Nombre" required autocomplete="off" />
+                            <input type="text" [(ngModel)]="usuario.nombre" placeholder="Nombre" required autocomplete="off" />
                         </div>
 
                         <div class="field-wrap">
 
-                            <input type="password" [(ngModel)]="register.contrasenia" placeholder="Contraseña" required autocomplete="off" />
+                            <input type="password" [(ngModel)]="usuario.contrasenia" placeholder="Contraseña" required autocomplete="off" />
                         </div>
                     </div>
 
                     <div class="field-wrap">
 
-                        <input type="password"[(ngModel)]="register.repiticioncontrasenia" placeholder="Repite la contraseña" required autocomplete="off" />
+                        <input type="password"[(ngModel)]="usuario.repiticioncontrasenia" placeholder="Repite la contraseña" required autocomplete="off" />
                     </div>
 
                     <div class="field-wrap">
 
-                        <input type="email" [(ngModel)]="register.correousuario" placeholder="Email" required autocomplete="off" />
+                        <input type="email" [(ngModel)]="usuario.correousuario" placeholder="Email" required autocomplete="off" />
                     </div>
 
                     <div clas="bottom">
@@ -71,7 +71,7 @@
                         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
 
-                        <input type="submit"(click)="save()" value="Registrarse">
+                        <input type="buttom"(click)="save()" value="Registrarse">
 
                         <li *ngFor="#register of registers">
                             <a>{{console.log.register.nombre}}</a>

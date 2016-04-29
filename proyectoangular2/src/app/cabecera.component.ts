@@ -10,10 +10,11 @@ import {register} from './register/register.model';
        templateUrl: './app/cabecera.component.html',
 })
 export class cabeceraComponent{
-  private registros : register[];
+  private regis : register[];
   nombrelogin: string;
   contrasenialogin:string;
   encontrado: boolean;
+  hideModal : boolean = false;
   constructor (private router: Router, private service: RegisterService){}
 
   gotosuscrip(){
@@ -30,7 +31,7 @@ export class cabeceraComponent{
     this.router.navigate(link);
   }
   gotoUser(){
-
+        this.hideModal  = true;
         this.router.navigate(['User', { nombre: this.nombrelogin }]);
 
   }
@@ -39,17 +40,22 @@ export class cabeceraComponent{
     this.router.navigate(link);
   }
   ngOnInit(){
-    this.registros = this.service.getUsers();
-    console.log(this.registros);
+    this.regis = this.service.getUsers();
+
   }
   compareTo(){
     var encontrado = false;
-    for (var usuario of this.registros){
+      this.regis = this.service.getUsers();
+      console.log(this.regis);
+    for (var usuario of this.regis){
+
         if(usuario.nombre == this.nombrelogin){
             if(usuario.contrasenia == this.contrasenialogin){
                 encontrado = true;
+
                 console.log(usuario.nombre);
                 console.log(this.nombrelogin);
+
                 this.gotoUser();
             }
         }
