@@ -12,19 +12,20 @@ import {RegisterService} from './register.service';
 
 export class RegisterComponent {
   newUser: boolean;
-  register: register;
+  usuario: register;
 
   constructor(private RegisterServic : RegisterService,private _routeParams:RouteParams){
-
-  }
-
-
-  ngOnInit(){
     let nombre=this._routeParams.get("nombre");
+    if(nombre){
     this.RegisterServic.getUser(nombre).subscribe(
-      register => this.register = register,
+      register => this.usuario = register,
       error => console.log(error)
     )
+
+  }else{
+    this.usuario = new register('','','','','Pinche de cocina','Nuevo usuario','img/userpic.png','img/food.jpg');
+
+  }
   }
 
 
@@ -34,7 +35,9 @@ export class RegisterComponent {
   }
 
   save() {
-    this.RegisterServic.saveUser(this.register);
+
+
+    this.RegisterServic.saveUser(this.usuario);
     window.history.back();
   }
 }

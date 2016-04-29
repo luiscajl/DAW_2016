@@ -32,7 +32,7 @@
         </div>
 
     </nav>
-    <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal fade" id="myModal" [hidden]="hideModal" role="dialog">
             <div class="modal-dialog">
 
               <!-- Modal content-->
@@ -62,8 +62,8 @@
                       </label>
                       <br>
                       <input [(ngModel)]="contrasenialogin" align="center" type="password"required autocomplete="off"/>
-                </div>
-                   <a (click)="compareTo()">Entrar</a>
+                </div> <br>
+                   <input type="submit" value="Entrar" (click)="compareTo()">
                     </div>
                 </form>
                 </div>
