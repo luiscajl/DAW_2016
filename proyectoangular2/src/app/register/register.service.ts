@@ -20,7 +20,7 @@ export class RegisterService{
 
   saveUser(usuario:register){
     this.registeruser.push(usuario);
-    console.log(this.registeruser);
+
     //return withObserver(usuario);
   }
 

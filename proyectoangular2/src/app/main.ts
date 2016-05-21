@@ -10,13 +10,14 @@ import {RegisterComponent} from './register/register.component';
 import {RecetaComponent} from './receta/receta.component';
 import {AdminComponent} from './admin/admin.component';
 import {RegisterService} from './register/register.service';
+import {RecetaService} from './creacionreceta/receta.service';
 import {CreacionRecetaComponent} from './creacionreceta/creacionreceta.component';
 
 
 @Component({
 
   selector: 'main-app',
-  providers: [ROUTER_PROVIDERS,RegisterService],
+  providers: [ROUTER_PROVIDERS,RegisterService,RecetaService],
   templateUrl: './app/cuerpo.html',
 
   directives: [ROUTER_DIRECTIVES, cabeceraComponent,FooterComponent ,UserComponent,RegisterComponent,RecetaComponent,AdminComponent],
@@ -47,7 +48,7 @@ import {CreacionRecetaComponent} from './creacionreceta/creacionreceta.component
     name:'Register',
     component:RegisterComponent,
   },
-{path:'/Receta',
+{path:'/Receta/:nombre',
     name:'Receta',
     component:RecetaComponent},
 {path:'/Admin',
