@@ -15,13 +15,14 @@ import {ControlPanelRecetas} from './controlpanel/controlpanel/admrecetas';
 import {ControlPanelRecetarios} from './controlpanel/controlpanel/admrecetarios';
 import {ControlPanelContrasenia} from './controlpanel/controlpanel/contrasenia';
 import {ControlPanelNotificaciones} from './controlpanel/controlpanel/notificaciones';
+import {RecetaService} from './creacionreceta/receta.service';
 
 
 
 @Component({
 
   selector: 'main-app',
-  providers: [ROUTER_PROVIDERS,RegisterService],
+  providers: [ROUTER_PROVIDERS,RegisterService,RecetaService],
   templateUrl: './app/cuerpo.html',
 
   directives: [ROUTER_DIRECTIVES, cabeceraComponent,FooterComponent ,UserComponent,RegisterComponent,RecetaComponent,AdminComponent,ControlPanelRecetas,ControlPanelRecetarios,ControlPanelContrasenia,ControlPanelNotificaciones],
@@ -42,7 +43,7 @@ import {ControlPanelNotificaciones} from './controlpanel/controlpanel/notificaci
     name: 'Footer',
     component: FooterComponent,},
 {path:'/ControlPanel',
-    name: 'ControlPanel',
+    name: 'Control',
     component: ControlPanelComponent,},
 
 {path:'/User/:nombre',
@@ -74,7 +75,11 @@ import {ControlPanelNotificaciones} from './controlpanel/controlpanel/notificaci
 {path:'/CrearReceta',
     name:'CrearReceta',
     component:CreacionRecetaComponent},
-
+    @RouteConfig([
+ {path:'/Inicio',
+    name: 'Inic',
+    component: iniciocomponent,
+    useAsDefault: true},
 
 
 ])
