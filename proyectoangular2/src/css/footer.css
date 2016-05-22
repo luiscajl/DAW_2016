@@ -1,11 +1,10 @@
 #footer{
-    background-color: rgb(172, 237, 214);
-    width: 100%;
+    
     bottom: 0%;
-
     height: 65px;
-    padding-right: 15px;
     padding-left: 15px;
+    padding-right: 15px;
     position: relative;
+    z-index: 1;
 
 }

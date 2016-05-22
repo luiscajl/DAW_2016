@@ -36,8 +36,7 @@ export class RegisterComponent {
 
   save() {
 
-
     this.RegisterServic.saveUser(this.usuario);
-    window.history.back();
+    //window.history.back();
   }
 }

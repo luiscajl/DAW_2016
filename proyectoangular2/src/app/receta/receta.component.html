@@ -11,17 +11,17 @@
 
 
       <div class="col-md-12">
-      <div class="col-md-4 img_receta_de_recetas">
+      <div class="col-md-4" id="img_receta_de_recetas">
       <span class="glyphicon glyphicon-asterisk" style="float:left; padding:5px;"></span>
-      <div class="titulo_receta"><h3>{{receta.nombre}}</h3><h5>{{receta.fecha}}</h5></div>
+      <div class="titulo_receta"><h3>Tarta de queso</h3><h5>15/3/16</h5></div>
       </div>
       <div class="col-md-8 datos_receta">
       <div class="usuario_receta"><img class="logo_cocinero" src="img/iconos/alberto.png"><br><button type="button" class="btn btn-primary seguir">Seguir</button></div>
-     {{receta.autor}}
+     Esta receta de tarta de queso fría es una receta que es más habitual encontrar en los últimos tiempos que la tarta de queso de toda la vida, la que se hace con horno. Cada una tiene una textura diferente, ya que mientras la tradicional es más como un bizcocho esponjoso y húmedo, esta tarta de queso fría es más cremosa y tiene una base más bien crujiente hecha a base de galletas.
 
       <div class="row">
       <div class="col-md-8 iconos">
-     <br><h4>{{receta.infoextra}}</h4>
+     <br><h4>Diabeticos - Al horno - Con video - Bla bla bla</h4>
      <img src="img/diabet.png">&nbsp;&nbsp;&nbsp;<img src="img/iconos/horno.png">&nbsp;&nbsp;&nbsp;<img src="https://www.youtube.com/yt/brand/media/image/YouTube-icon-dark.png">
 
 
@@ -44,13 +44,13 @@
                   <span class="glyphicon glyphicon-star"></span>
               </div>
              <div class="info col-md-8">
-      <span>{{receta.dificultad}}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-time"></span> 30 min </span>
+      <span>Dificultad: Fácil&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-time"></span> 30 min </span>
        </div>
           </div>
       </div>
 
   </div>
-  <div class="receta_herramienta">
+  <div class="receta_herramient" id=recetaherramientaalberto>
      <ul class="list-inline">
     <li><a href="#"><span class="glyphicon glyphicon-floppy-disk"></span> Guardar</a></li>
     <li><a href="#"><span class="glyphicon glyphicon-share"></span> Compartir</a></li>
@@ -126,6 +126,7 @@
       <div class="container galeria_imagenes">
        <div class="row">
 <div class="col-sm-6 col-md-3">
+
   <a href="#" class="thumbnail" data-toggle="modal" data-target="#myModal">
       <img src="./img/pos.jpg" alt="..."></a>
     <h3 id="titulo_galeria">Tarta de queso</h3>
@@ -265,46 +266,3 @@
               </div>
 
   </div>
-
-
-
-
-      <!-- Modal -->
-      <div class="modal fade" id="myModal" role="dialog">
-                          <div class="modal-dialog">
-
-                            <!-- Modal content-->
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <img src="img/logo_transparent_2.png">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title"></h4>
-                              </div>
-                              <div class="modal-body">
-
-
-
-
-                              <form action="/" method="">
-                                <div class="logueo">
-                              <div class="user">
-                                    <label>
-                                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Usuario
-                                    </label>
-                                    <br>
-                                    <input type="text">
-                              </div>
-                              <div class="pass">
-                                    <label>
-                                     &nbsp; &nbsp; &nbsp; &nbsp; Contraseña
-                                    </label>
-                                    <br>
-                                    <input align="center" type="password"required autocomplete="off"/>
-                              </div>
-                                 <a href="user.html">Entrar</a>
-                                  </div>
-                              </form>
-                              </div>
-                            </div>
-                          </div>
-                      </div>

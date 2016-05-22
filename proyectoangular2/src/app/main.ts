@@ -10,17 +10,21 @@ import {RegisterComponent} from './register/register.component';
 import {RecetaComponent} from './receta/receta.component';
 import {AdminComponent} from './admin/admin.component';
 import {RegisterService} from './register/register.service';
-import {RecetaService} from './creacionreceta/receta.service';
 import {CreacionRecetaComponent} from './creacionreceta/creacionreceta.component';
+import {ControlPanelRecetas} from './controlpanel/controlpanel/admrecetas';
+import {ControlPanelRecetarios} from './controlpanel/controlpanel/admrecetarios';
+import {ControlPanelContrasenia} from './controlpanel/controlpanel/contrasenia';
+import {ControlPanelNotificaciones} from './controlpanel/controlpanel/notificaciones';
+
 
 
 @Component({
 
   selector: 'main-app',
-  providers: [ROUTER_PROVIDERS,RegisterService,RecetaService],
+  providers: [ROUTER_PROVIDERS,RegisterService],
   templateUrl: './app/cuerpo.html',
 
-  directives: [ROUTER_DIRECTIVES, cabeceraComponent,FooterComponent ,UserComponent,RegisterComponent,RecetaComponent,AdminComponent],
+  directives: [ROUTER_DIRECTIVES, cabeceraComponent,FooterComponent ,UserComponent,RegisterComponent,RecetaComponent,AdminComponent,ControlPanelRecetas,ControlPanelRecetarios,ControlPanelContrasenia,ControlPanelNotificaciones],
 
   pipes: []
 })
@@ -33,22 +37,35 @@ import {CreacionRecetaComponent} from './creacionreceta/creacionreceta.component
 
 {path:'/Suscripciones',
     name: 'Susc',
-    component: suscripcionescomponent,
-     },
+    component: suscripcionescomponent},
 {path:'/Footer',
     name: 'Footer',
     component: FooterComponent,},
 {path:'/ControlPanel',
-    name: 'Control',
+    name: 'ControlPanel',
     component: ControlPanelComponent,},
+
 {path:'/User/:nombre',
     name:'User',
     component: UserComponent},
+{path:'/ControlPanel/Admrecetarios',
+    name: 'ControlRecetarios',
+    component: ControlPanelRecetarios},
+{path:'/ControlPanel/Admrecetas',
+    name: 'ControlRecetas',
+    component: ControlPanelRecetas},
+
+{path:'/ControlPanel/Contrasenia',
+    name: 'ControlContrasenia',
+    component: ControlPanelContrasenia,},
+
+{path:'/ControlPanel/Notificaciones',
+    name: 'ControlNotificaciones',
+    component: ControlPanelNotificaciones},
 {path:'/Register',
     name:'Register',
-    component:RegisterComponent,
-  },
-{path:'/Receta/:nombre',
+    component:RegisterComponent},
+{path:'/Receta',
     name:'Receta',
     component:RecetaComponent},
 {path:'/Admin',
@@ -57,6 +74,7 @@ import {CreacionRecetaComponent} from './creacionreceta/creacionreceta.component
 {path:'/CrearReceta',
     name:'CrearReceta',
     component:CreacionRecetaComponent},
+
 
 
 ])
