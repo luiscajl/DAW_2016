@@ -12,11 +12,9 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav ">
                     <li class=""><a (click)="gotoinicio()">Inicio</a></li>
-                    <li><a *ngIf="currentActive()" (click)="gotosuscrip()">Suscripciones</a></li>
+                    <li><a (click)="gotosuscrip()">Suscripciones</a></li>
                 </ul>
-
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a  *ngIf="currentActive()" class="receta_crear" (click)="gotoCrReceta()">  Crear receta</a></li>
                      <li><form class="navbar-form nav navbar-nav " role="search">
                         <fieldset class="busqueda">
                             <input class="busqueda" type="search" />
@@ -26,28 +24,14 @@
                         </li>
 
 
-
-                    <li><a *ngIf="!currentActive()"(click)="gotoregister()"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                    <li><a *ngIf="!currentActive()" id="log" data-toggle="modal" data-target="#myModal" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                    <li><a  *ngIf="currentActive()" >
-                      <div class="dropdown">
-                          <span class="receta_crear" id="menu1" data-toggle="dropdown">{{nombrelogin}}
-                            <span class="caret"></span></span>
-                            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Editar Suscripciones</a></li>
-                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Perfil</a></li>
-                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Editar Perfil</a></li>
-                              <li role="presentation" class="divider"></li>
-                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cerrar Sesion</a></li>
-                            </ul>
-                      </div>
-                    </a></li>
+                    <li><a class="receta_crear" (click)="gotoCrReceta()">Crear receta</a></li>
+                    <li><a (click)="gotoregister()"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a id="log" data-toggle="modal" data-target="#myModal" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                 </ul>
             </div>
         </div>
 
     </nav>
-
     <div class="modal fade" id="myModal" [hidden]="hideModal" role="dialog">
             <div class="modal-dialog">
 
@@ -79,7 +63,7 @@
                       <br>
                       <input [(ngModel)]="contrasenialogin" align="center" type="password"required autocomplete="off"/>
                 </div> <br>
-                   <input type="submit" data-dismiss="modal" value="Entrar" (click)="compareTo()">
+                   <input type="submit" value="Entrar" (click)="compareTo()">
                     </div>
                 </form>
                 </div>

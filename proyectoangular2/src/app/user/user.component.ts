@@ -14,7 +14,8 @@ import {register} from '../register/register.model';
 
 export class UserComponent {
  register: register;
- constructor(private RegisterServic : RegisterService,private _routeParams:RouteParams,private router: Router){
+ constructor(private RegisterServic : RegisterService,private _routeParams:RouteParams){
+
 
 
 
@@ -28,10 +29,4 @@ ngOnInit(){
   )
 
 }
-  gotocontrolpanel(){
-    let link = ['ControlPanel'];
-    this.router.navigate(link);
-  }
-
-
 }

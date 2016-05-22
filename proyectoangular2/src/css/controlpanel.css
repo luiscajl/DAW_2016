@@ -3,27 +3,24 @@ html {
 }
 
 body {
-
-
+    
+    background: #E9EEF4;
     font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #fff;
+}
 
-    background-color: WHITE;
+.contenido {
+    
+    display: table;
+    width: 90%;
 }
-#contenidofrost {
-  background-color: white;
-}
-#recetariosfrost{
-  padding-left: 300px;
-}
-.container{
-  margin-top: 40px;
-}
+
 .container #helper {
     color: black;
     margin: auto;
     background-color: white;
     text-align: center;
-    padding-left: 18%;
+    margin-left: 17%;
 
     position: relative;
 }
@@ -36,15 +33,13 @@ body {
 
 .menu {
     background: rgb(146, 217, 192);
-    height: auto;
+    min-height: 100%;
     width: 240px;
-    margin-top: 0px;
+    margin-top: -20px;
     display: table-cell;
     position: absolute;
     float: left;
     z-index: 1;
-    color:white;
-
 }
 
 .menu h2 {
@@ -218,7 +213,6 @@ body {
 }
 
 .bio {
-  padding-left: 50px;
     display: block;
 }
 
@@ -246,8 +240,8 @@ input[type="submit"]:hover {
     transition: all 0.40s ease-out;
 }
 
-//input[type="password"],
-#passwordfrost {
+input[type="password"],
+input[type="email"] {
     height: 4%;
     padding: 5px 15px;
     color: black;
@@ -361,8 +355,7 @@ input[type="checkbox"]:active:after:after {
 }
 
 #receta1 {
-    padding-top: 20px;
-    padding-left: 50px;
+    margin-top: 20px;
     box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.2);
 }
 
