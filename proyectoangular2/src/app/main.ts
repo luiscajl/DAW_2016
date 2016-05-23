@@ -45,7 +45,6 @@ import {RecetaService} from './creacionreceta/receta.service';
 {path:'/ControlPanel',
     name: 'Control',
     component: ControlPanelComponent,},
-
 {path:'/User/:nombre',
     name:'User',
     component: UserComponent},
@@ -75,11 +74,7 @@ import {RecetaService} from './creacionreceta/receta.service';
 {path:'/CrearReceta',
     name:'CrearReceta',
     component:CreacionRecetaComponent},
-    @RouteConfig([
- {path:'/Inicio',
-    name: 'Inic',
-    component: iniciocomponent,
-    useAsDefault: true},
+
 
 
 ])

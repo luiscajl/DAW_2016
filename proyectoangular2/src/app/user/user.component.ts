@@ -29,7 +29,7 @@ ngOnInit(){
 
 }
   gotocontrolpanel(){
-    let link = ['ControlPanel'];
+    let link = ['Control'];
     this.router.navigate(link);
   }
 
