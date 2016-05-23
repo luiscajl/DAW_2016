@@ -33,16 +33,10 @@
     background-image: url(../img/pos.jpg);
     background-size: cover;
     background-repeat: repeat-y;
-
 }
 
 .iconos img{
     width: 40px;
-
-}
-
-.img_receta{
-  width: 30%;
 
 }
 .cabecera_receta .img_receta_de_recetas{
@@ -51,7 +45,7 @@
     background-image: url(../img/pos.jpg);
     background-size: cover;
     padding-left: 15px;
-    width: 30%;
+
 }
 
 
@@ -148,7 +142,7 @@ ul,ol{
 .titulo_receta{
     text-align: center;
     height: 50px;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.8);
     position: absolute; /* con esta linea estoy consiguiendo el centrado de texto en un div */
     height: 80px;
     bottom: 0;

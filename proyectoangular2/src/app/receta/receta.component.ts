@@ -27,5 +27,6 @@ export class RecetaComponent {
       error => console.log(error)
     )
 
+
 }
 }

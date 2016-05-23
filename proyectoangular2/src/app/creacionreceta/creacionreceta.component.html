@@ -1,60 +1,47 @@
-<div class="container">
 <div class="contenido" id="bodydelfrost">
 
     <div id="cuerporeceta" class='col-md-8 col-center'>
         <br>
-        <div id="categorias"><br>
         <div class="inputlabel">
-            <div>
-            <label>Id: </label></div>
-            <div>
             <label id="labelreceta">Nombre de la receta</label>
-            <input [(ngModel)]="recetita.nombre" placeholder="title" id="pasosinput" type="text" class="form-control" required>
-          <h3></h3>
+            <input [(ngModel)]="recetita.nombre" id="pasosinput" type="text" class="form-control" required>
         </div>
         <br>
 
-        <div>
+        <div class="inputlabel">
             <label id="labelreceta">Breve descripcion de la receta</label>
-            <input [(ngModel)]="recetita.descripcion" placeholder="describa aquí"><br>
-            <h3></h3>
+            <input  [(ngModel)]="recetita.descripcion" id="recetainput" type="text" class="form-control" required>
         </div>
         <br>
 
 
-        <div>
+        <div class="inputlabel">
             <div class="input-append">
-            <div class="col-lg-12">
+                <label id="labelreceta">Ingredientes</label>
+                <br>
+                <input [(ngModel)]="ingrediente" name="ingredientes" id="ingredientesinput" />
 
-              <input #desc type='text'>
-              <button (click)="addItem(desc.value); desc.value=''">Agregar ingrediente</button>
-              <div *ngFor="#item of items">
-                <span>
 
-                </span>
-                <button (click)="removeItem(item)">Borrar</button>
-              </div>
-            </div><!-- /.col-lg-6 -->
 
+                <input (click)="addIngrediente()" type="submit" value="Añadir">
             </div>
         </div>
         <br>
-        </div>
+
 
 
         <div class="pasos">
 
 
             <ol>
-                <li *ngFor="#cadapaso of pasos">
-                  <span>
-
-                  </span>
+                <li>Lo primero que haremos será ocuparnos de las galletas. En esta receta usaremos las galletas más tradicionales y clásicas que son las maría, pero podéis usar las que más os gusten a vosotros. Tenemos que machacar lo equivalente a un paquete hasta convertirlas en polvo. Podemos colocarlas en un cuenco y con el mortero irlas aplastando o triturarlas directamente en la batidora.</li>
+                <li>Aprovechad ahora para poner en un vaso de agua las láminas de gelatina para que se vayan hidratando.</li>
+                <li>
+                    <textarea  [(ngModel)]="paso" id="pasosinput" rows="10" type="text" name="name" class="form-control" ng-model="user.name" required></textarea>
                 </li>
                 <br>
                 <div class="añadirpaso" style="text-align:center;">
-                    <textarea #pas type='text'></textarea>
-                    <button (click)="addPaso(pas.value); pas.value=''">Agregar paso</button> </div>
+                    <input (click)="addPaso()" id="recetabutton" type="submit" value="Añadir paso" ></div>
             </ol>
 
 
@@ -67,9 +54,86 @@
         </div>
 
 
+        <div id="categorias" role="main">
+            <div class="row">
+                <div class="col-md-5 col-md-offset-2">
 
-        <br><br>
-    </div>
+                    <br>
+                    <div class="inputlabel">
+                        <label id="labelreceta">Tiempo medio de preparación:</label>
+                        <input  [(ngModel)]="recetita.tiempo" id="tiempoinput" type="text" class="form-control" required>
+                    </div>
+                    <br>
+                    <div class="inputlabel">
+                        <label id="labelreceta">Tipo de plato:</label>
+
+                        <select name="tipoplato" id="tipoplato" type="option" value="" class="valid">
+                            <option value="1">Entrantes</option>
+                            <option value="8">Aliños y salsas</option>
+                            <option value="11">Ensaladas</option>
+                            <option value="2">Plato Principal</option>
+                            <option value="3">Postres</option>
+                            <option value="9">Reposteria</option>
+                            <option value="7">Otros</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="inputlabel">
+                        <label id="labelreceta">Enlace del video de la receta:</label>
+                        <input  [(ngModel)]="recetita.enlace" id="pasosinput" type="text" class="form-control" required>
+                    </div>
+                    <br>
+
+
+
+
+
+                </div>
+                <br>
+                <div class="col-md-5">
+                    <div class="inputlabel">
+                      <br>
+                        <br>
+                        <div class="field-wrap">
+                            <input type="checkbox" (change)="recetita.vegana = recetita.vegana.checked"/>
+                            <label for='input_1' tabindex="-1">
+                                <span class="check"></span> Vegana
+                            </label>
+                        </div>
+
+                        <div class="field-wrap">
+                            <input type="checkbox" />
+                            <label for='input_1' tabindex="-1">
+                                <span class="check"></span> Baja en grasas
+                            </label>
+                        </div>
+
+
+                        <div class="field-wrap">
+                            <input type="checkbox" />
+                            <label for='input_1' tabindex="-1">
+                                <span class="check"></span> Para diabeticos
+                            </label>
+                        </div>
+
+                        <div class="field-wrap">
+                            <input type="checkbox" />
+                            <label for='input_1' tabindex="-1">
+                                <span class="check"></span> Picante
+                            </label>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
 
     <br>
     <div class="creareceta" style="text-align:center;">
@@ -78,8 +142,4 @@
     </div>
     <br>
     <br>
-
-
-
-</div>
-</div>
+    </div>
