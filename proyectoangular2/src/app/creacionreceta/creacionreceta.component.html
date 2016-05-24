@@ -79,8 +79,8 @@
                     </div>
                     <br>
                     <div class="inputlabel">
-                        <label id="labelreceta">Enlace del video de la receta:</label>
-                        <input  [(ngModel)]="recetita.enlace" id="pasosinput" type="text" class="form-control" required>
+                        <label id="labelreceta">Dificultad: </label>
+                        <input  [(ngModel)]="recetita.dificultad" id="pasosinput" type="text" class="form-control" required>
                     </div>
                     <br>
 
@@ -95,29 +95,29 @@
                       <br>
                         <br>
                         <div class="field-wrap">
-                            <input type="checkbox" (change)="recetita.vegana = recetita.vegana.checked"/>
+                            <input type="checkbox"[(ngModel)]="recetita.vegana" />
                             <label for='input_1' tabindex="-1">
                                 <span class="check"></span> Vegana
                             </label>
                         </div>
 
-                        <div class="field-wrap">
-                            <input type="checkbox" />
+                        <div class="field-wrap"  >
+                            <input type="checkbox" [(ngModel)]="recetita.grasas"/>
                             <label for='input_1' tabindex="-1">
                                 <span class="check"></span> Baja en grasas
                             </label>
                         </div>
 
 
-                        <div class="field-wrap">
-                            <input type="checkbox" />
+                        <div class="field-wrap" >
+                            <input type="checkbox" [(ngModel)]="recetita.diabeticos"/>
                             <label for='input_1' tabindex="-1">
                                 <span class="check"></span> Para diabeticos
                             </label>
                         </div>
 
-                        <div class="field-wrap">
-                            <input type="checkbox" />
+                        <div class="field-wrap" >
+                            <input type="checkbox" [(ngModel)]="recetita.picante"/>
                             <label for='input_1' tabindex="-1">
                                 <span class="check"></span> Picante
                             </label>
