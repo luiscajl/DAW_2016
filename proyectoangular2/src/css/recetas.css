@@ -5,10 +5,10 @@
 
 .fondo1{
     height: 100%;
-    
+
    background-image: url(../img/apple_256.png);
    background-repeat:no-repeat; /* Indicamos que no se repetira */
-	background-attachment: fixed; /* Establecemos una posicion fija para la imagen */ 
+	background-attachment: fixed; /* Establecemos una posicion fija para la imagen */
 
 }
 
@@ -16,14 +16,14 @@
     height: 100%;
    background-image: url(../img/Tenedor.png);
    background-repeat:no-repeat; /* Indicamos que no se repetira */
-	background-attachment: fixed; /* Establecemos una posicion fija para la imagen */ 
+	background-attachment: fixed; /* Establecemos una posicion fija para la imagen */
 }
 
 .fondo3{
     height: 100%;
    background-image: url(../img/muffin.png);
    background-repeat:no-repeat; /* Indicamos que no se repetira */
-	background-attachment: fixed; /* Establecemos una posicion fija para la imagen */ 
+	background-attachment: fixed; /* Establecemos una posicion fija para la imagen */
 }
 
 .cabecera_receta{
@@ -37,9 +37,9 @@
 
 .iconos img{
     width: 40px;
-    
+
 }
-.cabecera_receta .img_receta{
+#img_receta_de_recetas{
     height: 200px;
      border-radius: 15px;
     background-image: url(../img/pos.jpg);
@@ -61,7 +61,7 @@
 }
 
 
-.receta_herramienta{
+#recetaherramientaalberto{
     background-color: rgb(146, 217, 192);
     color: white;
     border-bottom: solid rgba(99, 186, 155, 1) 5px;
@@ -72,14 +72,14 @@ text-align: center;
 .list-inline li{
     padding-top: 10px;
    height: 40px;
-    
+
 }
 
 .list-inline li a:hover{
     background-color: rgb(99, 186, 155);
 }
 
-.list-inline li a { 
+.list-inline li a {
     padding-top: 12px;
     padding-bottom: 12px;
     padding-right: 20px;
@@ -100,7 +100,7 @@ text-align: center;
     padding-right: 25%;
     text-align: center;
     border-bottom: solid rgba(202, 186, 131, 1) 5px;
-    
+
 }
 
 .receta_ingredientes ol{
@@ -143,8 +143,8 @@ ul,ol{
     height: 50px;
     background-color: rgba(0,0,0,0.4);
     position: absolute; /* con esta linea estoy consiguiendo el centrado de texto en un div */
-    height: 80px;  
-    bottom: 0; 
+    height: 80px;
+    bottom: 0;
     width: 100%;
     margin-left: -15px;
     border-bottom-left-radius: 15px;
@@ -152,19 +152,19 @@ ul,ol{
 }
 
 .titulo_receta h3{
-    
+
 }
 
 .logo_cocinero{
     height: 100px;
-   
+
 }
 
 .datos_receta{
     padding-top: 5px;
 }
 .contenedor_principal{
-     padding-top: 70px;
+
 }
 .usuario_receta{
     text-align: center;
@@ -178,7 +178,7 @@ ul,ol{
 
 .seguir{
     margin-top: 5px;
-    
+
 }
 
 
@@ -190,7 +190,7 @@ ul,ol{
 }
 
 .pasos ol {
-  counter-reset: section;             
+  counter-reset: section;
   list-style-type: none;
 background-color: rgba(255, 255, 255, 0.9);
     border-radius: 5px;
@@ -217,7 +217,7 @@ padding-left: 8px;
 .galeria{
  background-color: rgb(168,214,227);
     padding: 15px;
-  
+
 }
 
 .modal-body{
@@ -226,7 +226,7 @@ padding-left: 8px;
     vertical-align:middle;
     text-align:center;
 }
-  
+
 .modal-body img{
    width: 100%;
     position:relative;
@@ -243,8 +243,8 @@ padding-left: 8px;
 }
 
 .col-md-3{
- 
-    background: none;
+
+    //background: none;
 
 }
 
@@ -274,7 +274,7 @@ padding-left: 8px;
 }
 
 .comentarios_cuerpo{
-   
+
 }
 
 .pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus{
@@ -283,27 +283,27 @@ padding-left: 8px;
 
 .logo_cocinero_comentarios{
     height: 80px;
-   
+
 }
 
 #fecha_comentario{
     text-align: right;
-    
+
 }
 
 #texto_comentario{
    height: 95px;
-    
+
 }
 
 #likes_comentario{
-        
+
     display:inline;
     margin-top: 80px;
 }
 
 #dislikes_comentario{
-       
+
     display:inline;
      margin-top: 80px;
 }
@@ -311,7 +311,6 @@ padding-left: 8px;
 #titulo_galeria{
     color: white;
     text-align: center;
-    margin-top: -10px;
-    
-}
+    margin-top: 0px;
 
+}
