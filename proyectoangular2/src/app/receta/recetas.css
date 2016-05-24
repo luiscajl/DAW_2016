@@ -37,7 +37,9 @@
 }
 
 .iconos img{
+    display: inline-block;
     width: 40px;
+    margin-top: 30px;
 
 }
 

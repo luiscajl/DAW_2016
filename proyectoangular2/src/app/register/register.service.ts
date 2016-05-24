@@ -3,6 +3,7 @@ import {Injectable} from 'angular2/core';
 import {register} from './register.model';
 import {withObserver} from '../utils';
 
+
 @Injectable()
 export class RegisterService{
   private register:register;
@@ -18,7 +19,7 @@ export class RegisterService{
 
   }
 
-  saveUser(register:register){ 
+  saveUser(register:register){
     this.registeruser.push(register);
     console.log(this.registeruser);
     console.log(this.getUsers());
