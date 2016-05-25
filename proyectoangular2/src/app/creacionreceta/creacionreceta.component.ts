@@ -31,7 +31,7 @@ export class CreacionRecetaComponent {
     )
 
   }else{
-this.recetita = new receta('','22/05/2016','','','','',null,[],[],'',false,false,false,false);
+this.recetita = new receta('','22/05/2016','','','','',null,[],[],'',false,false,false,false,[]);
 
   }
   }
