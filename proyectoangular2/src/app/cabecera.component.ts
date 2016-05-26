@@ -70,13 +70,15 @@ export class cabeceraComponent{
                 this.currentUser = usuario;
                 this.service.setUser(usuario);
                 console.log(this.currentUser);
+                console.log(this.service.getCurrentUser());
                 this.gotoUser();
                 this.nombrelogin = this.service.getCurrentUser().nombre;
 
             }
         }
       }
-      if (encontrado){
+      if (!encontrado){
+        console.log("Error, usuario no creado");
 
       }
     }
