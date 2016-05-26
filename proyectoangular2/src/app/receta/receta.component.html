@@ -20,17 +20,17 @@
 
 
           <div class="row">
-            <div class="col-md-8 iconos">
-            <br><h4>{{receta.descripcion}}</h4>
-              <img src="img/diabet.png">&nbsp;&nbsp;&nbsp;<img src="img/iconos/horno.png">&nbsp;&nbsp;&nbsp;<img src="https://www.youtube.com/yt/brand/media/image/YouTube-icon-dark.png">
+            <div id="iconos" class="col-md-8 iconos">{{receta.descripcion}}
+              <div class="infoextra" style="margin-bot:10px">
 
-
-            </div>
+          </div>
+              </div>
           </div>
       <br>
 
       </div></div>
           </div>
+
           <div class="row">
               <div class="col-md-4 rank">
                   <span class="glyphicon glyphicon-star"></span>
@@ -40,7 +40,11 @@
                   <span class="glyphicon glyphicon-star"></span>
               </div>
              <div class="info col-md-8">
-      <span>{{receta.dificultad}}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-time"></span> 30 min </span>
+      <span>{{receta.dificultad}}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-time"></span> {{receta.tiempo}}</span>
+        <span *ngIf="receta.vegana">| Vegana</span>
+        <span *ngIf="receta.grasas">| Baja en grasas</span>
+        <span *ngIf="receta.diabeticos">| Para diabeticos</span>
+        <span *ngIf="receta.picante">| Picante</span>
        </div>
           </div>
       </div>
@@ -97,7 +101,7 @@
 
 
 <ol>
-<li *ngFor="#paso of receta.pasos">{{paso}}</li>
+<li *ngFor="#paso of receta.pasos"> {{paso}}</li>
 </ol>
 
 
@@ -156,7 +160,7 @@
               <div class="col-md-10 comentario">
                   <div id="fecha_comentario">29/03/2016</div>
                   <div id="texto_comentario">
-                  FUAAAA PEDAZO DE RECETA COMO ME VOY A PONER DE TARTA DE QUESO
+
                   </div>
 
                   <div id="likes_comentario">
@@ -236,9 +240,27 @@
 
 
               </div>
+
+
+
+
           </div>
+
+
+
           </div>
+  <br>
+          <div class="col-md-10 meterComentarios">
+                  <textarea  id="inputcomentarios" rows="5" type="text" name="name" class="form-control" required></textarea>
+                <input (click)="addComentario()" id="recetabutton" type="submit" value="Añadir comentario" >
+
+          </div>
+
+
           <br>
+            <br>
+              <br>
+                <br>
 
         </div>
   </div>

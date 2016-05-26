@@ -16,13 +16,14 @@ import {ControlPanelRecetarios} from './controlpanel/controlpanel/admrecetarios'
 import {ControlPanelContrasenia} from './controlpanel/controlpanel/contrasenia';
 import {ControlPanelNotificaciones} from './controlpanel/controlpanel/notificaciones';
 import {RecetaService} from './creacionreceta/receta.service';
+import {ComentarioService} from './receta/comentario.service';
 
 
 
 @Component({
 
   selector: 'main-app',
-  providers: [ROUTER_PROVIDERS,RegisterService,RecetaService],
+  providers: [ROUTER_PROVIDERS,RegisterService,RecetaService, ComentarioService],
   templateUrl: './app/cuerpo.html',
 
   directives: [ROUTER_DIRECTIVES, cabeceraComponent,FooterComponent ,UserComponent,RegisterComponent,RecetaComponent,AdminComponent,ControlPanelRecetas,ControlPanelRecetarios,ControlPanelContrasenia,ControlPanelNotificaciones],

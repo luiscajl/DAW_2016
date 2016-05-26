@@ -1,3 +1,5 @@
+import {register} from '../register/register.model';
+import {comentario} from '../receta/comentario.model';
 export class receta{
   nombre: string;
   fecha: string;
@@ -5,7 +7,7 @@ export class receta{
   infoextra: string;
   dificultad: string;
   tiempo: string;
-  autor: string;
+  autor: register;
   ingredientes: string[];
   pasos: string[];
   video:string
@@ -13,9 +15,11 @@ export class receta{
   grasas:boolean;
   diabeticos:boolean;
   picante:boolean;
+  comentarios: comentario[];
+
 //  comentarios: comentarios[];
 
-constructor(nombre: string, fecha: string, descripcion: string, infoextra: string, dificultad: string, tiempo: string, autor:string, ingredientes: string[], pasos: string[], video: string, vegana:boolean, grasas:boolean, diabeticos:boolean,picante:boolean ){
+constructor(nombre: string, fecha: string, descripcion: string, infoextra: string, dificultad: string, tiempo: string, autor:register, ingredientes: string[], pasos: string[], video: string, vegana:boolean, grasas:boolean, diabeticos:boolean,picante:boolean, comentarios: comentario[] ){
   this.nombre = nombre;
   this.ingredientes=ingredientes;
   this.fecha=fecha;
@@ -31,8 +35,8 @@ constructor(nombre: string, fecha: string, descripcion: string, infoextra: strin
   this.grasas = grasas;
   this.diabeticos = diabeticos;
   this.picante = picante;
+  this.comentarios = comentarios;
 
 
   }
 }
-

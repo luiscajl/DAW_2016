@@ -1,6 +1,8 @@
 import {Component} from 'angular2/core';
 import {receta} from './receta.model';
+import {register} from '../register/register.model';
 import {RecetaService} from './receta.service';
+
 
 import {RouteConfig, ROUTER_DIRECTIVES, RouteParams, Router} from 'angular2/router';
 
@@ -16,6 +18,7 @@ export class CreacionRecetaComponent {
   recetita: receta;
   ingrediente:string;
   paso:string;
+  autor:register;
 
 
 
@@ -28,7 +31,7 @@ export class CreacionRecetaComponent {
     )
 
   }else{
-this.recetita = new receta('','22/05/2016','','','','','frost',[],[],'',false,false,false,false);
+this.recetita = new receta('','22/05/2016','','','','',null,[],[],'',false,false,false,false,[]);
 
   }
   }
