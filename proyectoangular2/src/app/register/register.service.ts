@@ -18,7 +18,7 @@ export class RegisterService{
 
   }
 
-  saveUser(register:register){ 
+  saveUser(register:register){
     this.registeruser.push(register);
     console.log(this.registeruser);
     console.log(this.getUsers());
@@ -39,6 +39,7 @@ export class RegisterService{
    getCurrentUser(){
    return this.register;
     }
+    
    getCurrentUserlogin()
    {
      console.log("Ha entrado");

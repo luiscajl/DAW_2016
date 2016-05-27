@@ -23,9 +23,8 @@ import {ComentarioService} from './receta/comentario.service';
 @Component({
 
   selector: 'main-app',
-  providers: [ROUTER_PROVIDERS,RegisterService,RecetaService, ComentarioService],
+  providers: [ROUTER_PROVIDERS,RegisterService],
   templateUrl: './app/cuerpo.html',
-
   directives: [ROUTER_DIRECTIVES, cabeceraComponent,FooterComponent ,UserComponent,RegisterComponent,RecetaComponent,AdminComponent,ControlPanelRecetas,ControlPanelRecetarios,ControlPanelContrasenia,ControlPanelNotificaciones],
 
   pipes: []
