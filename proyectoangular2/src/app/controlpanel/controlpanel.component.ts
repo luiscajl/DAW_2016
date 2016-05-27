@@ -1,5 +1,6 @@
 import {Component} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES, RouteParams, Router} from 'angular2/router';
+import {RegisterService} from '../register/register.service';
 
 
 @Component({
@@ -10,7 +11,7 @@ import {RouteConfig, ROUTER_DIRECTIVES, RouteParams, Router} from 'angular2/rout
 
 export class ControlPanelComponent {
 
-constructor (private router: Router){}
+constructor (private router: Router, public registerservice: RegisterService){}
   gotocontrolpanel(){
     let link = ['ControlPanel'];
     this.router.navigate(link);

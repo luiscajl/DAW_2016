@@ -1,6 +1,8 @@
 import {Component} from 'angular2/core';
 import {receta} from './receta.model';
+import {register} from '../register/register.model';
 import {RecetaService} from './receta.service';
+
 
 import {RouteConfig, ROUTER_DIRECTIVES, RouteParams, Router} from 'angular2/router';
 
@@ -14,7 +16,13 @@ export class CreacionRecetaComponent {
 
 
   recetita: receta;
-  constructor(private RecetaService :RecetaService ,private _routeParams:RouteParams){
+  ingrediente:string;
+  paso:string;
+  autor:register;
+
+
+
+  constructor(private router: Router,private RecetaService :RecetaService ,private _routeParams:RouteParams){
     let nombre=this._routeParams.get("nombre");
     if(nombre){
     this.RecetaService.getReceta(nombre).subscribe(
@@ -23,7 +31,7 @@ export class CreacionRecetaComponent {
     )
 
   }else{
-
+this.recetita = new receta('','22/05/2016','','','','',null,[],[],'',false,false,false,false,[]);
 
   }
   }
@@ -38,6 +46,27 @@ export class CreacionRecetaComponent {
 
 
     this.RecetaService.saveReceta(this.recetita);
-    window.history.back();
+    this.gotoReceta();
   }
+
+
+  gotoReceta(){
+        console.log(this.recetita);
+        this.router.navigate(['Receta', { nombre: this.recetita.nombre }]);
+
+  }
+
+  addIngrediente(){
+    this.recetita.ingredientes.push(this.ingrediente);
+
+
+  }
+
+  addPaso(){
+    this.recetita.pasos.push(this.paso);
+
+
+
+  }
+
  }

@@ -4,16 +4,20 @@ import {user} from './user.model';
 import {RegisterService} from '../register/register.service';
 import {RegisterComponent} from '../register/register.component';
 import {register} from '../register/register.model';
+import {CurrentUserService} from './user.service';
 
 
 @Component({
   selector: 'user',
   templateUrl: 'app/user/user.component.html',
-  providers:[RegisterService]
+
 })
 
 export class UserComponent {
  register: register;
+ public nusuario: register;
+ nombrelogin:String;
+
  constructor(private RegisterServic : RegisterService,private _routeParams:RouteParams,private router: Router){
 
 
@@ -22,14 +26,17 @@ export class UserComponent {
 
 ngOnInit(){
   let nombre=this._routeParams.get("nombre");
-  this.RegisterServic.getUser(nombre).subscribe(
+  console.log(nombre);
+    this.RegisterServic.getUser(nombre).subscribe(
     register => this.register = register,
     error => console.log(error)
   )
 
 }
   gotocontrolpanel(){
-    let link = ['ControlPanel'];
+    this.nusuario = this.RegisterServic.getCurrentUser();
+    console.log(this.nusuario);
+    let link = ['Control'];
     this.router.navigate(link);
   }
 

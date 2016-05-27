@@ -41,7 +41,7 @@
 }
 #img_receta_de_recetas{
     height: 200px;
-    border-radius: 15px;
+     border-radius: 15px;
     background-image: url(../img/pos.jpg);
     background-size: cover;
     padding-left: 15px;
@@ -243,6 +243,9 @@ padding-left: 8px;
 }
 
 .col-md-3{
+
+    //background: none;
+
 }
 
 .galeria_imagenes img{

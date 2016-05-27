@@ -1,5 +1,7 @@
 import {Injectable} from 'angular2/core';
 import {register} from '../register/register.model.ts';
+import {RouteConfig, ROUTER_DIRECTIVES, RouteParams, Router} from 'angular2/router';
+
 
 @Injectable()
 export class CurrentUserService{
@@ -11,7 +13,7 @@ export class CurrentUserService{
     this.usuario=cUser;
     if(this.usuario!=undefined){
 	    //this.usuario.addRecomendacion(new Recomendacion(this.usuario, "El mejor roguelike", 15000, "Este juego es el mejor roguelike que ha salido nunca", "The binding of isaac: Rebirth"));
-	    
+
   	}
   }
   getCurrentUser(){
