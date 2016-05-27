@@ -4,7 +4,7 @@ import {RouteConfig, ROUTER_DIRECTIVES, RouteParams, Router} from 'angular2/rout
 
 
 @Injectable()
-export class CurrentUserService{
+export class UserService{
 
   private usuario:register;
 

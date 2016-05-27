@@ -12,7 +12,7 @@ export class ControlPanelRecetas {
 
   constructor (private router: Router){}
     gotocontrolpanel(){
-      let link = ['ControlPanel'];
+      let link = ['Control'];
       this.router.navigate(link);
     }
     gotoadmrecetarios(){
