@@ -7,14 +7,14 @@ import {RegisterService} from './register.service';
   selector: 'register',
   templateUrl: 'app/register/register.component.html',
   directives: [ROUTER_DIRECTIVES],
-  providers:[RegisterService]
+
 })
 
 export class RegisterComponent {
   newUser: boolean;
   usuario: register;
 
-  constructor(private RegisterServic : RegisterService,private _routeParams:RouteParams){
+  constructor(public RegisterServic : RegisterService,private _routeParams:RouteParams){
     let nombre=this._routeParams.get("nombre");
     if(nombre){
     this.RegisterServic.getUser(nombre).subscribe(

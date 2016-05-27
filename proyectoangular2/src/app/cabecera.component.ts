@@ -8,6 +8,7 @@ import {register} from './register/register.model';
 @Component({
        selector: 'cabecera', // mirar que es selector
        templateUrl: './app/cabecera.component.html',
+    
 })
 export class cabeceraComponent{
   private regis : register[];
