@@ -4,7 +4,7 @@ import {user} from './user.model';
 import {RegisterService} from '../register/register.service';
 import {RegisterComponent} from '../register/register.component';
 import {register} from '../register/register.model';
-import {CurrentUserService} from './user.service';
+import {UserService} from './user.service';
 
 
 @Component({
