@@ -1,5 +1,7 @@
 import {Component} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES, Router} from 'angular2/router';
+import {RecetaService} from '../creacionreceta/receta.service';
+import {receta} from '../creacionreceta/receta.model';
 
 
 @Component({
@@ -12,5 +14,9 @@ import {RouteConfig, ROUTER_DIRECTIVES, Router} from 'angular2/router';
 
 
 export class suscripcionescomponent {
-  constructor (private router: Router){}
+  recetas: receta[];
+  constructor (private router: Router, private RecetaService:RecetaService ){
+    this.recetas = RecetaService.getRecetas();
+
+  }
   }
