@@ -2,6 +2,7 @@ import {Component} from 'angular2/core';
 import {receta} from './receta.model';
 import {register} from '../register/register.model';
 import {RecetaService} from './receta.service';
+import {RegisterService} from '../register/register.service';
 
 
 import {RouteConfig, ROUTER_DIRECTIVES, RouteParams, Router} from 'angular2/router';
@@ -22,20 +23,11 @@ export class CreacionRecetaComponent {
 
 
 
-  constructor(private router: Router,private RecetaService :RecetaService ,private _routeParams:RouteParams){
-    let nombre=this._routeParams.get("nombre");
-    if(nombre){
-    this.RecetaService.getReceta(nombre).subscribe(
-      receta => this.recetita = receta,
-      error => console.log(error)
-    )
+  constructor(private router: Router,private RecetaService :RecetaService ,private _routeParams:RouteParams, private RegisterService:RegisterService){
 
-  }else{
-this.recetita = new receta('','22/05/2016','','','','',null,[],[],'',false,false,false,false,[]);
+this.recetita = new receta('','22/05/2016','','','','',RegisterService.getCurrentUser(),[],[],'',false,false,false,false,[]);
 
   }
-  }
-
 
 
   cancel() {
