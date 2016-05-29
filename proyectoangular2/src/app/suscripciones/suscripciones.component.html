@@ -5,25 +5,24 @@
 
 
 
-       <div class="row" id="receta1">
+       <div class="row" id="receta1" *ngFor="#receta of recetas">
            <div class="col-md-4">
                   <div class="row">
                       <div class="col-md-12  img_receta" id="columnaizquierda">
                          <span class="glyphicon glyphicon-asterisk" style="float:left; padding:5px;"></span>
-                         <div class="titulo_receta"><h3>Pechuga de pollo rellena</h3><h5>1/12/12</h5></div>
+                         <div class="titulo_receta"><h3>{{receta.nombre}}</h3><h5>{{receta.fehca}}</h5></div>
                        </div>
                </div>
             </div>
 
             <div class="col-md-6" id="colummnacentralreceta">
                 <div class="row">
-                    <div class="col-md-12" id="descripcionreceta">La receta de Pollo Asado es una receta muy tradicional en nuestra gastronomía, una receta ecónomica y fácil preparación, ideal para varios comensales.</div>
+                    <div class="col-md-12" id="descripcionreceta">{{receta.descripcion}}</div>
                 </div>
 
                 <div class="row">
-                    <div class="col-md-12" id="infoextra"><span>Dificultad:
-                                       Media | <span class="glyphicon glyphicon-time">
-                                     </span> 30 minutos </span><span id="apanio">
+                    <div class="col-md-12" id="infoextra"><span>{{receta.dificultad}}<span class="glyphicon glyphicon-time">
+                    </span>{{receta.tiempo}}</span><span id="apanio">
                                      <span class="glyphicon glyphicon-user"></span> 4 | <a href="#">
                                  <span class="glyphicon glyphicon-film"></span></a> | <span class="glyphicon glyphicon-tags"> </span>  Primer plato </span>
                      <!--<div id="compartir" >
@@ -43,7 +42,7 @@
 
             <div class="usuario_rece" id="usuariorecetajimlu">
                      <img class="logo_cocinero" src="img/iconos/alberto.png">
-                    <br><p id="nombreusuarioreceta">Alber</p>
+                    <br><p id="nombreusuarioreceta">{{receta.autor.nombre}}</p>
                      <p id="rangonombreusuarioreceta">Experto</p>
                     <button type="button" class="btn btn-primary seguir" id ="botonseguirnombreusuarioreceta">Seguir</button></div>
          </div>
@@ -51,7 +50,7 @@
 
 
 
-
+ <!--
 
 
 
@@ -81,7 +80,7 @@
                              <a href="#"><img id="compartirtwitter" src="img/iconos/twitter.png"></img></a>
                              <a href="#"><img id="compartirgoogle" src="img/iconos/g+.png"></img></a>
 
-                     </div>-->
+                     </div>-
                  </div>
                 </div>
                 <div class="row">
@@ -129,7 +128,7 @@
                              <a href="#"><img id="compartirtwitter" src="img/iconos/twitter.png"></img></a>
                              <a href="#"><img id="compartirgoogle" src="img/iconos/g+.png"></img></a>
 
-                     </div>-->
+                     </div>
                  </div>
                 </div>
                 <div class="row">
@@ -148,7 +147,7 @@
         </div>
 
 
-
+-->
 
 
 
