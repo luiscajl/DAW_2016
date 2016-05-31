@@ -17,7 +17,7 @@ export class ComentarioService{
 
   saveComentario(comentario:comentario){
     this.comentarios.push(comentario);
-   console.log(this.comentarios);
+   //console.log(this.comentarios);
     //return withObserver(usuario);
   }
 
