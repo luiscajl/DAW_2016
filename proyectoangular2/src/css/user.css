@@ -2,7 +2,7 @@
 
 .logo{
 
-   height: 113px;    
+   height: 113px;
 }
 body{
     background-color: #ededed;
@@ -13,7 +13,7 @@ body{
 #recetas{
     height: auto;
     background-color: rgb(192,239,222);
-    
+
 }
 
 
@@ -27,7 +27,7 @@ body{
     width: auto;
 }
 #editperfil
-{    
+{
     text-align: right;
     font-size: 20px;
     margin-top: 18px;
@@ -40,7 +40,7 @@ body{
 
 }
 
-#imagenicono{ 
+#imagenicono{
     margin-left: 20px;
     height: 100px;
     align-content: center;
@@ -51,26 +51,26 @@ body{
     /*background-color: rgba(0,0,0,0.5);*/
     text-align: left;
     color: white;
-    
+
     font-family: 'Droid Sans', sans-serif;
 }
 #rangousuario{
-   
-   
+
+
     font-size: 17px;
-   
+
     color: white;
     font-family: 'Droid Sans', sans-serif;
-    
+
 }
 #infousuario{
     font-size: 12px;
     color: white;
     font-family: 'Droid Sans', sans-serif;
-    
+
 }
 #nombreusurangoinfo{
-    
+
     margin-left: 40px;
     margin-right: 40px;
     background-color: rgba(76, 141, 160, 0.5);
@@ -103,7 +103,7 @@ body{
     height: auto;
     width: auto;
     border-bottom: solid rgba(99, 186, 155, 1);
-    
+
 }
 #menuperfil{
     text-align: center;
@@ -128,14 +128,14 @@ body{
 .list-inline li{
 padding-top: 10px;
    height: 40px;
-    
+
 }
 
 .list-inline li a:hover{
     background-color: rgb(99, 186, 155);
 }
 
-.list-inline li a { 
+.list-inline li a {
     padding-top: 12px;
     padding-bottom: 12px;
     padding-right: 20px;
@@ -154,13 +154,13 @@ padding-top: 10px;
     height: auto;
     width: auto;
     margin-left: 80px;
-    margin-right:80px;    
-    
-    
-    
+    margin-right:80px;
+
+
+
 }
 #receta1{
-    box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.2);    
+    box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.2);
     border-bottom: solid rgba(173, 173, 173, 1);
     background-color: white;
     margin-top: 15px;
@@ -173,10 +173,10 @@ padding-top: 10px;
 
 .img_receta{
     height: 200px;
-    border-radius: 15px;           
+    border-radius: 15px;
     background-image: url(../img/pollorelleno.jpg);
     background-size: cover;
-    
+
     margin-bottom: 15px;
     margin-top: 15px;
     margin-left: 15px;
@@ -184,7 +184,7 @@ padding-top: 10px;
 }
 .img_receta2{
     height: 200px;
-    border-radius: 15px;           
+    border-radius: 15px;
     background-image: url(../img/albondigas.jpg);
     background-size: cover;
     margin-bottom: 15px;
@@ -194,7 +194,7 @@ padding-top: 10px;
 }
 .img_receta3{
     height: 200px;
-    border-radius: 15px;           
+    border-radius: 15px;
     background-image: url(../img/flan.jpg);
     background-size: cover;
     margin-bottom: 15px;
@@ -222,10 +222,10 @@ padding-top: 10px;
     font-family: 'Droid Sans', sans-serif;
     font-size: 15px;
 }
-    
+
 #infoextra{
         font-family: 'Droid Sans', sans-serif;
-        font-size: 13px; 
+        font-size: 13px;
 }
 
 
@@ -233,7 +233,7 @@ padding-top: 10px;
 #stars{
     font-size: 35px;
     bottom: 0;
-    margin-top: 60px;    
+    margin-top: 60px;
 }
 .usuario_receta{
     text-align: center;
@@ -249,7 +249,7 @@ padding-top: 10px;
 .logo_cocinero{
     height: 100px;
     margin-top: 10px;
-    
+
 }
 #nombreusuarioreceta{
     font-size: 20px;
@@ -271,7 +271,7 @@ padding-top: 10px;
     background-size: 50px 50px;
     height: 50px;
     width: 50px;
-    
+
 }
 #compartirtwitter{
     background-size: 50px 50px;
@@ -288,17 +288,17 @@ background-size: 50px 50px;
 #iconoperfil{
     max-height: 100px;
     max-width: 100px;
-    
+
 }
 #colummnacentralreceta{
     margin-top: 20px;
     padding-left: 30px;
-    
-    
+
+
 }
 
 
-    
+
 #footer{
     background-color: rgb(172, 237, 214);
     width: 100%;
@@ -307,7 +307,7 @@ background-size: 50px 50px;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top: 20px;
-    
+
 }
 
 .glyphicon-star{
@@ -324,19 +324,19 @@ background-size: 50px 50px;
 }
 
 /*
-@media (max-width:1920px) { 
+@media (max-width:1920px) {
     #textoreceta{
         width: 300px;}
 
 }
-@media (max-width:1200px) { 
+@media (max-width:1200px) {
     #textoreceta{width: 240px;}
-   
-    
+
+
 
 }
 
-@media (max-width:800px) { 
+@media (max-width:800px) {
     #textoreceta{ width: auto;}
     #containerrecetas{margin-left: 20px;margin-right: 20px;}
     .receta_herramienta{height: auto;max-height: 300px;}
@@ -347,7 +347,7 @@ background-size: 50px 50px;
     #compartir{padding-top: 10px;padding-bottom: 10px;}
     #botonseguir{padding-left: 0px; padding-bottom: 10px;text-align: center;padding-top: 0px;}
     #imagenicono{ text-align: center;height: 100px;
-    
+
 
 
 @media (max-width:400px) {  /*Ancho menor a 400

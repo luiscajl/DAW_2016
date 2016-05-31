@@ -6,9 +6,14 @@ import {RouteConfig, ROUTER_DIRECTIVES, RouteParams, Router} from 'angular2/rout
 @Injectable()
 export class ControlPanelService{
 
-  private register:register;
+  register:register;
+  private viejabio="";
+  private nuevabio="";
+  private bio="";
 
-  updateuser(){
+
+  getcurrentcontrolpanel(){
+    return this.register
+  }
 
   }
-}

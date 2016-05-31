@@ -25,12 +25,9 @@
             <div id="helper" class="col-md-12">
 <h2>Email y contraseña</h2>
 <div class="contraseña">
-    <input type="email" placeholder="Email">
+    <input type="email" placeholder="Email" [(ngModel)]="emailnuevo">
 
-    <input type="submit" value="Cambiar email"><br> Comprueba que pones un EMAIL CORRECTO!.
-    <br> Si el email que pones es incorrecto podrías bloquear la cuenta al no recibir el email de validación
-
-
+    <input type="submit" value="Cambiar email" (click)="updateemailuser()"><br> Comprueba que pones un EMAIL CORRECTO!.
 
 
 </div>
@@ -38,20 +35,16 @@
 
 <div class="email">
     <div class="field-wrap">
-        <input id="passwordfrost" type="password" placeholder="Contraseña antigua">
+        <input id="passwordfrost" type="password" placeholder="Contraseña antigua" [(ngModel)]="pass">
     </div>
     <div class="field-wrap">
-        <input id="passwordfrost" type="password" placeholder="Contraseña nueva">
+        <input id="passwordfrost" type="password" placeholder="Contraseña nueva" [(ngModel)]="passnueva">
     </div>
     <div class="field-wrap">
-        <input id="passwordfrost" type="password" placeholder="Repite la contraseña">
+        <input id="passwordfrost" type="password" placeholder="Repite la contraseña" [(ngModel)]="passnuevarepeticion">
     </div>
 
-    <input type="submit" value="Cambiar contraseña">
-
-
-
-
+    <input type="submit" value="Cambiar contraseña"(click)="updatepassuser()">
 
 </div>
 </div>

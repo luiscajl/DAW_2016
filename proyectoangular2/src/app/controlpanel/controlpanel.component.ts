@@ -3,6 +3,7 @@ import {RouteConfig, ROUTER_DIRECTIVES, RouteParams, Router} from 'angular2/rout
 import {RegisterService} from '../register/register.service';
 import {UserService} from '../user/user.service';
 import {register} from '../register/register.model';
+import {ControlPanelService} from './controlpanel.service';
 
 
 @Component({
@@ -13,11 +14,15 @@ import {register} from '../register/register.model';
 
 export class ControlPanelComponent {
   register:register;
-  
+  private viejabio="";
+  private nuevabio="";
+  private bio="";
 
-  constructor (private router: Router, private _routeParams:RouteParams,public registerservice: RegisterService, private userservice:UserService){}
+
+  constructor (private router: Router, private _routeParams:RouteParams,public registerservice: RegisterService, private userservice:UserService, private controlservice:ControlPanelService){}
   ngOnInit(){
     this.register = this.registerservice.getCurrentUser();
+    this.viejabio=this.registerservice.getCurrentUser().bio;
 
   }
   gotocontrolpanel(){
@@ -41,6 +46,14 @@ export class ControlPanelComponent {
   gotonotificaciones(){
     let link = ['ControlNotificaciones'];
     this.router.navigate(link);
+  }
+  updateuser(){
+    this.register.bio=this.register.bio;
+    this.register.nombre=this.register.nombre;
+    //if(this.register.pass)
+    console.log(this.registerservice.getCurrentUser());
+
+
   }
 
 
