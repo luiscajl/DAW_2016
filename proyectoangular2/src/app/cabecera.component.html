@@ -31,12 +31,12 @@
                     <li><a *ngIf="!currentActive()" id="log" data-toggle="modal" data-target="#myModal" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                     <li><a  *ngIf="currentActive()" >
                       <div class="dropdown">
-                          <span class="receta_crear" id="menu1" data-toggle="dropdown">{{nombrelogin}}
+                          <span class="receta_crear" id="menu1" data-toggle="dropdown" >{{nombrelogin}}
                             <span class="caret"></span></span>
                             <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Editar Suscripciones</a></li>
-                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Perfil</a></li>
-                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Editar Perfil</a></li>
+                              <li role="presentation"><a role="menuitem" tabindex="-1" (click)="gotoadmrecetas()()" >Administrar Recetas</a></li>
+                              <li role="presentation"><a role="menuitem" tabindex="-1" (click)="gotoUser()" >Perfil</a></li>
+                              <li role="presentation"><a role="menuitem" tabindex="-1" (click)="gotocontrolpanel()">Editar Perfil</a></li>
                               <li role="presentation" class="divider"></li>
                               <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Cerrar Sesion</a></li>
                             </ul>

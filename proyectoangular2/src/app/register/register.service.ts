@@ -7,10 +7,10 @@ import {withObserver} from '../utils';
 export class RegisterService{
   private register:register;
   public registeruser = [
-      new register('Luis Carlos','1234','1234','luisca@gmail.com','Pinche de cocina', 'Nuevo usuario', 'img/userpic.png','img/food.jpg'),
-      new register('Paco','12345','12345','paco@gmail.com','Chef', 'Nuevo usuario', 'img/userpic.png','img/food.jpg'),
-      new register('frost','1234','12345','paco@gmail.com', 'Maestro de los fogones','Nuevo usuario', 'img/userpic.png','img/food.jpg'),
-      new register('luisca','1234','12345','paco@gmail.com', 'Maestro de los fogones','Nuevo usuario', 'img/userpic.png','img/food.jpg')
+      new register('Luis Carlos','1234','1234','luisca@gmail.com','', 'Nuevo usuario', 'img/userpic.png','img/food.jpg'),
+      new register('Paco','12345','12345','paco@gmail.com','', 'Nuevo usuario', 'img/userpic.png','img/food.jpg'),
+      new register('frost','1234','12345','paco@gmail.com', '','Nuevo usuario', 'img/userpic.png','img/food.jpg'),
+      new register('luisca','1234','12345','paco@gmail.com', '','Nuevo usuario', 'img/userpic.png','img/food.jpg')
 
     ];
   getUsers(){
@@ -39,7 +39,7 @@ export class RegisterService{
    getCurrentUser(){
    return this.register;
     }
-    
+
    getCurrentUserlogin()
    {
      console.log("Ha entrado");

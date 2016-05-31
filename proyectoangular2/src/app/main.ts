@@ -25,7 +25,7 @@ import {ControlPanelService} from './controlpanel/controlpanel.service';
 @Component({
 
   selector: 'main-app',
-  providers: [ROUTER_PROVIDERS,RegisterService,UserService,ControlPanelService],
+  providers: [ROUTER_PROVIDERS,RegisterService,UserService,ControlPanelService,RecetaService,ComentarioService],
   templateUrl: './app/cuerpo.html',
   directives: [ROUTER_DIRECTIVES, cabeceraComponent,FooterComponent ,UserComponent,RegisterComponent,RecetaComponent,AdminComponent,ControlPanelRecetas,ControlPanelRecetarios,ControlPanelContrasenia,ControlPanelNotificaciones],
 

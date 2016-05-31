@@ -8,7 +8,7 @@ import {register} from './register/register.model';
 @Component({
        selector: 'cabecera', // mirar que es selector
        templateUrl: './app/cabecera.component.html',
-    
+
 })
 export class cabeceraComponent{
   private regis : register[];
@@ -44,10 +44,7 @@ export class cabeceraComponent{
     this.router.navigate(link);
   }
   ngOnInit(){
-    console.log(this.regis);
     this.regis = this.service.getUsers();
-    console.log(this.regis);
-
 
   }
   currentActive(){
@@ -56,22 +53,20 @@ export class cabeceraComponent{
    }
   compareTo(){
     var encontrado = false;
-      console.log(this.regis);
       this.regis = this.service.getUsers();
-      console.log(this.regis);
     for (var usuario of this.regis){
-          console.log(this.regis);
+          //console.log(this.regis);
         if(usuario.nombre == this.nombrelogin){
-            console.log(this.regis);
+            //console.log(this.regis);
             if(usuario.contrasenia == this.contrasenialogin){
-                console.log(this.regis);
+                //console.log(this.regis);
                 encontrado = true;
                 //console.log(usuario.nombre);
                 //console.log(this.nombrelogin);
                 this.currentUser = usuario;
                 this.service.setUser(usuario);
-                console.log(this.currentUser);
-                console.log(this.service.getCurrentUser());
+                //console.log(this.currentUser);
+                //console.log(this.service.getCurrentUser());
                 this.gotoUser();
                 this.nombrelogin = this.service.getCurrentUser().nombre;
 

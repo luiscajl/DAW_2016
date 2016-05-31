@@ -69,17 +69,17 @@
                     </div>
                     Nota: El tamaño máximo de tu imagen de cabecera es de 1900 por 400 pixeles o 29KB.
                 </div>
-
+                
 
 
                 <h3>Cambiar biografia</h3>
                 <div class="bio">
-                    <textarea id="txtArea" rows="2" cols="20">
-                        {{register.bio}}
+                    <textarea id="txtArea" rows="2" cols="20" [(ngModel)]="register.bio">{{register.bio}}
+
                     </textarea>
                     <br>
                     <br><br>
-                    <input type="submit" value="Guardar cambios"><br><br><br>
+                    <input type="submit" (click)="updateuser()" value="Guardar cambios"><br><br><br>
                 </div>
 
             </div>

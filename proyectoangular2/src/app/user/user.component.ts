@@ -5,6 +5,8 @@ import {RegisterService} from '../register/register.service';
 import {RegisterComponent} from '../register/register.component';
 import {register} from '../register/register.model';
 import {UserService} from './user.service';
+import {RecetaService} from '../creacionreceta/receta.service';
+import {receta} from '../creacionreceta/receta.model';
 
 
 @Component({
@@ -16,10 +18,18 @@ import {UserService} from './user.service';
 export class UserComponent {
  register: register;
  public nusuario: register;
- nombrelogin:String;
+ recetauser:receta[];
+ usuarioactivo:string;
+ contador:number;
+ numeroseguidores=[];
 
- constructor(private RegisterServic : RegisterService,private _routeParams:RouteParams,private router: Router){
-
+ constructor(private RegisterServic : RegisterService,private _routeParams:RouteParams,private router: Router, private recetaser :RecetaService,private userservi :UserService){
+  this.register =this.RegisterServic.getCurrentUser();
+  this.usuarioactivo =this.RegisterServic.getCurrentUser().nombre;
+  this.recetauser=this.recetaser.getrecetasuser(this.usuarioactivo);
+  this.setrango();
+  this.contador=this.recetaser.getnumerorecetasuser(this.register.nombre);
+  this.calcularseguidores();
 
 
 }
@@ -32,6 +42,7 @@ ngOnInit(){
     error => console.log(error)
   )
 
+
 }
   gotocontrolpanel(){
     this.nusuario = this.RegisterServic.getCurrentUser();
@@ -39,6 +50,19 @@ ngOnInit(){
     let link = ['Control'];
     this.router.navigate(link);
   }
+  calcularseguidores(){
+    //if()this.userservi.getseguidores(this.usuarioactivo);
+    //console.log(this.numeroseguidores);
+
+  }
+  setrango()
+  {
+    if (this.recetaser.getnumerorecetasuser(this.register.nombre)>1){
+
+        this.register.rango='Pinche de cocina';
+
+  }
+}
 
 
 }
