@@ -17,15 +17,16 @@ import {ControlPanelContrasenia} from './controlpanel/controlpanel/contrasenia';
 import {ControlPanelNotificaciones} from './controlpanel/controlpanel/notificaciones';
 import {RecetaService} from './creacionreceta/receta.service';
 import {ComentarioService} from './receta/comentario.service';
+import {UserService} from './user/user.service';
+import {ControlPanelService} from './controlpanel/controlpanel.service';
 
 
 
 @Component({
 
   selector: 'main-app',
-  providers: [ROUTER_PROVIDERS,RegisterService,RecetaService, ComentarioService],
+  providers: [ROUTER_PROVIDERS,RegisterService,UserService,ControlPanelService],
   templateUrl: './app/cuerpo.html',
-
   directives: [ROUTER_DIRECTIVES, cabeceraComponent,FooterComponent ,UserComponent,RegisterComponent,RecetaComponent,AdminComponent,ControlPanelRecetas,ControlPanelRecetarios,ControlPanelContrasenia,ControlPanelNotificaciones],
 
   pipes: []
@@ -36,7 +37,6 @@ import {ComentarioService} from './receta/comentario.service';
     name: 'Inic',
     component: iniciocomponent,
     useAsDefault: true},
-
 {path:'/Suscripciones',
     name: 'Susc',
     component: suscripcionescomponent},
@@ -55,11 +55,9 @@ import {ComentarioService} from './receta/comentario.service';
 {path:'/ControlPanel/Admrecetas',
     name: 'ControlRecetas',
     component: ControlPanelRecetas},
-
 {path:'/ControlPanel/Contrasenia',
     name: 'ControlContrasenia',
     component: ControlPanelContrasenia,},
-
 {path:'/ControlPanel/Notificaciones',
     name: 'ControlNotificaciones',
     component: ControlPanelNotificaciones},
@@ -75,9 +73,6 @@ import {ComentarioService} from './receta/comentario.service';
 {path:'/CrearReceta',
     name:'CrearReceta',
     component:CreacionRecetaComponent},
-
-
-
 ])
 
 

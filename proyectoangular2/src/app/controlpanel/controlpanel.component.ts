@@ -1,5 +1,8 @@
 import {Component} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES, RouteParams, Router} from 'angular2/router';
+import {RegisterService} from '../register/register.service';
+import {UserService} from '../user/user.service';
+import {register} from '../register/register.model';
 
 
 @Component({
@@ -9,10 +12,16 @@ import {RouteConfig, ROUTER_DIRECTIVES, RouteParams, Router} from 'angular2/rout
 })
 
 export class ControlPanelComponent {
+  register:register;
+  
 
-constructor (private router: Router){}
+  constructor (private router: Router, private _routeParams:RouteParams,public registerservice: RegisterService, private userservice:UserService){}
+  ngOnInit(){
+    this.register = this.registerservice.getCurrentUser();
+
+  }
   gotocontrolpanel(){
-    let link = ['ControlPanel'];
+    let link = ['Control'];
     this.router.navigate(link);
   }
   gotoadmrecetarios(){
