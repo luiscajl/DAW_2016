@@ -57,8 +57,7 @@ export class RecetaService{
       {
         if (recetita.autor.nombre==usuario){
           this.contadornumerorecetas=this.contadornumerorecetas+1;
-          console.log("He entrado y aumentado el contador");
-          console.log(this.contadornumerorecetas);
+          
         }
       }
       return this.contadornumerorecetas;

@@ -1,23 +1,18 @@
+import {register} from '../register/register.model';
 export class user{
     nombre:string;
     imageperfil:string;
-    rango:string;
-    icono:string;
-    infousuario:string;
-    seguidoresrecetas:string;
-    recetas:string;
-    recetarios:string;
+    fondoperfil:string;
+    seguidoresrecetas=[];
 
-    constructor(nombrec:string,imageperfilc:string,rangoc:string,iconoc:string,infousuarioc:string,seguidoresrecetasc:string,recetasc:string,recetariosc:string)
+
+    constructor(nombrec:string,imageperfilc:string,fondoperfilc:string,seguidoresrecetasc=[])
     {
       this.nombre=nombrec;
       this.imageperfil=imageperfilc;
-      this.rango=rangoc;
-      this.icono=iconoc;
-      this.infousuario=infousuarioc;
+      this.fondoperfil=fondoperfilc;
       this.seguidoresrecetas=seguidoresrecetasc;
-      this.recetas=recetasc;
-      this.recetarios=recetariosc;
+
     }
 
 }
