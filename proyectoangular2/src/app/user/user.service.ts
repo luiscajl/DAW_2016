@@ -3,6 +3,7 @@ import {register} from '../register/register.model.ts';
 import {RouteConfig, ROUTER_DIRECTIVES, RouteParams, Router} from 'angular2/router';
 import {receta} from '../creacionreceta/receta.model';
 import {user} from './user.model';
+import {RegisterService} from '../register/register.service';
 
 
 @Injectable()
@@ -18,21 +19,26 @@ export class UserService{
 
       ];
 
-  /*setUser(cUser:register){
+  setUser(cUser:user){
+    this.user=cUser;
 
-    this.register=cUser;
-    if(this.register!=undefined){
-	    //this.usuario.addRecomendacion(new Recomendacion(this.usuario, "El mejor roguelike", 15000, "Este juego es el mejor roguelike que ha salido nunca", "The binding of isaac: Rebirth"));
+  }
+  getUsers(){
+    return this.usersperfil;
 
-  	}
-  }*/
-  getseguidores(user:string)
+  }
+  getseguidores(userr:string)
   {
-    return this.user.seguidoresrecetas;
-  }/*
+    for (var usu of this.usersperfil){
+        if(usu.nombre==userr){
+          console.log(this.getCurrentUser());
+          console.log(this.user);
+          return this.user.seguidoresrecetas;
+    }}
+  }
   getCurrentUser(){
     return this.user;
 
-  }*/
+  }
 
 }
