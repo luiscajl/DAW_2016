@@ -1,11 +1,12 @@
 import {Injectable} from 'angular2/core';
 import {register} from '../register/register.model.ts';
 import {RouteConfig, ROUTER_DIRECTIVES, RouteParams, Router} from 'angular2/router';
+import {receta} from '../creacionreceta/receta.model';
 
 
 @Injectable()
 export class UserService{
-
+  private receta:receta;
   private usuario:register;
 
   setUser(cUser:register){
@@ -20,4 +21,5 @@ export class UserService{
     return this.usuario;
 
   }
+
 }

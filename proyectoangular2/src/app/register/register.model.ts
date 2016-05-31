@@ -1,3 +1,4 @@
+import {receta} from '../creacionreceta/receta.model';
 export class register{
     nombre:string;
     contrasenia:string;
@@ -7,6 +8,7 @@ export class register{
     bio: string;
     fotoperfil: string;
     fotobanner:string;
+
 
     constructor(nombrec:string,contraseniac:string,repiticioncontraseniac:string,correousuarioc:string, rangoc:string, bioc:string, fotoperfilc:string,fotobannerc:string)
     {
@@ -18,7 +20,4 @@ export class register{
       this.bio = bioc;
       this.fotoperfil = fotoperfilc;
       this.fotobanner = fotobannerc;
-
-    }
-
-}
+}}

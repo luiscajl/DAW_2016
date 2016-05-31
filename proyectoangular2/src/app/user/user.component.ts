@@ -5,6 +5,7 @@ import {RegisterService} from '../register/register.service';
 import {RegisterComponent} from '../register/register.component';
 import {register} from '../register/register.model';
 import {UserService} from './user.service';
+import {RecetaService} from '../creacionreceta/receta.service';
 
 
 @Component({
@@ -18,9 +19,9 @@ export class UserComponent {
  public nusuario: register;
  nombrelogin:String;
 
- constructor(private RegisterServic : RegisterService,private _routeParams:RouteParams,private router: Router){
-
-
+ constructor(private RegisterServic : RegisterService,private _routeParams:RouteParams,private router: Router, private recetaser :RecetaService){
+  this.register =this.RegisterServic.getCurrentUser();
+  this.setrango();
 
 }
 
@@ -32,6 +33,7 @@ ngOnInit(){
     error => console.log(error)
   )
 
+
 }
   gotocontrolpanel(){
     this.nusuario = this.RegisterServic.getCurrentUser();
@@ -39,6 +41,14 @@ ngOnInit(){
     let link = ['Control'];
     this.router.navigate(link);
   }
+  setrango()
+  {
+    if (this.recetaser.getnumerorecetasuser(this.register.nombre)>1){
+  
+        this.register.rango='Pinche de cocina';
+
+  }
+}
 
 
 }

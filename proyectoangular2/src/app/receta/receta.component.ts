@@ -18,9 +18,6 @@ export class RecetaComponent {
   comentario: comentario;
   constructor(private RecetaService : RecetaService,private _routeParams:RouteParams, private ComentarioService:ComentarioService ){
 
-
-
-
  }
 
 

@@ -25,14 +25,14 @@
             <div id="helper" class="col-md-12">
 <h2>Administrar recetas</h2>
 
-<div class="container" id="containerrecetas">
-    <div class="row" id="receta1">
+<div  class="container" id="containerrecetas">
+    <div class="row" id="receta1" *ngFor="#receta of recetauser">
 
         <div class="col-md-4 img_receta">
             <span class="glyphicon glyphicon-asterisk" style="float:left; padding:5px;"></span>
             <div class="titulo_receta">
-                <h3>Pechuga de pollo rellena</h3>
-                <h5>15/3/16</h5></div>
+                <h3>{{receta.nombre}}</h3>
+                <h5>{{receta.fecha}}</h5></div>
         </div>
 
 
@@ -41,7 +41,7 @@
 
 
         <div class="col-md-2" id="textoreceta1">
-            <div id="textoreceta">La receta de Pollo Asado es una receta muy tradicional en nuestra gastronomía, una receta ecónomica y fácil preparación, ideal para varios comensales.
+            <div id="textoreceta">{{receta.descripcion}}
             </div>
 
         </div>
@@ -55,7 +55,7 @@
             <div id="edit_delete">
 
 
-                <a id="delete" href="#">
+                <a id="delete" >
                     <i class="fa fa-trash-o"></i>
                 </a>
 
@@ -74,45 +74,6 @@
 
 
 
-
-
-
-    <div class="row" id="receta1">
-
-        <div class="col-md-4 img_receta2">
-            <span class="glyphicon glyphicon-asterisk" style="float:left; padding:5px;"></span>
-            <div class="titulo_receta">
-                <h3>Albóndigas de carne al microondas</h3>
-                <h5>1/2/16</h5></div>
-        </div>
-        <div class="col-md-2" id="textoreceta1">
-            <div id="textoreceta">Realizar las albóndigas al microondas con un poco de pimienta, otro poco de nada. Y poco mas.
-            </div>
-
-        </div>
-
-
-
-
-        <div id="editar_borrar" class="col-sm-3">
-
-            <div id="edit_delete">
-
-
-                <a id="delete" href="#">
-                    <i class="fa fa-trash-o"></i>
-                </a>
-
-
-                <a id="edit" href="#">
-                    <i class="fa fa-pencil-square-o"></i>
-                </a>
-
-            </div>
-
-
-        </div>
-    </div>
 
 
 
