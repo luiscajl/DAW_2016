@@ -4,7 +4,7 @@ export class receta{
   nombre: string;
   fecha: string;
   descripcion: string;
-  infoextra: string;
+  tipo: string;
   dificultad: string;
   tiempo: string;
   autor: register;
@@ -19,12 +19,12 @@ export class receta{
 
 //  comentarios: comentarios[];
 
-constructor(nombre: string, fecha: string, descripcion: string, infoextra: string, dificultad: string, tiempo: string, autor:register, ingredientes: string[], pasos: string[], video: string, vegana:boolean, grasas:boolean, diabeticos:boolean,picante:boolean, comentarios: comentario[] ){
+constructor(nombre: string, fecha: string, descripcion: string, tipo: string, dificultad: string, tiempo: string, autor:register, ingredientes: string[], pasos: string[], video: string, vegana:boolean, grasas:boolean, diabeticos:boolean,picante:boolean, comentarios: comentario[] ){
   this.nombre = nombre;
   this.ingredientes=ingredientes;
   this.fecha=fecha;
   this.descripcion = descripcion;
-  this.infoextra = infoextra;
+  this.tipo = tipo;
   this.dificultad = dificultad;
   this.tiempo = tiempo;
   this.autor = autor;

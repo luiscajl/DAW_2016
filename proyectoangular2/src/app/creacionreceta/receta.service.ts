@@ -29,6 +29,7 @@ export class RecetaService{
   }
 
 
+
   saveReceta(receta:receta){
     this.recetas.push(receta);
     console.log(this.recetas);
@@ -37,7 +38,7 @@ export class RecetaService{
 
   getReceta(nombre: string) {
     let rceta = this.recetas.filter(h => h.nombre === nombre)[0]
-    return withObserver(new receta(rceta.nombre,rceta.fecha,rceta.descripcion,rceta.infoextra,rceta.dificultad,rceta.tiempo,rceta.autor,rceta.ingredientes,rceta.pasos,rceta.video,rceta.vegana,rceta.grasas,rceta.diabeticos,rceta.picante,rceta.comentarios));
+    return withObserver(new receta(rceta.nombre,rceta.fecha,rceta.descripcion,rceta.tipo,rceta.dificultad,rceta.tiempo,rceta.autor,rceta.ingredientes,rceta.pasos,rceta.video,rceta.vegana,rceta.grasas,rceta.diabeticos,rceta.picante,rceta.comentarios));
   }
   getrecetasuser(usuario:string)
   {
@@ -57,7 +58,7 @@ export class RecetaService{
       {
         if (recetita.autor.nombre==usuario){
           this.contadornumerorecetas=this.contadornumerorecetas+1;
-          
+
         }
       }
       return this.contadornumerorecetas;

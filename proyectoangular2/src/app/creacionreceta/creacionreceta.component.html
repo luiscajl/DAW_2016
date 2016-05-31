@@ -67,14 +67,14 @@
                     <div class="inputlabel">
                         <label id="labelreceta">Tipo de plato:</label>
 
-                        <select name="tipoplato" id="tipoplato" type="option" value="" class="valid">
-                            <option value="1">Entrantes</option>
-                            <option value="8">Aliños y salsas</option>
-                            <option value="11">Ensaladas</option>
-                            <option value="2">Plato Principal</option>
-                            <option value="3">Postres</option>
-                            <option value="9">Reposteria</option>
-                            <option value="7">Otros</option>
+                        <select  [(ngModel)]="recetita.tipo" (ngModelChange)="changed($event)" name="tipoplato" id="tipoplato" >
+                            <option [value]="Entrantes">Entrantes</option>
+                            <option [value]="Salsas">Aliños y salsas</option>
+                            <option [value]="Ensaladas">Ensaladas</option>
+                            <option [value]="Principal">Plato Principal</option>
+                            <option [value]="Postres">Postres</option>
+                            <option [value]="Reposteria">Reposteria</option>
+                            <option [value]="Otros">Otros</option>
                         </select>
                     </div>
                     <br>

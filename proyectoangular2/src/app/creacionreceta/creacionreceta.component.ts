@@ -61,4 +61,8 @@ this.recetita = new receta('','22/05/2016','','','','',RegisterService.getCurren
 
   }
 
+  changed(event) {
+   this.recetita.tipo = event;
+ }
+
  }
