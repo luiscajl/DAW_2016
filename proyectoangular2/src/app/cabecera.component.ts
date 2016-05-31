@@ -3,6 +3,8 @@ import {ROUTER_DIRECTIVES, Router} from 'angular2/router';
 import {RegisterService} from './register/register.service';
 import {RegisterComponent} from './register/register.component';
 import {register} from './register/register.model';
+import {UserService} from './user/user.service';
+import {user} from './user/user.model';
 
 
 @Component({
@@ -14,10 +16,11 @@ export class cabeceraComponent{
   private regis : register[];
   currentUser:register;
   nombrelogin: string;
+  private user:user[];
   contrasenialogin:string;
   encontrado: boolean;
   hideModal : boolean = false;
-  constructor (private router: Router, private service: RegisterService){
+  constructor (private router: Router, private service: RegisterService, private userrservice:UserService){
 
   }
 
@@ -51,6 +54,18 @@ export class cabeceraComponent{
        this.currentUser = this.service.getCurrentUser();
        return this.service.getCurrentUser()!=undefined;
    }
+   seteouserjimlu()
+   {
+     this.user = this.userrservice.getUsers();
+      for(var users of this.user)
+      {
+        if(users.nombre==this.nombrelogin)
+        {
+          this.userrservice.setUser(users);
+      }
+    }
+
+   }
   compareTo(){
     var encontrado = false;
       this.regis = this.service.getUsers();
@@ -65,6 +80,7 @@ export class cabeceraComponent{
                 //console.log(this.nombrelogin);
                 this.currentUser = usuario;
                 this.service.setUser(usuario);
+                this.seteouserjimlu();
                 //console.log(this.currentUser);
                 //console.log(this.service.getCurrentUser());
                 this.gotoUser();

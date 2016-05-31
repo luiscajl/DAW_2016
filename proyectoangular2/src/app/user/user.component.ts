@@ -21,7 +21,8 @@ export class UserComponent {
  recetauser:receta[];
  usuarioactivo:string;
  contador:number;
- numeroseguidores=[];
+ numeroseguidores=0;
+ seguidores=[];
 
  constructor(private RegisterServic : RegisterService,private _routeParams:RouteParams,private router: Router, private recetaser :RecetaService,private userservi :UserService){
   this.register =this.RegisterServic.getCurrentUser();
@@ -51,10 +52,12 @@ ngOnInit(){
     this.router.navigate(link);
   }
   calcularseguidores(){
-    //if()this.userservi.getseguidores(this.usuarioactivo);
-    //console.log(this.numeroseguidores);
+    this.seguidores=this.userservi.getseguidores(this.userservi.getCurrentUser().nombre);
+    for (var usu of this.seguidores){
+      this.numeroseguidores=this.numeroseguidores+1;
 
-  }
+
+  }}
   setrango()
   {
     if (this.recetaser.getnumerorecetasuser(this.register.nombre)>1){
