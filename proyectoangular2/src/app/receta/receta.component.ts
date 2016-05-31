@@ -3,6 +3,7 @@ import {receta} from '../creacionreceta/receta.model';
 import {comentario} from './comentario.model';
 import {ComentarioService} from './comentario.service';
 import {RecetaService} from '../creacionreceta/receta.service';
+import {RegisterService} from '../register/register.service';
 import {RouteConfig, ROUTER_DIRECTIVES, RouteParams, Router} from 'angular2/router';
 
 @Component({
@@ -16,8 +17,8 @@ export class RecetaComponent {
   receta: receta;
   comentarios:comentario[];
   comentario: comentario;
-  constructor(private RecetaService : RecetaService,private _routeParams:RouteParams, private ComentarioService:ComentarioService ){
-
+  constructor(private RegisterService: RegisterService, private RecetaService : RecetaService,private _routeParams:RouteParams, private ComentarioService:ComentarioService ){
+  this.comentario = new comentario('',RegisterService.getCurrentUser(),null);
  }
 
 
@@ -27,8 +28,8 @@ export class RecetaComponent {
       receta => this.receta = receta,
       error => console.log(error)
     )
-  //  this.comentarios = this.RecetaService.getComentarios();
-  this.comentario = new comentario('',null,this.receta);
+ //this.comentarios = this.RecetaService.getComentarios();
+
 
 
 }
@@ -40,7 +41,9 @@ return this.receta;
 
 addComentario(){
   this.ComentarioService.saveComentario(this.comentario);
-    this.RecetaService.addComentario(this.comentario);
+//  this.RecetaService.addComentario(this.comentario);
+this.receta.comentarios.push(this.comentario);
+console.log(this.comentario.texto);
 
 }
 }
