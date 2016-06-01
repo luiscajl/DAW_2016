@@ -16,13 +16,16 @@
           <div class="titulo_receta"><h3>{{receta.nombre}}</h3><h5>{{receta.fecha}}</h5></div>
         </div>
       <div class="col-md-8 datos_receta">
-        <div class="usuario_receta"><img class="logo_cocinero" src="img/iconos/alberto.png"><br>{{receta.autor.nombre}}<br><button type="button" class="btn btn-primary seguir">Seguir</button></div>
+        <div class="usuario_receta"><img class="logo_cocinero" src="img/iconos/alberto.png"><br>{{receta.autor.nombre}}<br><button type="button" class="btn btn-primary seguir">Seguir</button>
+
+        </div>
+
 
 
           <div class="row">
             <div id="iconos" class="col-md-8 iconos">{{receta.descripcion}}
-              <div class="infoextra" style="margin-bot:10px">
-
+              <div class="infoextra" >
+  <input *ngIf="puedoEditar" style="margin-bot:10px" (click)="gotoEditarReceta()" id="recetabutton" type="submit" value="Editar receta" >
           </div>
               </div>
           </div>
@@ -38,6 +41,7 @@
                   <span class="glyphicon glyphicon-star"></span>
                   <span class="glyphicon glyphicon-star"></span>
                   <span class="glyphicon glyphicon-star"></span>
+
               </div>
              <div class="info col-md-8">
       <span>{{receta.dificultad}}&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-time"></span> {{receta.tiempo }}</span>
@@ -46,6 +50,7 @@
         <span *ngIf="receta.grasas">| Baja en grasas</span>
         <span *ngIf="receta.diabeticos">| Para diabeticos</span>
         <span *ngIf="receta.picante">| Picante</span>
+
        </div>
           </div>
       </div>

@@ -17,7 +17,10 @@ export class RecetaComponent {
   receta: receta;
   comentarios:comentario[];
   comentario: comentario;
-  constructor(private RegisterService: RegisterService, private RecetaService : RecetaService,private _routeParams:RouteParams, private ComentarioService:ComentarioService ){
+  puedoEditar: boolean;
+  constructor(private router: Router, private RegisterService: RegisterService, private RecetaService : RecetaService,private _routeParams:RouteParams, private ComentarioService:ComentarioService ){
+    this.puedoEditar = false;
+
   this.comentario = new comentario('',RegisterService.getCurrentUser(),null);
  }
 
@@ -30,7 +33,9 @@ export class RecetaComponent {
     )
  //this.comentarios = this.RecetaService.getComentarios();
 
-
+ if(this.RegisterService.getCurrentUser() == this.receta.autor){
+     this.puedoEditar = true;
+ }
 
 }
 
@@ -46,4 +51,16 @@ this.receta.comentarios.push(this.comentario);
 console.log(this.comentario.texto);
 
 }
+
+gotoEditarReceta(){
+
+      this.router.navigate(['CrearReceta', { nombre: this.receta.nombre }]);
+
+}
+
+editarReceta(){
+
+}
+
+
 }
