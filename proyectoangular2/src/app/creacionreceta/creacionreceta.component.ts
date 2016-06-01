@@ -15,18 +15,31 @@ import {RouteConfig, ROUTER_DIRECTIVES, RouteParams, Router} from 'angular2/rout
 
 export class CreacionRecetaComponent {
 
-
+  receta:receta;
   recetita: receta;
   ingrediente:string;
-  paso:string;
+  pasos:string[];
   autor:register;
+  paso:string;
 
 
 
   constructor(private router: Router,private RecetaService :RecetaService ,private _routeParams:RouteParams, private RegisterService:RegisterService){
 
-this.recetita = new receta('','22/05/2016','','','','',RegisterService.getCurrentUser(),[],[],'',false,false,false,false,[]);
 
+
+  }
+
+  ngOnInit(){
+    let nombre=this._routeParams.get("nombre");
+    if(nombre){
+    this.RecetaService.getReceta(nombre).subscribe(
+      receta => this.receta = receta,
+      error => console.log(error)
+    )
+  }else{
+    this.recetita = new receta('','22/05/2016','','','','',this.RegisterService.getCurrentUser(),[],[],'',false,false,false,false,[]);
+  }
   }
 
 
@@ -56,6 +69,7 @@ this.recetita = new receta('','22/05/2016','','','','',RegisterService.getCurren
 
   addPaso(){
     this.recetita.pasos.push(this.paso);
+    this.pasos.push(this.paso);
 
 
 
