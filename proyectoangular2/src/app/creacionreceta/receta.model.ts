@@ -16,10 +16,11 @@ export class receta{
   diabeticos:boolean;
   picante:boolean;
   comentarios: comentario[];
+  imagen:string;
 
 //  comentarios: comentarios[];
 
-constructor(nombre: string, fecha: string, descripcion: string, tipo: string, dificultad: string, tiempo: string, autor:register, ingredientes: string[], pasos: string[], video: string, vegana:boolean, grasas:boolean, diabeticos:boolean,picante:boolean, comentarios: comentario[] ){
+constructor(nombre: string, fecha: string, descripcion: string, tipo: string, dificultad: string, tiempo: string, autor:register, ingredientes: string[], pasos: string[], video: string, vegana:boolean, grasas:boolean, diabeticos:boolean,picante:boolean, comentarios: comentario[],imagen:string ){
   this.nombre = nombre;
   this.ingredientes=ingredientes;
   this.fecha=fecha;
@@ -36,6 +37,7 @@ constructor(nombre: string, fecha: string, descripcion: string, tipo: string, di
   this.diabeticos = diabeticos;
   this.picante = picante;
   this.comentarios = comentarios;
+  this.imagen=imagen;
 
 
   }

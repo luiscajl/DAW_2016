@@ -174,7 +174,7 @@ padding-top: 10px;
 .img_receta{
     height: 200px;
     border-radius: 15px;
-    background-image: url(../img/pollorelleno.jpg);
+
     background-size: cover;
     margin-left: 15px;
     margin-top: 15px;
@@ -183,7 +183,7 @@ padding-top: 10px;
 .img_receta2{
     height: 200px;
      border-radius: 15px;
-    background-image: url(../img/albondigas.jpg);
+
     background-size: cover;
     padding-left: 15px;
     margin-left: 15px;
@@ -393,7 +393,7 @@ background-size: 50px 50px;
 .img_receta{
     height: 200px;
     border-radius: 15px;
-    background-image: url(../img/pollorelleno.jpg);
+
     background-size: cover;
 
     margin-bottom: 15px;
@@ -404,7 +404,7 @@ background-size: 50px 50px;
 .img_receta2{
     height: 200px;
     border-radius: 15px;
-    background-image: url(../img/albondigas.jpg);
+
     background-size: cover;
     margin-bottom: 15px;
     margin-top: 15px;
@@ -414,7 +414,7 @@ background-size: 50px 50px;
 .img_receta3{
     height: 200px;
     border-radius: 15px;
-    background-image: url(../img/flan.jpg);
+
     background-size: cover;
     margin-bottom: 15px;
     margin-top: 15px;
@@ -424,7 +424,7 @@ background-size: 50px 50px;
 .titulo_receta {
     text-align: center;
     height: 50px;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.7);
     /*opacity: 0.5;*/
     position: absolute;
     height: 80px;
