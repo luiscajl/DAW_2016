@@ -141,7 +141,7 @@ ul,ol{
 .titulo_receta{
     text-align: center;
     height: 50px;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.7);
     position: absolute; /* con esta linea estoy consiguiendo el centrado de texto en un div */
     height: 80px;
     bottom: 0;

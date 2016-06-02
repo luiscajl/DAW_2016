@@ -38,7 +38,7 @@ export class CreacionRecetaComponent {
       error => console.log(error)
     )
   }else{
-    this.recetita = new receta('','22/05/2016','','','','',this.RegisterService.getCurrentUser(),[],[],'',false,false,false,false,[]);
+    this.recetita = new receta('','22/05/2016','','','','',this.RegisterService.getCurrentUser(),[],[],'',false,false,false,false,[],'../../img/pos.jpg');
   }
   }
 

@@ -9,13 +9,22 @@
 .mas_visitadas h2{
   color: black;
 }
-
-.mas_visitadas .img_receta{
-  background-image: url(../img/pos.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+#imgjimlu{
+  margin-left: -15px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
+#recetasjimlu{
+  background-color: none;
 
+
+}
+.titulo_receta{
+  padding-left: 0px;
+
+
+  background-color: rgba(0,0,0,0.6);
+}
 .recetas{
     //padding-left: 100px;
 }
