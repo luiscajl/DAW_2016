@@ -4,7 +4,7 @@
         <br>
         <div class="inputlabel">
             <label id="labelreceta">Nombre de la receta</label>
-            <input [(ngModel)]="recetita.nombre" id="pasosinput" type="text" class="form-control" required>
+            <input [(ngModel)]="recetita.nombre" id="pasosinput" type="text" class="form-control"  required>
         </div>
         <br>
 
@@ -34,8 +34,7 @@
 
 
             <ol>
-                <li>Lo primero que haremos será ocuparnos de las galletas. En esta receta usaremos las galletas más tradicionales y clásicas que son las maría, pero podéis usar las que más os gusten a vosotros. Tenemos que machacar lo equivalente a un paquete hasta convertirlas en polvo. Podemos colocarlas en un cuenco y con el mortero irlas aplastando o triturarlas directamente en la batidora.</li>
-                <li>Aprovechad ahora para poner en un vaso de agua las láminas de gelatina para que se vayan hidratando.</li>
+                <li *ngFor="#paso of receta.pasos">
                 <li>
                     <textarea  [(ngModel)]="paso" id="pasosinput" rows="10" type="text" name="name" class="form-control" ng-model="user.name" required></textarea>
                 </li>
