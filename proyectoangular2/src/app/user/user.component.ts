@@ -18,7 +18,7 @@ import {receta} from '../creacionreceta/receta.model';
 export class UserComponent {
  register: register;
  public nusuario: register;
- recetauser:receta[];
+ recetuser:receta[];
  usuarioactivo:string;
  contador:number;
  numeroseguidores=0;
@@ -27,21 +27,19 @@ export class UserComponent {
  constructor(private RegisterServic : RegisterService,private _routeParams:RouteParams,private router: Router, private recetaser :RecetaService,private userservi :UserService){
   this.register =this.RegisterServic.getCurrentUser();
   this.usuarioactivo =this.RegisterServic.getCurrentUser().nombre;
-  this.recetauser=this.recetaser.getrecetasuser(this.usuarioactivo);
-  this.setrango();
-  this.contador=this.recetaser.getnumerorecetasuser(this.register.nombre);
-  this.calcularseguidores();
+
 
 
 }
 
 ngOnInit(){
   let nombre=this._routeParams.get("nombre");
-  console.log(nombre);
-    this.RegisterServic.getUser(nombre).subscribe(
-    register => this.register = register,
-    error => console.log(error)
+    this.RegisterServic.getUser(nombre).subscribe(register => this.register = register,error => console.log(error)
   )
+  this.recetuser=this.recetaser.getrecetasparaelusuario(this.usuarioactivo);
+  this.setrango();
+  this.contador=this.recetaser.getnumerorecetasuser(this.register.nombre);
+  this.calcularseguidores();
 
 
 }
