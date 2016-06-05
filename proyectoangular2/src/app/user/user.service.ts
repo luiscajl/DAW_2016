@@ -31,8 +31,8 @@ export class UserService{
   {
     for (var usu of this.usersperfil){
         if(usu.nombre==userr){
-          console.log(this.getCurrentUser());
-          console.log(this.user);
+          //console.log(this.getCurrentUser());
+          //console.log(this.user);
           return this.user.seguidoresrecetas;
     }}
   }
