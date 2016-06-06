@@ -44,6 +44,7 @@ export class RecetaService{
   }
   getrecetasuser(usuario:string)
   {
+    //this.recetasuser=[];
     //let recetas=this.recetas.filter(h=>h.autor.nombre ===autor)
     for (var receta of this.recetas)
     {
@@ -57,6 +58,7 @@ export class RecetaService{
     getrecetasparaelusuario(usuario:string)
     {
       //let recetas=this.recetas.filter(h=>h.autor.nombre ===autor)
+      this.recetasuserparaelusuario=[];
       for (var receta of this.recetas)
       {
 

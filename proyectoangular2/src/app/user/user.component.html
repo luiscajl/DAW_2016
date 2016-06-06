@@ -14,7 +14,7 @@
             </div>
             <div class="col-md-2" id="nombreusurangoinfo">
 
-                    <h2 id="nombreusuario">{{register.nombre}}<button type="button" class="btn btn-primary seguir">  Seguir  </button>                         </h2>
+                    <h2 id="nombreusuario">{{register.nombre}}<button type="button" (click)="seguirusuario(register.nombre)" *ngIf="userseguir()" class="btn btn-primary seguir">  Seguir  </button>                         </h2>
 
                     <h3 id="rangousuario">{{register.rango}}</h3>
                     <h3 id="infousuario">{{register.bio}}</h3>
