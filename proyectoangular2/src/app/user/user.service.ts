@@ -14,8 +14,9 @@ export class UserService{
 
 
   public usersperfil = [
-      new user('luisca','IMG','IMG2',['frost','Paco']),
+      new user('luisca','IMG','IMG2',['frost']),
       new user('frost','IMG','IMG2',['luisca','Paco']),
+      new user('mozilla','IMG','IMG2',['frost']),
 
       ];
 
@@ -31,8 +32,8 @@ export class UserService{
   {
     for (var usu of this.usersperfil){
         if(usu.nombre==userr){
-          console.log(this.getCurrentUser());
-          console.log(this.user);
+          //console.log(this.getCurrentUser());
+          //console.log(this.user);
           return this.user.seguidoresrecetas;
     }}
   }
@@ -40,5 +41,6 @@ export class UserService{
     return this.user;
 
   }
+
 
 }

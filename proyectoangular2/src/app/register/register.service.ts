@@ -10,7 +10,8 @@ export class RegisterService{
       new register('Luis Carlos','1234','1234','luisca@gmail.com','', 'Nuevo usuario', 'img/userpic.png','img/food.jpg'),
       new register('Paco','12345','12345','paco@gmail.com','', 'Nuevo usuario', 'img/userpic.png','img/food.jpg'),
       new register('frost','1234','12345','paco@gmail.com', '','Nuevo usuario', 'img/userpic.png','img/food.jpg'),
-      new register('luisca','1234','12345','paco@gmail.com', '','Nuevo usuario', 'img/userpic.png','img/food.jpg')
+      new register('luisca','1234','12345','paco@gmail.com', '','Nuevo usuario', 'img/userpic.png','img/food.jpg'),
+      new register('mozilla','1234','1234','paco@gmail.com','','Bio predefinida','img/userpic.png','img/food.jpg')
 
     ];
   getUsers(){

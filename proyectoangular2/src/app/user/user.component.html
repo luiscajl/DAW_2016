@@ -14,7 +14,7 @@
             </div>
             <div class="col-md-2" id="nombreusurangoinfo">
 
-                    <h2 id="nombreusuario">{{register.nombre}}<button type="button" class="btn btn-primary seguir">  Seguir  </button>                         </h2>
+                    <h2 id="nombreusuario">{{register.nombre}}<button type="button" (click)="seguirusuario(register.nombre)" *ngIf="userseguir()" class="btn btn-primary seguir">  Seguir  </button>                         </h2>
 
                     <h3 id="rangousuario">{{register.rango}}</h3>
                     <h3 id="infousuario">{{register.bio}}</h3>
@@ -65,7 +65,7 @@
 
 
 
-        <div class="container" id="containerrecetas" *ngFor="#receta of recetauser">
+        <div class="container" id="containerrecetas" *ngFor="#receta of recetuser">
 
 
 
@@ -75,7 +75,7 @@
                      <div class="row">
                          <div class="col-md-12  img_receta3" id="columnaizquierda">
                            <img class="img" id="imgjimlu" height="200" width="327"  src="{{receta.imagen}}">
-                            
+
                             <div class="titulo_receta"><h3>{{receta.nombre}}</h3><h5>{{receta.fecha}}</h5></div>
                           </div>
                   </div>

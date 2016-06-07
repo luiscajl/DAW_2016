@@ -2,10 +2,7 @@
 <div class="contenedor_principal">
          <div class="container" id="containerrecetassuscripcions">
 
-
-
-
-       <div class="row" id="receta1" *ngFor="#receta of recetas">
+       <div class="row" id="receta1" *ngFor="#receta of recetastodosusuarios">
            <div class="col-md-4">
                   <div class="row">
                       <div class="col-md-12  img_receta" id="columnaizquierda">
@@ -25,12 +22,6 @@
                     </span>{{receta.tiempo}}</span><span id="apanio">
                                      <span class="glyphicon glyphicon-user"></span> 4 | <a href="#">
                                  <span class="glyphicon glyphicon-film"></span></a> | <span class="glyphicon glyphicon-tags"> </span>  Primer plato </span>
-                     <!--<div id="compartir" >
-                            <a href="#"><img id="compartirfacebook" src="img/iconos/facebook.png" ></img></a>
-                             <a href="#"><img id="compartirtwitter" src="img/iconos/twitter.png"></img></a>
-                             <a href="#"><img id="compartirgoogle" src="img/iconos/g+.png"></img></a>
-
-                     </div>-->
                  </div>
                 </div>
                 <div class="row">
@@ -41,10 +32,10 @@
            <div class="col-md-2" id="">
 
             <div class="usuario_rece" id="usuariorecetajimlu">
-                     <img class="logo_cocinero" src="img/iconos/alberto.png">
+                     <img class="logo_cocinero"  (click)="gotouserdelareceta(receta.autor.nombre)" src="img/iconos/alberto.png">
                     <br><p id="nombreusuarioreceta">{{receta.autor.nombre}}</p>
                      <p id="rangonombreusuarioreceta">Experto</p>
-                    <button type="button" class="btn btn-primary seguir" id ="botonseguirnombreusuarioreceta">Seguir</button></div>
+                    <!--<button type="button" class="btn btn-primary seguir" id ="botonseguirnombreusuarioreceta">Seguir</button></div>-->
          </div>
         </div>
 
