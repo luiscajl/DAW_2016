@@ -16,13 +16,33 @@ import {RegisterService} from '../register/register.service';
 })
 
 export class suscripcionescomponent {
-  recetastodosusuarios: receta[]=[];
+  recetastodosusuarios: receta[];
   seguidores: string[];
   recetitas:receta[];
   liandola:receta[];
 
   constructor (private router: Router, private recetase:RecetaService, private UserService: UserService , private RegisterService:RegisterService){
+    this.liandola = [];
+    this.recetastodosusuarios = [];
+    this.seguidores = [];
+    this.recetitas = [];
     this.getrecetastodoslosusuarios();
+
+
+    this.seguidores=this.UserService.getseguidores(this.UserService.getCurrentUser().nombre);
+
+
+          this.liandola=this.recetase.getrecetasuser(this.seguidores);
+        //  console.log(this.recetase.getrecetasuser(user))
+
+      for(var receta of  this.liandola) {
+        //console.log("Entrando en el segundo for :" +this.liandola);
+            //console.log(this.recetastodosusuarios);
+            //console.log("Esta dentro de la llamada de el segundo for y ha ejecutado a recetastodosusuarios y no ejecutado el push");
+            this.recetastodosusuarios.push(receta);
+          //  console.log(this.recetastodosusuarios);
+
+          }
 
 
 }
@@ -34,21 +54,7 @@ export class suscripcionescomponent {
   getrecetastodoslosusuarios()
   {
 
-  this.seguidores=this.UserService.getseguidores(this.UserService.getCurrentUser().nombre);
 
-    for (var user of this.seguidores){
-      console.log(this.seguidores);
-        this.liandola=this.recetase.getrecetasuser(user);
-        //console.log(this.recetase.getrecetasuser(user))
-      }
-    for(var receta of  this.liandola) {
-      //console.log("Entrando en el segundo for :" +this.liandola);
-          //console.log(this.recetastodosusuarios);
-          //console.log("Esta dentro de la llamada de el segundo for y ha ejecutado a recetastodosusuarios y no ejecutado el push");
-          this.recetastodosusuarios.push(receta);
-          //console.log(this.recetastodosusuarios);
-    
-        }
       }
 
 
