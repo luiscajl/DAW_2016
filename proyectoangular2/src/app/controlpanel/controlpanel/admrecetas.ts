@@ -24,7 +24,7 @@ export class ControlPanelRecetas {
   ngOnInit()
   {
     this.usuarioactivo=this.registerser.getCurrentUser().nombre;
-    this.recetauser=this.recetaser.getrecetasuser(this.usuarioactivo);
+    this.recetauser=this.recetaser.getrecetasparaelusuario(this.usuarioactivo);
     console.log(this.recetauser);
   }
     gotocontrolpanel(){

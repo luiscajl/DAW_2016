@@ -34,7 +34,7 @@
 
 
             <ol>
-                <li *ngFor="#paso of receta.pasos">
+                <li *ngFor="#paso of pasos"></li>
                 <li>
                     <textarea  [(ngModel)]="paso" id="pasosinput" rows="10" type="text" name="name" class="form-control" ng-model="user.name" required></textarea>
                 </li>
@@ -66,7 +66,7 @@
                     <div class="inputlabel">
                         <label id="labelreceta">Tipo de plato:</label>
 
-                        <select  [(ngModel)]="recetita.tipo" (ngModelChange)="changed($event)" name="tipoplato" id="tipoplato" >
+                        <select name="tipoplato" id="tipoplato" >
                             <option [value]="Entrantes">Entrantes</option>
                             <option [value]="Salsas">Aliños y salsas</option>
                             <option [value]="Ensaladas">Ensaladas</option>
