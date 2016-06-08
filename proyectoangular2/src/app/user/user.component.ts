@@ -16,8 +16,10 @@ import {receta} from '../creacionreceta/receta.model';
 })
 
 export class UserComponent {
+  user:register;
  register: register;
  public nusuario: register;
+ private textoSeguir;
  recetuser:receta[];
  usuarioactivo:string;
  contador:number;
@@ -25,9 +27,12 @@ export class UserComponent {
  seguidores=[];
  nombreusuario:string;
 
+
  constructor(private RegisterServic : RegisterService,private _routeParams:RouteParams,private router: Router, private recetaser :RecetaService,private userservi :UserService){
   this.register =this.RegisterServic.getCurrentUser();
   this.usuarioactivo =this.RegisterServic.getCurrentUser().nombre;
+  this.textoSeguir = "Seguir"
+
 
 }
 
@@ -41,6 +46,12 @@ this.nombreusuario=this._routeParams.get("nombre");
   this.contador=this.recetaser.getnumerorecetasuser(nombre);
   this.calcularseguidores();
   this.ponerrecetas(nombre);
+  for(var seguidor of this.userservi.getseguidores(this.userservi.getCurrentUser().nombre)){
+    if(this.register.nombre == seguidor){
+      this.textoSeguir = "Siguiendo"
+    }
+
+  }
 
 }
   ponerrecetas(nombre:string)
@@ -67,7 +78,19 @@ this.nombreusuario=this._routeParams.get("nombre");
   }
   seguirusuario(registernombre:string)
   {
-    this.seguidores.push(registernombre);
+if(this.textoSeguir == "Siguiendo"){
+  this.userservi.deleteSeguidor(registernombre);
+  this.textoSeguir = "Seguir";
+
+}else{
+
+this.userservi.addSeguidor(registernombre);
+this.textoSeguir = "Siguiendo";
+
+}
+console.log(this.userservi.getseguidores(this.userservi.getCurrentUser().nombre));
+
+
   }
   calcularseguidores(){
     this.numeroseguidores=0;

@@ -20,6 +20,10 @@ export class iniciocomponent {
 
   }
 
+gotouserdelareceta(user: string){
+    this.router.navigate(['User', { nombre: user }]);
+}
+
 
 
   }

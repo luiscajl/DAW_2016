@@ -14,7 +14,7 @@
             </div>
             <div class="col-md-2" id="nombreusurangoinfo">
 
-                    <h2 id="nombreusuario">{{register.nombre}}<button type="button" (click)="seguirusuario(register.nombre)" *ngIf="userseguir()" class="btn btn-primary seguir">  Seguir  </button>                         </h2>
+                    <h2 id="nombreusuario">{{register.nombre}}  <button type="button" (click)="seguirusuario(register.nombre)" class="btn btn-primary seguir">  {{textoSeguir}}  </button>                         </h2>
 
                     <h3 id="rangousuario">{{register.rango}}</h3>
                     <h3 id="infousuario">{{register.bio}}</h3>
@@ -106,7 +106,7 @@
                         <img class="logo_cocinero" src="img/iconos/alberto.png">
                        <br><p id="nombreusuarioreceta">{{register.nombre}}</p>
                         <p id="rangonombreusuarioreceta">{{register.rango}}</p>
-                       <button  type="button" class="btn btn-primary seguir" id ="botonseguirnombreusuarioreceta">Seguir</button></div>
+                       <button  type="button" (click)="seguirusuario(register.nombre)" class="btn btn-primary seguir" id ="botonseguirnombreusuarioreceta">Seguir</button></div>
             </div>
            </div>
 

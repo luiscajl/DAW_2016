@@ -20,19 +20,17 @@ export class suscripcionescomponent {
   seguidores: string[];
   recetitas:receta[];
   liandola:receta[];
+  textoseguir:string;
 
   constructor (private router: Router, private recetase:RecetaService, private UserService: UserService , private RegisterService:RegisterService){
     this.liandola = [];
     this.recetastodosusuarios = [];
     this.seguidores = [];
     this.recetitas = [];
-    this.getrecetastodoslosusuarios();
 
-
+    this.textoseguir = "Siguiendo";
     this.seguidores=this.UserService.getseguidores(this.UserService.getCurrentUser().nombre);
-
-
-          this.liandola=this.recetase.getrecetasuser(this.seguidores);
+    this.liandola=this.recetase.getrecetasuser(this.seguidores);
         //  console.log(this.recetase.getrecetasuser(user))
 
       for(var receta of  this.liandola) {
@@ -51,17 +49,19 @@ export class suscripcionescomponent {
 
   }
 
-  getrecetastodoslosusuarios()
-  {
 
-
-      }
 
 
 
 gotouserdelareceta(usuariodelareceta:string)
         {
             this.router.navigate(['User', { nombre: usuariodelareceta }]);
+        }
+
+seguirUser(usuariodelareceta:string){
+        //  this.UserService.addSeguidor(usuariodelareceta);
+          ///this.textoseguir = "Siguiendo";
+
         }
 
 

@@ -11,11 +11,12 @@ export class UserService{
   private user:user;
   private register:register;
   private seguidores=[];
+  private siguiendo: boolean;
 
 
   public usersperfil = [
       new user('luisca','IMG','IMG2',['frost']),
-      new user('frost','IMG','IMG2',['luisca','Paco']),
+      new user('frost','IMG','IMG2',['Paco']),
       new user('mozilla','IMG','IMG2',['frost']),
 
       ];
@@ -39,6 +40,37 @@ export class UserService{
   }
   getCurrentUser(){
     return this.user;
+
+  }
+
+  addSeguidor(seguidor:string){
+    this.user.seguidoresrecetas.push(seguidor);
+
+
+  }
+
+  deleteSeguidor(seguidor:string){
+    for(var seguid of this.user.seguidoresrecetas){
+      if (seguid = seguidor){
+        var index = this.user.seguidoresrecetas.indexOf(seguidor);   
+        this.user.seguidoresrecetas.splice(index, 1);
+
+      }
+    }
+  }
+
+  estaSiguiendo(user: string){
+    for (var usu of this.usersperfil){
+        for(var seguidor of usu.seguidoresrecetas){
+            if(seguidor == user){
+
+              this.siguiendo = true;
+            }
+
+        }
+
+    }
+
 
   }
 

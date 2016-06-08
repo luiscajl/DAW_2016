@@ -14,12 +14,12 @@
 
             <div class="col-md-6" id="colummnacentralreceta">
                 <div class="row">
-                    <div class="col-md-12" id="descripcionreceta">{{receta.descripcion}}</div>
+                    <div class="col-md-12" id="descripcionreceta">{{receta.descripcion}}    </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-md-12" id="infoextra"><span>{{receta.dificultad}}<span class="glyphicon glyphicon-time">
-                    </span>{{receta.tiempo}}</span><span id="apanio">
+                    <div class="col-md-12" id="infoextra"><span>{{receta.dificultad}}    <span class="glyphicon glyphicon-time">
+                    </span>{{receta.tiempo}}    </span><span id="apanio">
                                      <span class="glyphicon glyphicon-user"></span> 4 | <a href="#">
                                  <span class="glyphicon glyphicon-film"></span></a> | <span class="glyphicon glyphicon-tags"> </span>  Primer plato </span>
                  </div>
@@ -35,7 +35,7 @@
                      <img class="logo_cocinero"  (click)="gotouserdelareceta(receta.autor.nombre)" src="img/iconos/alberto.png">
                     <br><p id="nombreusuarioreceta">{{receta.autor.nombre}}</p>
                      <p id="rangonombreusuarioreceta">Experto</p>
-                    <!--<button type="button" class="btn btn-primary seguir" id ="botonseguirnombreusuarioreceta">Seguir</button></div>-->
+                    <button type="button" (click)="seguirUser(receta.autor.nombre)" class="btn btn-primary seguir" id ="botonseguirnombreusuarioreceta">{{textoseguir}}</button></div>
          </div>
         </div>
 
