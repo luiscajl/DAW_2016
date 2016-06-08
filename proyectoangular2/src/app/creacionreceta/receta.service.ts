@@ -42,16 +42,19 @@ export class RecetaService{
     let rceta = this.recetas.filter(h => h.nombre === nombre)[0]
     return withObserver(new receta(rceta.nombre,rceta.fecha,rceta.descripcion,rceta.tipo,rceta.dificultad,rceta.tiempo,rceta.autor,rceta.ingredientes,rceta.pasos,rceta.video,rceta.vegana,rceta.grasas,rceta.diabeticos,rceta.picante,rceta.comentarios,rceta.imagen));
   }
-  getrecetasuser(usuario:string)
+  getrecetasuser(usuarios:string[])
   {
     //this.recetasuser=[];
     //let recetas=this.recetas.filter(h=>h.autor.nombre ===autor)
+    this.recetasuser=[];
+    for(var usuario of usuarios){
     for (var receta of this.recetas)
     {
       if (receta.autor.nombre==usuario){
         this.recetasuser.push(receta);
       }
     }
+  }
     return this.recetasuser;
     }
 
